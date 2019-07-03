@@ -2,19 +2,19 @@
 
 @font-face {
     font-family:"NotoR";
-    src:url('../font/notokr-regular.eot') format('embedded-opentype'), url('../font/notokr-regular.woff') format('woff'), url('../font/notokr-regular.woff2') format('woff2');
+    src:url('../fonts/NotoSansKR-Regular.eot') format('embedded-opentype'), url('../fonts/NotoSansKR-Regular.woff') format('woff'), url('../fonts/NotoSansKR-Regular.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
   @font-face {
     font-family:"NotoM";
-    src:url('../font/notokr-medium.eot') format('embedded-opentype'), url('../font/notokr-medium.woff') format('woff'), url('../font/notokr-medium.woff2') format('woff2');
+    src:url('../fonts/NotoSansKR-Medium.eot') format('embedded-opentype'), url('../fonts/NotoSansKR-Medium.woff') format('woff'), url('../fonts/NotoSansKR-Medium.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
   @font-face {
     font-family:"NotoB";
-    src:url('../font/notokr-bold.eot') format('embedded-opentype'), url('../font/notokr-bold.woff') format('woff'), url('../font/notokr-bold.woff2') format('woff2');
+    src:url('../fonts/NotoSansKR-Bold.eot') format('embedded-opentype'), url('../fonts/NotoSansKR-Bold.woff') format('woff'), url('../fonts/NotoSansKR-Bold.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
