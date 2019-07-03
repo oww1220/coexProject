@@ -1,189 +1,150 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>한국교원단체총연합회 </title>
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/layout.css">
-
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/ui2017.js"></script>
-
+    <meta charset="UTF-8">
+    <title>코엑스 프로젝트</title>
+    <style type="text/css">
+    *,*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+    html,body{width:100%;height:100%;}
+    body {font-family:Malgun Gothic,'맑은고딕',Dotum,'돋움',sans-serif;font-size:12px;color:#666;}
+    html,body,div,span,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+    sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+    figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,h1,h2,h3,h4,h5,h6 {margin:0;padding:0;list-style:none; -webkit-text-size-adjust:none; }
+    img {width:100%;height:auto;vertical-align:top;vertical-align:top;border:0;line-height:0;}
+    a {color:#666;text-decoration:none;}
+    table {width:100%;border-collapse:collapse;border-spacing:0;}
+    tbody, tfoot, thead, tr, th, td {table-layout:fixed;word-break:break-all;}
+    .tit {font-size:20px;color:#515151;font-weight:bold;padding:10px 0 10px 5px;}
+    .table_row {border-top:1px solid #666;border-bottom:2px solid #999;margin-bottom:20px;}
+    .table_row table {width:100%;}
+    .table_row table tbody tr.sky th, .table_row table tbody tr.sky td {background:#d2f6f6;}
+    .table_row table tbody tr.none {text-decoration:line-through;}
+    .table_row table tbody tr.yellow td {background:#ffeeca;color:#000;}
+    .table_row table tbody tr.yellow td:first-child {background:none;}
+    .table_row table tbody {border-top:1px solid #666;}
+    .table_row table thead th {padding:5px;background:#d9d9d9;border-left:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;color:#333;}
+    .table_row table thead th.sub {background: #ededed;}
+    .table_row table tbody td {padding:5px;border-top:1px solid #c3c3c3;border-left:1px solid #c3c3c3;}
+    .table_row table tbody td.first {font-weight:bold;color:#333;}
+    .table_row table tbody td a:hover {text-decoration: underline;}
+    .table_row table tbody td.check {color:blue;}
+    .table_row table tbody th {text-align:center;background:#f9f9f9;color:#515151;border-top:1px solid #c3c3c3;}
+    .table_row table tbody tr:first-child th, .table_row table tbody tr:first-child td {border-top:0;}
+    .table_row table th:first-child, .table_row table tbody td:first-child {border-left:0;}
+    .table_row table tbody tr:hover th, tr:hover td {background:#f5f5f5 !important;}
+    .text_area {padding:5px;margin-bottom:20px;color:#666;border:2px solid #ccc;line-height:1.5;}
+    .text_area a {display:block;padding:3px;text-decoration: none;}
+    .text_area a:hover {text-decoration: underline;}
+    .red {color:red;}
+    .blue {color:blue;}
+    .ac {text-align:center;}
+    </style>
 </head>
-<body>
+<body style="min-width:700px;padding:0 5px;">
+    <!-- contents -->
+    <section>
+        <p class="tit"><strong>[2019년 코엑스 프로젝트]</strong>코딩리스트</p>
 
-<div id="wrap">
-	<!--해더-->
-	<div id="header">
+        <p style="text-align:right;margin-bottom:5px;">ver.1.0 ()</p>
+        <div class="table_row">
+            <table>     
+                <colgroup>
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="7%" />
+                    <col width="15%" />
+                    <col width="7%" />
+                    <col width="*" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="5">분류</th>
+                        <th rowspan="2">폴더명</th>
+                        <th rowspan="2">기본파일명</th>
+                        <th rowspan="2">최종작업일</th>
+                        <th rowspan="2">비고</th>
+                    </tr>
+                    <tr>
+                        <th class="sub">1Depth</th>
+                        <th class="sub">2Depth</th>
+                        <th class="sub">3Depth</th>
+                        <th class="sub">4Depth</th>
+                        <th class="sub">5Depth</th>
+                    </tr>
+                </thead>
 
-		<div class="headerWrap">
-			<h1><img src="images/layout/member_logo.jpg" alt="교총"/></h1>
-			<div class="panelBt">
-				<a href="#">
-					<img src="images/layout/member_panel.jpg" alt="교총패널"/>
-				</a>
-			</div>
-			<div class="panelBt02">
-				<a href="#">
-					<img src="images/layout/member_join.jpg" alt="교총맴버스"/>
-				</a>
-			</div>
+                <tbody>
 
-		</div>
-		<div class="headerCard"></div>
+					<!-- 레이아웃 -->
+                    <tr class="sky">
+						<td class="first">레이아웃</td>
+						<td>상세</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>layout</td>
+						<td><a href="html/layout/layout.html" target="_blank">layout.html</a></td>
+						<td>2019-06-17</td>
+						<td class="check">해더, 푸터 </td>
+					</tr>
+					<!-- //레이아웃 -->
 
+					<!-- 메인 -->
+                    <tr class="sky">
+						<td class="first">메인</td>
+						<td>상세</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>main</td>
+						<td><a href="html/main/main.html" target="_blank">main.html</a></td>
+						<td>2019-06-17</td>
+						<td class="check"></td>
+					</tr>
+					<!-- //메인 -->
 
-	</div>
-	<!--//해더-->
+                    <!-- 장바구니 
+                    <tr class="sky">
+                        <td class="first">장바구니</td>
+                        <td>멤버십 등급</td>
+                        <td>리스트</td>
+                        <td></td>
+                        <td></td>
+                        <td>cart</td>
+                        <td><a href="cart/cart_membership_list.html" target="_blank">cart_membership_list.html</a></td>
+                        <td>2019-05-02</td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>장바구니</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="cart/cart_list.html" target="_blank">cart_list.html</a></td>
+                        <td>2019-05-02</td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>사은품 리스트</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="cart/cart_gift_list.html" target="_blank">cart_gift_list.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+					<!-- 장바구니 -->
 
-	<!--패널부분->
-	<div class="panelDim"></div>
-	<div class="panelW">
-		<div class="panelW_in">
-			<div class="panel_tit">
-				<div class="logo">
-					<a href="">
-						<img src="images/layout/panel_logo.png" alt="logo">
-					</a>
-				</div>
-				<div class="close">
-					<img src="images/layout/btn_close.png" alt="close">
-				</div>
-			</div>
-			<div class="panel_cnt">
-
-				<div>
-					<ul>
-						<li>
-							<a href="">회원가입</a>
-						</li>
-						<li>
-							<a href="">아이디 만들기</a>
-						</li>
-						<li>
-							<a href="">회원정보수정</a>
-						</li>
-						<li>
-							<a href="">신문주소변경</a>
-						</li>
-						<li>
-							<a href="">아이디 찾기</a>
-						</li>
-						<li>
-							<a href="">비밀번호 찾기</a>
-						</li>
-						<li>
-							<a href="">회원탈퇴</a>
-						</li>
-					</ul>
-					<div class="pcBt">
-						<a href="">PC 버전</a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<!--//패널부분-->
-
-	<!--컨텐츠-->
-	<div id="container">
-		<div class="inner">
-			<h2>로그인</h2>
-			<div class="contentW">컨텐츠</div>
-		</div>
-	</div>
-	<!--//컨텐츠--->
-
-
-	<!--후터-->
-	<div id="footer">
-		<div class="inner">
-
-			<div class="footerTop">
-				<ul class="after">
-					<li>
-						<a href="#">
-							<img src="images/layout/btn_footer_sns01.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/layout/btn_footer_sns02.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/layout/btn_footer_sns03.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/layout/btn_footer_sns04.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="images/layout/btn_footer_sns05.png" alt="">
-						</a>
-					</li>
-				</ul>
-				<a href="">PC 버젼</a>
-			</div>
-
-			<div class="footinnermenu">
-				<ul class="after">
-					<li>
-						<a href="#">홈페이지운영규칙</a>
-					</li>
-					<li class="point">
-						<a href="#">개인정보처리방침</a>
-					</li>
-				</ul>
-				<ul class="after">
-					<li>
-						<a href="#">이메일주소무단수집거부</a>
-					</li>
-					<li>
-						<a href="#">찾아오시는길</a>
-					</li>
-				</ul>
-
-			</div>
-
-			<div class="footinnerdesc">
-				<ul>
-					<li>(06764) 서울특별시 서초구 태봉로 114 (우면동 142)</li>
-					<li class="after"><span>TEL 02-570-5500</span><span>FAX 02-577-7468</span></li>
-					<li>E-MAIL kfta16@kfta.or.kr</li>
-				</ul>
-
-				<p>COPYRIGHT © 2017 KFTA ALL RIGHT RESERVED.</p>
-			</div>
-
-
-
-		</div>
-
-		<div class="btnHome">
-			<a href="">
-				<img src="images/layout/btn_home.png" alt="홈으로">
-			</a>
-		</div>
-
-		<div class="btnTop">
-			<a href="">
-				<img src="images/layout/btn_top.png" alt="탑으로">
-			</a>
-		</div>
-
-
-	</div>
-	<!--//후터-->
-<div>
-
+                </tbody>
+            </table>
+        </div>
+    </section>
 </body>
 </html>
