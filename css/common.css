@@ -1,27 +1,27 @@
 @charset "utf-8";
 
+/*font*/
 @font-face {
     font-family:"NotoR";
-    src:url('../fonts/NotoSansKR-Regular.eot') format('embedded-opentype'), url('../fonts/NotoSansKR-Regular.woff') format('woff'), url('../fonts/NotoSansKR-Regular.woff2') format('woff2');
+    src:url('../fonts/notokr-regular.eot') format('embedded-opentype'), url('../fonts/notokr-regular.woff') format('woff'), url('../fonts/notokr-regular.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
   @font-face {
     font-family:"NotoM";
-    src:url('../fonts/NotoSansKR-Medium.eot') format('embedded-opentype'), url('../fonts/NotoSansKR-Medium.woff') format('woff'), url('../fonts/NotoSansKR-Medium.woff2') format('woff2');
+    src:url('../fonts/notokr-medium.eot') format('embedded-opentype'), url('../fonts/notokr-medium.woff') format('woff'), url('../fonts/notokr-medium.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
   @font-face {
     font-family:"NotoB";
-    src:url('../fonts/NotoSansKR-Bold.eot') format('embedded-opentype'), url('../fonts/NotoSansKR-Bold.woff') format('woff'), url('../fonts/NotoSansKR-Bold.woff2') format('woff2');
+    src:url('../fonts/notokr-bold.eot') format('embedded-opentype'), url('../fonts/notokr-bold.woff') format('woff'), url('../fonts/notokr-bold.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
 
 
 /* CSS Reset */
-
 /* reset element */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
