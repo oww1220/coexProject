@@ -21,7 +21,7 @@ var COEX = COEX || {
 	event: {
 		toggle: function(target){
 			var layer = $(target.data("target"));
-			target.on("click", function(){
+			target.on("click", function() {
 				if(layer.is(":visible")){
 					layer.slideUp();
 				}
@@ -30,13 +30,34 @@ var COEX = COEX || {
 				}
 			});
 		},
-	}
+		goTop: function(target){
+			target.on("click",function(e) {
+				$("html, body").stop().animate({"scrollTop": 0}, 1000);
+            	e.preventDefault()
+			});
+		}, 
+		topScrollCh: function(target, parent){
+			if(parent.hasClass("pc")){
+				var winScroll = $(window).scrollTop();
+				if(winScroll == 0){
+					target.fadeOut();
+				}
+				else{
+					target.fadeIn();
+				}
+			}
+			else{
+				return;
+			}
+		},	
+	},
 };
 
 
 $(function(){
 
 	var BODY = $("body");
+	var GOTOP = $(".footer .btnTop")
 
 	/*호스트환경 체크*/
 	COEX.resize.pf(BODY);
@@ -45,7 +66,18 @@ $(function(){
 	/*푸터 토글*/
 	COEX.event.toggle($(".footer .family_wrap .family_btn"));
 
+	/*pc top으로 scroll*/
+	COEX.event.topScrollCh(GOTOP, BODY);
+
+	/*top으로*/
+	COEX.event.goTop(GOTOP);
+
 	$(window).on("load", function(){
+	});
+
+	$(window).on("scroll", function(){
+		/*pc top으로 scroll*/
+		COEX.event.topScrollCh(GOTOP, BODY);
 	});
 
 	$(window).on("resize", function(){
