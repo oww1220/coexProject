@@ -39,7 +39,7 @@ time, mark, audio, video {
 	margin:0;padding:0;
 }
 
- html, body {width:100%;/*height:100%;*/-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent;word-break:keep-all;font-family:"NotoR";}
+ html, body {width:100%;/*height:100%;*/-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent;word-break:keep-all;font-family:"NotoR";font-size:13px;letter-spacing:-1px;line-height: 1;}
  h1, h2, h3, h4, h5, h6 {font-weight:normal;font-size:inherit;}
 
  /* HTML5 display-role reset for older browsers */
@@ -84,3 +84,15 @@ hr {display:none;}
 select {padding:5px;border:1px solid #ccc;font-size:13px;background-color:#fff;}
 input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 .input {padding:5px;border:1px solid #e6e6e6;font-size:13px;color:#666;}
+
+
+
+/*테블릿*/
+@media screen and (min-width:768px){
+
+}
+
+/*데스크탑*/
+@media screen and (min-width:1024px){
+
+}
