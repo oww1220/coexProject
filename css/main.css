@@ -112,7 +112,7 @@
 
   .main_wrap .cols_notice {margin:20px 15px 40px;}
   .main_wrap .cols_notice ul {}
-  .main_wrap .cols_notice li {}
+  .main_wrap .cols_notice li {position: relative;}
   .main_wrap .cols_notice li a {display:block;}
   .main_wrap .cols_notice li a:before {width:23px;height:23px;margin-right:10px;background-image: url("../images/icon/pc_main_notice.png");}
   .main_wrap .cols_notice li p {font-size: 18px;width:940px;padding:1px 0;}
