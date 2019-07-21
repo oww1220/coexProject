@@ -35,15 +35,50 @@ var COEX = COEX || {
 			if(closeBt) that.close(closeBt, dimmed, parent);
 			if(dimmed) that.close(dimmed, dimmed, parent);
 		},
+		calculate: function(layer){
+			var layer = $("." + layer),
+				winH = $(window).height(),
+				winW = $(window).width(),
+				layerH = layer.height(),
+				layerW = layer.width(),
+				marginH = parseInt(layer.find(".pop_inner").css("marginTop")) + parseInt(layer.find(".pop_inner").css("marginBottom"));
+			//console.log(layer, winH, winW, layerH, layerW, marginH);
+
+			if(winH < layerH){
+				layer.find(".pop_inner").css({
+					height: winH - marginH,
+					overflow: "auto",
+				});
+				layer.css({
+					top: 0,
+					left: (winW - layerW) / 2,
+				});
+			}
+			else{
+				layer.find(".pop_inner").removeAttr("style");
+				layer.css({
+					top: (winH - layerH) / 2,
+					left: (winW - layerW) / 2,
+				});
+			}
+
+		},
 		open: function(target, dimmed, parent){
 			var that = this;
 			$(document).on("click", target, function(e){
 				var layer = $(this).data("layer");
 				that.scrollTop = $(window).scrollTop();
+
+				$("body").addClass("fixed");
 				
 				if(dimmed) $(dimmed).fadeIn();
 				$(parent + "." + layer).show();
+				that.calculate(layer);
 				//console.log(layer, that.scrollTop);
+
+				$(window).on("resize.layer", function(){
+					that.calculate(layer);
+				});
 
 				e.preventDefault();
 			});
@@ -58,12 +93,15 @@ var COEX = COEX || {
 				}
 				else{
 					layer = $(parent + "."+$(this).data("layer"));
-				}
+				}			
 				
 				layer.hide();
-
+				$("body").removeClass("fixed");
+				$(window).scrollTop(that.scrollTop)
 				if(dimmed) $(dimmed).fadeOut();
 				//console.log(layer, that.scrollTop);
+
+				$(window).off("resize.layer");
 
 				e.preventDefault();
 			});
