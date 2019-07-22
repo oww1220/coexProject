@@ -6,6 +6,7 @@
 .sub_wrap .sub_h2 > h2 {font-size:18px;font-weight: bold;}
 .sub_wrap .sub_h2 > span {display:block;margin-top:15px;font-size:12px;color:#888;}
 .sub_wrap .sub_h2 .sns_wrap {position: absolute;bottom: 0; right:0;}
+.sub_wrap .sub_h2 .sns_wrap a {display: block;width: 35px;height: 35px;background: url("../images/icon/m_sub_share.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;}
 
 .sub_wrap .btn_wrap {font-size: 0;text-align: center;margin-top: 30px;}
 .sub_wrap .btn_wrap  > a {display: inline-block;font-size: 13px;height:35px;line-height: 37px;width: 60%;border-radius: 100px;}
@@ -13,19 +14,30 @@
 
 
 /*이벤트 리스트 및 디테일*/
-.sub_wrap .event_wrap {margin: 15px 0;}
-.sub_wrap .event_wrap .more_bt {}
-.sub_wrap .event_wrap .more_bt .list_in a {display: block;width: 60px;height: 60px;background: url("../images/icon/m_main_cols1_more_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:20px auto 0;}
+.sub_wrap .event_wrap {margin: 15px 0 60px;}
 
-.sub_wrap .event_wrap .event_detail {padding-top:20px;border-top: 1px dashed #ddd;}
+.sub_wrap .event_wrap .event_detail {padding:20px 0 0px;border-top: 1px dashed #ddd;}
 .sub_wrap .event_wrap .event_detail .event_prev {display: none;}
+.sub_wrap .event_wrap .event_detail img {width:100%;}
+
+.sub_wrap .event_wrap .event_list li {margin-bottom: 15px;}
+.sub_wrap .event_wrap .event_list li a {display: block;}
+.sub_wrap .event_wrap .event_list li img{width: 100%;}
+
+.sub_wrap .event_wrap .event_list .more_bt {width:100%;margin:0;}
+.sub_wrap .event_wrap .event_list .more_bt .list_in a {display: block;width: 60px;height: 60px;background: url("../images/icon/m_main_cols1_more_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:20px auto 0;}
 
 
 /*테블릿*/
 @media screen and (min-width:768px){
-
+  
   .sub_wrap .btn_wrap  > a {height:50px;line-height: 52px;font-size: 15px;}
 
+  /*이벤트 리스트 및 디테일*/
+  .sub_wrap .event_wrap .event_list li {float: left;width: 50%;}
+  .sub_wrap .event_wrap .event_list li:nth-child(odd) a {margin-right:7.5px;}
+  .sub_wrap .event_wrap .event_list li:nth-child(even) a {margin-left:7.5px;}
+  .sub_wrap .event_wrap .event_list .more_bt .list_in a {margin-top: 10px;}
 
 }
 
@@ -37,16 +49,31 @@
   .sub_wrap .sub_h2 {margin-bottom: 60px;}
   .sub_wrap .sub_h2 > h2 {font-size: 50px;}
   .sub_wrap .sub_h2 > span {font-size: 18px;margin-top:25px;}
+  .sub_wrap .sub_h2 .sns_wrap a {width: 80px;height: 80px;background-image:url("../images/icon/pc_sub_share.png");}
 
   .sub_wrap .btn_wrap {margin-top: 100px;}
   .sub_wrap .btn_wrap  > a {height:70px;line-height: 72px;width: 350px;font-size: 20px;}
 
   /*이벤트 리스트 및 디테일*/
-  .sub_wrap .event_wrap {margin: 116px 0 195px;}
-  .sub_wrap .event_wrap .more_bt .list_in a {width: 120px;height: 120px;margin: 40px auto 0;}
+  .sub_wrap .event_wrap {margin: 116px 0 200px;}
   
-  .sub_wrap .event_wrap .event_detail {padding-top:60px;}
+  .sub_wrap .event_wrap .event_detail {padding:60px 0 0px;}
   .sub_wrap .event_wrap .event_detail .event_prev {display: block;margin-top:100px;}
   .sub_wrap .event_wrap .event_detail .event_prev a {font-size: 20px;}
+  .sub_wrap .event_wrap .event_detail .event_prev a:before {position:relative;bottom:2px;margin-right:10px;display:inline-block;vertical-align:middle;content:"";width:25px;height:8px;background:url("../images/icon/pc_sub_pass_btn.png") no-repeat 0 0;background-size: 100%;}
+  .sub_wrap .event_wrap .event_detail img {width:auto;}
+
+  .sub_wrap .event_wrap .event_list .type01 li {float: left;width: 360px;margin:0 60px 100px 0;}
+  .sub_wrap .event_wrap .event_list .type02 li {float: left;width: 570px;margin:0 60px 100px 0;}
+
+  .sub_wrap .event_wrap .event_list li:nth-child(odd) a {margin-right:0px;}
+  .sub_wrap .event_wrap .event_list li:nth-child(even) a {margin-left:0px;}
+  .sub_wrap .event_wrap .event_list .type01 li:nth-child(3n) {margin-right:0;}
+  .sub_wrap .event_wrap .event_list .type02 li:nth-child(2n) {margin-right:0;}
+  .sub_wrap .event_wrap .event_list .type01 .more_bt,
+  .sub_wrap .event_wrap .event_list .type02 .more_bt {width:100%;margin:0;}
+  .sub_wrap .event_wrap .event_list .more_bt .list_in a {width: 120px;height: 120px;margin: 0px auto;}
+
+
 
 }

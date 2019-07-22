@@ -37,15 +37,18 @@ var COEX = COEX || {
 		},
 		calculate: function(layer){
 			var layer = $("." + layer),
+				layerIn = layer.find(".pop_inner"),
 				winH = $(window).height(),
-				winW = $(window).width(),
-				layerH = layer.height(),
-				layerW = layer.width(),
-				marginH = parseInt(layer.find(".pop_inner").css("marginTop")) + parseInt(layer.find(".pop_inner").css("marginBottom"));
-			//console.log(layer, winH, winW, layerH, layerW, marginH);
+				winW = $(window).width();
+				layerIn.removeAttr("style");
 
+			var layerH = layer.height(),
+				layerW = layer.width(),
+				marginH = parseInt(layerIn.css("marginTop")) + parseInt(layerIn.css("marginBottom"));
+			//console.log(layer, winH, winW, layerH, layerW, marginH);
+			
 			if(winH < layerH){
-				layer.find(".pop_inner").css({
+				layerIn.css({
 					height: winH - marginH,
 					overflow: "auto",
 				});
@@ -55,7 +58,7 @@ var COEX = COEX || {
 				});
 			}
 			else{
-				layer.find(".pop_inner").removeAttr("style");
+				layerIn.removeAttr("style");
 				layer.css({
 					top: (winH - layerH) / 2,
 					left: (winW - layerW) / 2,
