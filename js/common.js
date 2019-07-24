@@ -17,6 +17,13 @@ var COEX = COEX || {
 				target.addClass("iphone");
 			}
 		},
+		font: function(){
+			var doc = document.documentElement,
+			fontSizeVal = (parseFloat((doc.clientWidth / 320 * 62.5) * 100) / 100);
+			fontSizeVal = (fontSizeVal >= 125) ? 125 : fontSizeVal;
+
+			doc.style.fontSize = fontSizeVal + '%';
+		},
 	},
 	slide: {
 		init: function(target, sort, option){
@@ -157,6 +164,9 @@ var COEX = COEX || {
 	},
 };
 
+/*돔컨텐츠로즈 전에 실행 함수-root엘리먼트만 존재하는시점*/
+COEX.resize.font();
+
 
 $(function(){
 
@@ -215,6 +225,9 @@ $(function(){
 	$(window).on("resize", function(){
 		/*호스트환경 체크*/
 		COEX.resize.chk($BODY);
+
+		/*rem 용 폰트 리사이즈*/
+		COEX.resize.font();
 
 	});
 
