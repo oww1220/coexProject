@@ -20,7 +20,7 @@ var COEX = COEX || {
 		font: function(){
 			var doc = document.documentElement,
 			fontSizeVal = (parseFloat((doc.clientWidth / 320 * 62.5) * 100) / 100);
-			fontSizeVal = (fontSizeVal >= 125) ? 125 : fontSizeVal;
+			fontSizeVal = (fontSizeVal >= 90) ? 90 : fontSizeVal;
 
 			doc.style.fontSize = fontSizeVal + '%';
 		},
