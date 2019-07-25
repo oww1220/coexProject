@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>coex </title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/sub.css">
+
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/slick.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<!--해더-->
+	<header id="header">
+
+		<div class="inner">
+			
+		</div>
+
+	</header>
+	<!--//해더-->
+
+	<!--컨텐츠-->
+	<div id="container">
+
+		<div class="sub_wrap">
+
+			<!--회원가입-->
+			<div class="signup_wrap">
+				<div class="inner">
+					<div class="sub_h2">
+						<h2>비밀번호 재설정</h2>
+					</div>
+					<div class="signup_cont">
+						<form action="">
+							<ul class="signup_list">
+								<li>
+									<label for="">이메일 주소(ID)</label>
+									<input type="text" value="smp@naver.com" readonly="readonly"/>
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message">에러 메시지</span>
+								</li>
+								<li>
+									<label for="">새 비밀번호</label>
+									<input type="password"/>
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message">비밀번호 양식과 틀립니다</span>
+								</li>
+								<li>
+									<label for="">새 비밀번호 재입력</label>
+									<input type="password"/>
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message"></span>
+								</li>
+							</ul>
+							<a href="#" class="layer_open_bt signup_btn" data-layer="layer-t01">확인</a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--//회원가입-->
+
+			<!--재설정완료 레이어-->
+			<!--js::pop_layer:parent, layer-t01:target--->
+			<div class="pop_layer signup layer-t01">
+				<div class="pop_inner">
+					<div class="pop_cont">
+						<strong>비밀번호 재설정이 완료되었습니다!</strong>
+						<p>다시 로그인 해주세요.</p>
+						<div class="btn_wrap">
+							<a href="#" class="blue">확인</a>
+						</div>
+						<a href="#"class="layer_close_bt" data-layer="layer-t01">닫기</a>	
+					</div>
+				</div>
+			</div>
+			<div class="layer_dimmed">레이어 배경</div>
+			<!--//재설정완료 레이어-->
+
+		</div>
+			
+	</div>
+	<!--//컨텐츠--->
+
+
+	<!--후터-->
+	<footer id="footer" class="footer">
+
+		<div class="inner">
+	
+		</div>
+
+	</footer>
+	<!--//후터-->
+</div>
+
+</body>
+</html>
