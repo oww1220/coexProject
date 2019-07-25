@@ -36,7 +36,7 @@
 .signup_wrap .signup_list li label {display:block;color:#888;font-size:1.05rem;}
 .signup_wrap .signup_list li input {width:100%;border:0;border-bottom:1px solid #E8E8E8;height:3rem;font-size:1.2rem;line-height:3.1rem;transition:.3s all ease;}
 .signup_wrap .signup_list li input:focus {border-bottom:2px solid #4C6DF7;}
-.signup_wrap .signup_list li input:read-only {border-bottom:1px solid #E8E8E8;}
+.signup_wrap .signup_list li input:read-only {border-bottom:1px solid #E8E8E8 !important;}
 .signup_wrap .signup_list li span {margin-top:0.5rem;display: none;}
 .signup_wrap .signup_list li .help_message {color:#4C6DF7;font-size:1rem;}
 .signup_wrap .signup_list li input:focus + .help_message {display: block;}
