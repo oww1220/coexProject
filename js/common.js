@@ -20,7 +20,7 @@ var COEX = COEX || {
 		font: function(){
 			var doc = document.documentElement,
 			fontSizeVal = (parseFloat((doc.clientWidth / 320 * 62.5) * 100) / 100);
-			fontSizeVal = (fontSizeVal >= 90) ? 90 : fontSizeVal;
+			fontSizeVal = (fontSizeVal >= 85) ? 85 : fontSizeVal;
 
 			doc.style.fontSize = fontSizeVal + '%';
 		},
@@ -119,14 +119,15 @@ var COEX = COEX || {
 	},
 	event: {
 		toggle: function(target){
-			var layer = $(target.data("target"));
-			target.on("click", function() {
+			var layer = $("." + target.data("target"));
+			target.on("click", function(e) {
 				if(layer.is(":visible")){
 					layer.slideUp();
 				}
 				else{
 					layer.slideDown();
 				}
+				e.preventDefault();
 			});
 		},
 		goTop: function(target){
@@ -155,6 +156,7 @@ var COEX = COEX || {
 				var layer = (tab_cont + "." + parent + " > div");
 				var idx = $(this).index();
 
+				$(this).addClass("on").siblings().removeClass("on");
 				$(layer).eq(idx).show().siblings().hide();
 				//console.log(layer, idx);
 				e.preventDefault();
@@ -174,7 +176,7 @@ $(function(){
 	var $BODY = $("body"),
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
-		$FOOTER_TOGGLE = $(".footer .family_wrap .family_btn"),
+		$TOGGLE = $(".toggle_btn"),
 		LAYER_BT_OPEN = ".layer_open_bt",
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
@@ -199,8 +201,9 @@ $(function(){
 		});
 	}
 
-	/*푸터 토글*/
-	COEX.event.toggle($FOOTER_TOGGLE);
+
+	/*토글*/
+	COEX.event.toggle($TOGGLE);
 
 	/*pc top으로 scroll*/
 	COEX.event.topScrollCh($GOTOP, $BODY);
