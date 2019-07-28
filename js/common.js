@@ -120,12 +120,49 @@ var COEX = COEX || {
 	event: {
 		toggle: function(target){
 			var layer = $("." + target.data("target"));
+
 			target.on("click", function(e) {
+				var sort = target.data("sort");
+				var onClass = target.data("on");
+				//console.log(sort, onClass);
+				if(onClass){
+					if($(this).hasClass("on")){
+						$(this).removeClass("on");
+						layer.removeClass("on");
+					}
+					else{
+						$(this).addClass("on");
+						layer.addClass("on");
+					}	
+				}
+
 				if(layer.is(":visible")){
-					layer.slideUp();
+					if(sort == "fade"){
+						layer.fadeOut();
+					}
+					else if (sort == "normal"){
+						layer.hide();
+					}
+					else if (sort == "none"){
+						return false;
+					}
+					else{
+						layer.slideUp();
+					}
 				}
 				else{
-					layer.slideDown();
+					if(sort == "fade"){
+						layer.fadeIn();
+					}
+					else if (sort == "normal"){
+						layer.show();
+					}
+					else if (sort == "none"){
+						return false;
+					}
+					else{
+						layer.slideDown();
+					}
 				}
 				e.preventDefault();
 			});
@@ -136,6 +173,17 @@ var COEX = COEX || {
             	e.preventDefault();
 			});
 		}, 
+		goTarget:function(target){
+			$(document).on("click", target, function(e){
+				var hrefString = $(this).attr("href");
+				var offsetTop = $(hrefString).offset();
+				if(offsetTop){
+					offsetTop = offsetTop.top;
+					$("html, body").stop().animate({"scrollTop": offsetTop}, 1000);
+				}
+				e.preventDefault();
+			});
+		},
 		topScrollCh: function(target, parent){
 			if(parent.hasClass("pc")){
 				var winScroll = $(window).scrollTop();
@@ -177,6 +225,7 @@ $(function(){
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
 		$TOGGLE = $(".toggle_btn"),
+		GOTARGET = ".go_target_bt"
 		LAYER_BT_OPEN = ".layer_open_bt",
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
@@ -210,6 +259,9 @@ $(function(){
 
 	/*top으로*/
 	COEX.event.goTop($GOTOP);
+
+	/*target으로*/
+	COEX.event.goTarget(GOTARGET);
 
 	/*layer팝업*/
 	COEX.layer.init(LAYER_BT_OPEN, LAYER_BT_CLOSE, LAYER_DIM, LAYER_DIV);
