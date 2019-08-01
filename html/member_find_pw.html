@@ -41,16 +41,29 @@
 					</div>
 					<div class="signup_cont">
 						<form action="">
+							<div class="signup_top">	
+								<p>가입하신 ID(이메일 주소 혹은 휴대폰번호)를 입력해주세요.</p>
+							</div>
 							<ul class="signup_list">
 								<li>
-									<label for="">이메일 주소(ID)</label>
+									<label for="">이메일 주소</label>
+									<input type="text"/>
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message">에러 메시지</span>
+								</li>
+								<li>
+									<label for="">휴대폰 번호</label>
 									<input type="text"/>
 									<span class="help_message">도움말 메시지</span>
 									<span class="error_message">에러 메시지</span>
 								</li>
 
 							</ul>
-							<a href="#" class="layer_open_bt signup_btn" data-layer="layer-t01">확인</a>
+							<ul class="signup_btns">
+								<li>
+									<a href="#" class="signup_btn" id="test01" data-layer="layer-t01">확인</a>
+								</li>
+							</ul>
 						</form>
 					</div>
 				</div>
@@ -65,7 +78,7 @@
 						<strong>존재하지 않는 이메일(ID)입니다!</strong>
 						<p>가입하신 이메일 주소(ID)를 다시한번 확인하신 후 시도해주세요.</p>
 						<div class="btn_wrap">
-							<a href="#">확인</a>
+							<a href="#" id="test001" data-layer="layer-t01">확인</a>
 						</div>
 						<a href="#"class="layer_close_bt" data-layer="layer-t01">닫기</a>	
 					</div>

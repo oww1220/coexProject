@@ -37,27 +37,29 @@
 			<div class="signup_wrap">
 				<div class="inner">
 					<div class="sub_h2">
-						<h2>비밀번호 찾기</h2>
+						<h2>비밀번호 재설정</h2>
 					</div>
 					<div class="signup_cont">
 						<form action="">
-							<div class="signup_top">	
-								<p>가입하신 ID(이메일 주소 혹은 휴대폰번호)를 입력해주세요.</p>
-							</div>
 							<ul class="signup_list">
 								<li>
-									<label for="">이메일 주소</label>
-									<input type="text"/>
+									<label for="">휴대폰 번호</label>
+									<input type="text" value="smp@naver.com" readonly="readonly"/>
 									<span class="help_message">도움말 메시지</span>
 									<span class="error_message">에러 메시지</span>
 								</li>
 								<li>
-									<label for="">휴대폰 번호</label>
-									<input type="text"/>
+									<label for="">새 비밀번호</label>
+									<input type="password"/>
 									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
+									<span class="error_message">비밀번호 양식과 틀립니다</span>
 								</li>
-
+								<li>
+									<label for="">새 비밀번호 재입력</label>
+									<input type="password"/>
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message"></span>
+								</li>
 							</ul>
 							<ul class="signup_btns">
 								<li>
@@ -70,22 +72,22 @@
 			</div>
 			<!--//회원가입-->
 
-			<!--입력오류 레이어-->
+			<!--재설정완료 레이어-->
 			<!--js::pop_layer:parent, layer-t01:target--->
 			<div class="pop_layer signup layer-t01">
 				<div class="pop_inner">
 					<div class="pop_cont">
-						<strong>존재하지 않는 휴대폰번호(ID)입니다!</strong>
-						<p>가입하신 휴대폰 번호(ID)를 다시한번 확인하신 후 시도해주세요.</p>
+						<strong>비밀번호 재설정이 완료되었습니다!</strong>
+						<p>다시 로그인 해주세요.</p>
 						<div class="btn_wrap">
-							<a href="#">확인</a>
+							<a href="#">로그인</a>
 						</div>
 						<a href="#"class="layer_close_bt" data-layer="layer-t01">닫기</a>	
 					</div>
 				</div>
 			</div>
 			<div class="layer_dimmed">레이어 배경</div>
-			<!--//입력오류 레이어-->
+			<!--//재설정완료 레이어-->
 
 		</div>
 			

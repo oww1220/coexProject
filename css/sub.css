@@ -66,6 +66,8 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 /*회원가입 및 로그인*/
 .sub_wrap .signup_wrap {margin: 1.7rem 0 6rem;}
 .sub_wrap .signup_wrap h2 {text-align:center;}
+.signup_wrap .signup_top {margin-bottom: 3.5rem;}
+.signup_wrap .signup_top p {text-align:center;font-size: 1.15rem;color:#4c6df7;} 
 .signup_wrap .signup_list {}
 .signup_wrap .signup_list li {}
 .signup_wrap .signup_list li + li {margin-top:2rem;}
@@ -82,13 +84,14 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .signup_wrap .signup_list li.error input,
 .signup_wrap .signup_list li.error input:focus{border-bottom:2px solid #FF6280;}
 .signup_wrap .signup_list li .error_message {color:#FF6280;font-size:1rem;}
-.signup_wrap .signup_btn {display: inline-block;font-size: 1.15rem;height:3.3rem;line-height: 3.4rem;width: 100%;background-color: #4c6df7;color:#fff;text-align:center;border-radius:5px;margin-top: 3rem;}
+.signup_wrap .signup_btn {display: inline-block;font-size: 1.15rem;height:3.3rem;line-height: 3.4rem;width: 100%;background-color: #4c6df7;color:#fff;text-align:center;border-radius:5px;box-sizing:border-box;}
 .signup_wrap .signup_guide {color:#888;font-size:1.05rem;text-align:center;margin-top:2rem;}
 .signup_wrap .signup_guide a {display:inline-block;border-bottom:1px solid #222;margin-left:0.7rem;}
 .signup_wrap .signup_btns {margin-top:3.5rem;}
 .signup_wrap .signup_btns .signup_btn {margin-top:0;position: relative;}
 .signup_wrap .signup_btns .signup_btn:before {display:block;content:"";width:2rem;height:2rem;position:absolute;top:0.6rem;left:2.5rem;background-position:0 0;background-repeat:no-repeat;background-size:100%;}
 .signup_wrap .signup_btns li + li {margin-top:1rem;}
+.signup_wrap .signup_btns .signup_btn.border {background-color:#fff;border:1px solid #4c6df7;color:#4c6df7;}
 .signup_wrap .signup_btns .signup_btn.facebook {background-color:#445D99;}
 .signup_wrap .signup_btns .signup_btn.twitter {background-color:#1CA1F1;}
 .signup_wrap .signup_btns .signup_btn.kakao {background-color:#FFE600;}
@@ -209,6 +212,8 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
   /*회원가입 및 로그인*/
   .sub_wrap .signup_wrap {margin: 110px 0 200px;}
   .sub_wrap .signup_wrap .signup_cont {width: 700px;padding:80px 100px;margin:0 auto;border:1px solid #E8E8E8;box-sizing:border-box;border-radius: 15px;}
+  .signup_wrap .signup_top {margin-bottom: 60px;}
+  .signup_wrap .signup_top p {font-size:18px;} 
   .signup_wrap .signup_list {}
   .signup_wrap .signup_list li + li {margin-top:40px;}
   .signup_wrap .signup_list li label {font-size:15px;}
@@ -217,7 +222,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
   .signup_wrap .signup_list li span {margin-top:10px;font-size:15px;}
   .signup_wrap .signup_list li.error input,
   .signup_wrap .signup_list li.error input:focus{border-bottom:3px solid #FF6280;}
-  .signup_wrap .signup_btn {height:70px;line-height: 72px;font-size: 18px;margin-top: 60px;}
+  .signup_wrap .signup_btn {height:70px;line-height: 70px;font-size: 18px;margin-top: 60px;}
   .signup_wrap .signup_guide {font-size:15px;margin-top:40px;}
   .signup_wrap .signup_guide a {margin-left:10px;}
   .signup_wrap .signup_btns {margin-top:80px;}

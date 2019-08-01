@@ -35,13 +35,6 @@ var COEX = COEX || {
 	},
 	layer: {
 		scrollTop: 0,
-		init: function(openBt, closeBt, dimmed, parent){
-			var that = this;
-			
-			if(openBt) that.open(openBt, dimmed, parent);
-			if(closeBt) that.close(closeBt, dimmed, parent);
-			if(dimmed) that.close(dimmed, dimmed, parent);
-		},
 		calculate: function(layer){
 			var layer = $("." + layer),
 				layerIn = layer.find(".pop_inner"),
@@ -73,27 +66,36 @@ var COEX = COEX || {
 			}
 
 		},
-		open: function(target, dimmed, parent){
+		open: function(target, dimmed, parent, callback){
 			var that = this;
 			$(document).on("click", target, function(e){
 				var layer = $(this).data("layer");
 				that.scrollTop = $(window).scrollTop();
 
-				$("body").addClass("fixed");
+				if(callback){
+					callback(show);
+				}
+				else{
+					show();
+				}
 				
-				if(dimmed) $(dimmed).fadeIn();
-				$(parent + "." + layer).show();
-				that.calculate(layer);
-				//console.log(layer, that.scrollTop);
-
-				$(window).on("resize.layer", function(){
+				function show(){
+					$("body").addClass("fixed");
+				
+					if(dimmed) $(dimmed).fadeIn();
+					$(parent + "." + layer).show();
 					that.calculate(layer);
-				});
+					//console.log(layer, that.scrollTop);
+
+					$(window).on("resize.layer", function(){
+						that.calculate(layer);
+					});
+				}
 
 				e.preventDefault();
 			});
 		},
-		close: function(target, dimmed, parent){
+		close: function(target, dimmed, parent, callback){
 			var that = this;
 			$(document).on("click", target, function(e){
 				var layer;
@@ -103,15 +105,24 @@ var COEX = COEX || {
 				}
 				else{
 					layer = $(parent + "."+$(this).data("layer"));
-				}			
+				}
 				
-				layer.hide();
-				$("body").removeClass("fixed");
-				$(window).scrollTop(that.scrollTop)
-				if(dimmed) $(dimmed).fadeOut();
-				//console.log(layer, that.scrollTop);
+				if(callback){
+					callback(hide);
+				}
+				else{
+					hide();
+				}
 
-				$(window).off("resize.layer");
+				function hide() {
+					layer.hide();
+					$("body").removeClass("fixed");
+					$(window).scrollTop(that.scrollTop);
+					if(dimmed) $(dimmed).fadeOut();
+					//console.log(layer, that.scrollTop);
+
+					$(window).off("resize.layer");
+				}
 
 				e.preventDefault();
 			});
@@ -264,7 +275,22 @@ $(function(){
 	COEX.event.goTarget(GOTARGET);
 
 	/*layer팝업*/
-	COEX.layer.init(LAYER_BT_OPEN, LAYER_BT_CLOSE, LAYER_DIM, LAYER_DIV);
+	COEX.layer.open(LAYER_BT_OPEN, LAYER_DIM, LAYER_DIV);
+	COEX.layer.close(LAYER_BT_CLOSE, LAYER_DIM, LAYER_DIV);
+	COEX.layer.close(LAYER_DIM, LAYER_DIM, LAYER_DIV);
+
+	COEX.layer.open("#test01", LAYER_DIM, LAYER_DIV, function (show){
+		alert("콜백");
+
+		show();
+	});
+	COEX.layer.close("#test001", LAYER_DIM, LAYER_DIV, function (hide){
+		alert("콜백");
+
+		hide();
+	});
+
+
 
 	/*탭버튼*/
 	COEX.event.tap(TAB_NAV, TAB_CONTS);
