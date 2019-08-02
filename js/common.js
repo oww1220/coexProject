@@ -221,6 +221,13 @@ var COEX = COEX || {
 				e.preventDefault();
 			});
 		},
+		calander: function(target, option, callback){
+			$(target).each(function(){
+				$(this).datepicker(option); 
+				$(this).datepicker("setDate", "today"); 
+				$(this).on("change", callback);
+			});
+		},
 		
 	},
 };
@@ -290,6 +297,26 @@ $(function(){
 		hide();
 	});
 
+	/*pc용 달력*/
+	COEX.event.calander(".datepicker", {
+		changeMonth:true,
+		changeYear:true,
+		showOn:"button",
+		buttonText: "선택",
+		buttonImageOnly:false,
+		showMonthAfterYear:true,
+		minDate:null,  //최소 기간
+		maxDate:null,  //최대 노출
+		yearRange:"c-5:c+5",  //노출되는 범위
+		dateFormat :"yy-mm-dd",
+		dayNamesMin:["일", "월", "화", "수", "목", "금", "토"],
+		monthNamesShort: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
+	},
+	function(e){
+		console.log("날짜변경됨");
+	});
+
+	
 
 
 	/*탭버튼*/
