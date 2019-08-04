@@ -130,13 +130,18 @@ var COEX = COEX || {
 	},
 	event: {
 		toggle: function(target){
-			var layer = $("." + target.data("target"));
 
-			target.on("click", function(e) {
-				var sort = target.data("sort");
-				var onClass = target.data("on");
-				//console.log(sort, onClass);
+			$(document).on("click", target, function(e) {
+				var layer = $("." + $(this).data("target"));
+				var sort = $(this).data("sort");
+				var onClass = $(this).data("on");
+				var siblings = $(this).data("siblings");
+				//console.log(sort, onClass, siblings);
 				if(onClass){
+					if(siblings){
+						$(this).parent().siblings().find(target).removeClass("on");
+						$(this).parent().siblings().find(target).siblings().removeClass("on");
+					}
 					if($(this).hasClass("on")){
 						$(this).removeClass("on");
 						layer.removeClass("on");
@@ -163,15 +168,24 @@ var COEX = COEX || {
 				}
 				else{
 					if(sort == "fade"){
+						if(siblings){
+							$(this).parent().siblings().find(target).siblings().fadeOut();
+						}
 						layer.fadeIn();
 					}
 					else if (sort == "normal"){
+						if(siblings){
+							$(this).parent().siblings().find(target).siblings().hide();
+						}
 						layer.show();
 					}
 					else if (sort == "none"){
 						return false;
 					}
 					else{
+						if(siblings){
+							$(this).parent().siblings().find(target).siblings().slideUp();
+						}
 						layer.slideDown();
 					}
 				}
@@ -242,7 +256,7 @@ $(function(){
 	var $BODY = $("body"),
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
-		$TOGGLE = $(".toggle_btn"),
+		TOGGLE = ".toggle_btn",
 		GOTARGET = ".go_target_bt"
 		LAYER_BT_OPEN = ".layer_open_bt",
 		LAYER_BT_CLOSE = ".layer_close_bt",
@@ -270,7 +284,7 @@ $(function(){
 
 
 	/*토글*/
-	COEX.event.toggle($TOGGLE);
+	COEX.event.toggle(TOGGLE);
 
 	/*pc top으로 scroll*/
 	COEX.event.topScrollCh($GOTOP, $BODY);
