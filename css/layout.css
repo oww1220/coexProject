@@ -93,7 +93,7 @@ body.fixed {overflow: hidden; position: fixed;}
 }
 
 
-/*테블릿*/
+/*-------------테블릿-------------*/
 @media screen and (min-width:768px) {
 
     /*레이어*/
@@ -104,7 +104,7 @@ body.fixed {overflow: hidden; position: fixed;}
 
 }
 
-/*데스크탑*/
+/*-------------데스크탑-------------*/
 @media screen and (min-width:1024px) {
     body {min-width: 1200px;}
 

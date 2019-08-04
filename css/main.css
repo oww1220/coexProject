@@ -60,12 +60,12 @@
 
 
 
-/*테블릿*/
+/*-------------테블릿-------------*/
 @media screen and (min-width:768px){
 
 }
 
-/*데스크탑*/
+/*-------------데스크탑-------------*/
 @media screen and (min-width:1024px){
 
   .main_wrap .inner {overflow: hidden;}

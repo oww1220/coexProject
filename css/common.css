@@ -94,12 +94,12 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 .input_date .pc {display:none;}
 .input_date .mo {display:block;}
 
-/*테블릿*/
+/*-------------테블릿-------------*/
 @media screen and (min-width:768px){
 
 }
 
-/*데스크탑*/
+/*-------------데스크탑-------------*/
 @media screen and (min-width:1024px){
 
   .input_c input[type=checkbox] + label {font-size:17px;padding-left:35px;line-height:25px;}
