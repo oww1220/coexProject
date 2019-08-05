@@ -29,7 +29,7 @@ var COEX = COEX || {
 		init: function(target, sort, option){
 			if(sort == "slick") {
 				//console.log("slick");
-				target.slick(option);
+				return target.slick(option);
 			}
 		},
 	},
@@ -256,6 +256,7 @@ $(function(){
 	var $BODY = $("body"),
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
+		$REGISLIDE = $(".sub_wrap .regi_conts .slide ul"),
 		TOGGLE = ".toggle_btn",
 		GOTARGET = ".go_target_bt"
 		LAYER_BT_OPEN = ".layer_open_bt",
@@ -274,12 +275,24 @@ $(function(){
 
 	/*메인 공지사항 슬라이드*/
 	if($NOTICE && $.fn.slick) {
-		COEX.slide.init($NOTICE, "slick", {
-			infinite: true,
-			autoplay: true,
-			arrows: false,
-			vertical: true,
-		});
+		(function(){
+			COEX.slide.init($NOTICE, "slick", {
+				infinite: true,
+				autoplay: true,
+				arrows: false,
+				vertical: true,
+			});
+		})();
+	}
+
+	/*사전등록 슬라이드*/
+	if($REGISLIDE && $.fn.slick) {
+		(function(){
+			var slide = COEX.slide.init($REGISLIDE, "slick", {
+				infinite: true,
+				autoplay: true,
+			});
+		})();
 	}
 
 
