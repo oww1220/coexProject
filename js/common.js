@@ -242,6 +242,41 @@ var COEX = COEX || {
 				$(this).on("change", callback);
 			});
 		},
+		customSelect:function(parent){
+			var target = parent + " button";
+			var listTarget = parent + " a";
+			var $parent;
+			$(document).on("click", target, function(e){
+				$parent = $(this).parent();
+				if($parent.hasClass("on")){
+					$parent.removeClass("on");
+					$parent.css({"z-index": 0});
+				}
+				else{
+					$(parent).css({"z-index": 0});
+					$(parent).removeClass("on");
+					$parent.addClass("on");
+					$parent.css({"z-index": 1});
+				}
+				//console.log($parent);
+			});
+			$(document).on("click", listTarget, function(e){
+				var bt = $parent.find("button");
+				var input = $parent.find("input");
+				var val = $(this).data("val");
+				var text = $(this).text();
+
+				input.val(val);
+				bt.text(text);
+				//console.log(input, input.val());
+
+				$parent.addClass("select");
+				$parent.removeClass("on");
+				$parent.css({"z-index": 0});
+
+				e.preventDefault();
+			});
+		},
 		
 	},
 };
@@ -257,6 +292,7 @@ $(function(){
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
 		$REGISLIDE = $(".sub_wrap .regi_conts .slide ul"),
+		SELECTCUSTOM = ".select_custum",
 		TOGGLE = ".toggle_btn",
 		GOTARGET = ".go_target_bt"
 		LAYER_BT_OPEN = ".layer_open_bt",
@@ -295,6 +331,8 @@ $(function(){
 		})();
 	}
 
+	/*커스텀 셀렉트*/
+	COEX.event.customSelect(SELECTCUSTOM);
 
 	/*토글*/
 	COEX.event.toggle(TOGGLE);
