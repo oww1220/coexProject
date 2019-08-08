@@ -82,6 +82,7 @@ hr {display:none;}
 
 /* input Design */
 select {padding:5px;border:1px solid #ccc;font-size:13px;background-color:#fff;}
+select.normal {padding:0;border:0;font-size:0.9rem;display:inline-block;}
 input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 .input {padding:5px;border:1px solid #e6e6e6;font-size:13px;color:#666;}
 
@@ -107,6 +108,8 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 
 /*-------------데스크탑-------------*/
 @media screen and (min-width:1024px){
+
+  select.normal {padding:0;border:0;font-size:14px;display:inline-block;}
 
   .input_c {padding-top:0;}
   .input_c input[type=checkbox] + label {font-size:17px;padding-left:35px;line-height:25px;}
