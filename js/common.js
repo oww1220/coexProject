@@ -10,6 +10,7 @@ var COEX = COEX || {
 			else {
 				target.removeClass("pc mobile tablet").addClass("mobile");
 			}
+			COEX.resize.resize(target);
 		},
 		pf: function(target){
 			var pf = navigator.platform;
@@ -24,6 +25,12 @@ var COEX = COEX || {
 
 			doc.style.fontSize = fontSizeVal + '%';
 		},
+		resize: function($BODY){
+			$(window).on("resize", function(){
+				COEX.resize.chk($BODY);
+				COEX.resize.font();
+			});
+		}
 	},
 	slide: {
 		init: function(target, sort, option){
@@ -277,6 +284,48 @@ var COEX = COEX || {
 				e.preventDefault();
 			});
 		},
+		hoverClick: function($BODY, $MYPAGE_REGILIST, targetDiv){
+			event();
+			function event(){
+				//console.log($BODY.hasClass("pc"))
+				if($BODY.hasClass("pc")){
+					$MYPAGE_REGILIST.on({
+						mouseenter: function(e){
+							var target = $(this).find(".hover");
+							if(!target.is(":visible")){
+								target.fadeIn();
+							}
+						},
+						mouseleave: function(e){
+							var target = $(this).find(".hover");
+							if(target.is(":visible")){
+								target.fadeOut();
+							}
+						},
+					}, targetDiv);
+				}
+				else{
+					$MYPAGE_REGILIST.on({
+						click: function(e){
+							var target = $(this).find(".hover");
+							if(target.is(":visible")){
+								target.fadeOut();
+							}	
+							else{
+								target.fadeIn();
+								$(this).parent().siblings().find(".hover").fadeOut();
+							}
+						},
+	
+					}, targetDiv);
+				}
+			}
+
+			$(window).on("resize", function(){
+				$MYPAGE_REGILIST.off("click mouseenter mouseleave");
+				event();
+			});	
+		}
 		
 	},
 };
@@ -292,6 +341,7 @@ $(function(){
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
 		$REGISLIDE = $(".sub_wrap .regi_conts .slide ul"),
+		$MYPAGE_REGILIST = $(".mypage_wrap .sub_frame .regi_list");
 		SELECTCUSTOM = ".select_custum",
 		TOGGLE = ".toggle_btn",
 		GOTARGET = ".go_target_bt"
@@ -307,10 +357,16 @@ $(function(){
 	/*호스트환경 체크*/
 	COEX.resize.pf($BODY);
 	COEX.resize.chk($BODY);
+	
 
+	$(window).on("scroll", function(){
+		/*pc top으로 scroll*/
+		COEX.event.topScrollCh($GOTOP, $BODY);
+	});
 
+	
 	/*메인 공지사항 슬라이드*/
-	if($NOTICE && $.fn.slick) {
+	if($NOTICE.length && $.fn.slick) {
 		(function(){
 			COEX.slide.init($NOTICE, "slick", {
 				infinite: true,
@@ -322,7 +378,7 @@ $(function(){
 	}
 
 	/*사전등록 슬라이드*/
-	if($REGISLIDE && $.fn.slick) {
+	if($REGISLIDE.length && $.fn.slick) {
 		(function(){
 			var slide = COEX.slide.init($REGISLIDE, "slick", {
 				infinite: true,
@@ -330,6 +386,12 @@ $(function(){
 			});
 		})();
 	}
+
+	/*마이페이지 사전등록 리스트:pc-hover, mo-click*/
+	if($MYPAGE_REGILIST.length){
+		COEX.event.hoverClick($BODY, $MYPAGE_REGILIST, ".regi_in");
+	}
+	
 
 	/*커스텀 셀렉트*/
 	COEX.event.customSelect(SELECTCUSTOM);
@@ -381,28 +443,10 @@ $(function(){
 		console.log("날짜변경됨");
 	});
 
-	
-
 
 	/*탭버튼*/
 	COEX.event.tap(TAB_NAV, TAB_CONTS);
 
-	$(window).on("load", function(){
-	});
-
-	$(window).on("scroll", function(){
-		/*pc top으로 scroll*/
-		COEX.event.topScrollCh($GOTOP, $BODY);
-	});
-
-	$(window).on("resize", function(){
-		/*호스트환경 체크*/
-		COEX.resize.chk($BODY);
-
-		/*rem 용 폰트 리사이즈*/
-		COEX.resize.font();
-
-	});
 
 
 });
