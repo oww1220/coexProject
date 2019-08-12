@@ -47,7 +47,7 @@ var COEX = COEX || {
 				layerIn = layer.find(".pop_inner"),
 				winH = $(window).height(),
 				winW = $(window).width();
-				layerIn.removeAttr("style");
+				layerIn.find(".pop_cont").removeAttr("style");
 
 			var layerH = layer.height(),
 				layerW = layer.width(),
@@ -55,7 +55,7 @@ var COEX = COEX || {
 			//console.log(layer, winH, winW, layerH, layerW, marginH);
 			
 			if(winH < layerH){
-				layerIn.css({
+				layerIn.find(".pop_cont").css({
 					height: winH - marginH,
 					overflow: "auto",
 				});
@@ -65,7 +65,7 @@ var COEX = COEX || {
 				});
 			}
 			else{
-				layerIn.removeAttr("style");
+				layerIn.find(".pop_cont").removeAttr("style");
 				layer.css({
 					top: (winH - layerH) / 2,
 					left: (winW - layerW) / 2,
@@ -80,7 +80,7 @@ var COEX = COEX || {
 				that.scrollTop = $(window).scrollTop();
 
 				if(callback){
-					callback(show);
+					callback(show, layer);
 				}
 				else{
 					show();
@@ -115,7 +115,7 @@ var COEX = COEX || {
 				}
 				
 				if(callback){
-					callback(hide);
+					callback(hide, layer);
 				}
 				else{
 					hide();
@@ -423,6 +423,34 @@ $(function(){
 
 		hide();
 	});
+
+	/*업체정보 레이어*/
+	if($(".layer_open_company").length){
+		
+		COEX.layer.open(".layer_open_company", LAYER_DIM, LAYER_DIV, function (show, layer){	
+			show();
+			var $target = $("." + layer + " .slide ul");
+			var $texts = $("." + layer + " .texts li");
+			//console.log($target);
+			COEX.slide.init($target, "slick", {
+				infinite: true,
+				autoplay: true,
+				adaptiveHeight: true,
+			});
+
+			$target.on("afterChange", function(event, slick, currentSlide){
+				//console.log(currentSlide);
+				$texts.eq(currentSlide).addClass("on").siblings().removeClass("on");
+			});
+
+		});
+		COEX.layer.close(".layer_close_compony", LAYER_DIM, LAYER_DIV, function (hide, layer){
+			hide();
+			var $target = layer;
+			$target.find(".slide ul").slick("unslick");
+		});
+	}
+	
 
 	/*pc용 달력*/
 	COEX.event.calander(".datepicker", {

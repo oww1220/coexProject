@@ -40,9 +40,9 @@
 /*레이어*/
 body.fixed {overflow: hidden; position: fixed;}
 .pop_layer {position: fixed;display:none;z-index: 110;width:80%;left:0;max-width: 350px;}
-.pop_layer .pop_inner {overflow: hidden;border-radius: 10px;background-color:#fff;margin:15px;}
-.pop_layer .pop_cont {padding:1.7rem 1.55rem;position: relative;}
-.pop_layer .pop_cont .layer_close_bt {position: absolute;top: 1.5rem;right: 1.5rem;width: 1.5rem;height: 1.5rem;font: 0/0 a;background: url("../images/icon/pc_sub_close_btn.png") no-repeat 0 0;background-size:100%;}
+.pop_layer .pop_inner {overflow: hidden;border-radius: 10px;background-color:#fff;margin:15px;position: relative;}
+.pop_layer .pop_cont {padding:1.7rem 1.55rem;position: relative;box-sizing:border-box;}
+.pop_layer .layer_close_bt {position: absolute;top: 1.5rem;right: 1.5rem;width: 1.5rem;height: 1.5rem;font: 0/0 a;background: url("../images/icon/pc_sub_close_btn.png") no-repeat 0 0;background-size:100%;}
 
 .pop_layer .pop_cont strong {font-size: 1.7rem;color: #4c6df7;display: block;width: 60%;line-height: 1.5;}
 .pop_layer .pop_cont p {color:#888;width: 60%;line-height: 1.6;margin-top:1.05rem;font-size: 1.05rem;}
@@ -113,7 +113,7 @@ body.fixed {overflow: hidden; position: fixed;}
     /*레이어*/
     .pop_layer {max-width:800px;}
     .pop_layer .pop_cont {padding:100px 80px;}
-    .pop_layer .pop_cont .layer_close_bt {top: 30px;right: 30px;width: 32px;height: 32px;}
+    .pop_layer .layer_close_bt {top: 30px;right: 30px;width: 32px;height: 32px;}
     .pop_layer .pop_cont .btn_wrap {margin-top:60px;}
     .pop_layer .pop_cont .btn_wrap a {height:70px;line-height: 72px;width: 250px;font-size: 20px;}
 
