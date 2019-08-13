@@ -47,7 +47,7 @@ var COEX = COEX || {
 				layerIn = layer.find(".pop_inner"),
 				winH = $(window).height(),
 				winW = $(window).width();
-				layerIn.find(".pop_cont").removeAttr("style");
+				layerIn.find(".pop_scroll").removeAttr("style");
 
 			var layerH = layer.height(),
 				layerW = layer.width(),
@@ -55,7 +55,7 @@ var COEX = COEX || {
 			//console.log(layer, winH, winW, layerH, layerW, marginH);
 			
 			if(winH < layerH){
-				layerIn.find(".pop_cont").css({
+				layerIn.find(".pop_scroll").css({
 					height: winH - marginH,
 					overflow: "auto",
 				});
@@ -65,7 +65,7 @@ var COEX = COEX || {
 				});
 			}
 			else{
-				layerIn.find(".pop_cont").removeAttr("style");
+				layerIn.find(".pop_scroll").removeAttr("style");
 				layer.css({
 					top: (winH - layerH) / 2,
 					left: (winW - layerW) / 2,
@@ -341,7 +341,7 @@ $(function(){
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
 		$REGISLIDE = $(".sub_wrap .regi_conts .slide ul"),
-		$MYPAGE_REGILIST = $(".mypage_wrap .sub_frame .regi_list");
+		$REGI_LIST = $(".regi_list_wrap .regi_list"),
 		SELECTCUSTOM = ".select_custum",
 		TOGGLE = ".toggle_btn",
 		GOTARGET = ".go_target_bt"
@@ -387,11 +387,11 @@ $(function(){
 		})();
 	}
 
-	/*마이페이지 사전등록 리스트:pc-hover, mo-click*/
-	if($MYPAGE_REGILIST.length){
-		COEX.event.hoverClick($BODY, $MYPAGE_REGILIST, ".regi_in");
+	/*사전등록 리스트:pc-hover, mo-click*/
+	if($REGI_LIST.length){
+		COEX.event.hoverClick($BODY, $REGI_LIST, ".regi_in");
 	}
-	
+
 
 	/*커스텀 셀렉트*/
 	COEX.event.customSelect(SELECTCUSTOM);
