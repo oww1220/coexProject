@@ -32,6 +32,73 @@ var COEX = COEX || {
 			});
 		}
 	},
+	Map: {
+		init: function(){
+			var JqMap = function(){
+				this.map = new Object();
+			};
+			JqMap.prototype = {
+				/* key, value 값으로 구성된 데이터를 추가 */
+				put: function (key, value) {
+					this.map[key] = value;
+				},
+				/* 지정한 key값의 value값 반환 */
+				get: function (key) {
+					return this.map[key];
+				},
+				/* 구성된 key 값 존재여부 반환 */
+				containsKey: function (key) {
+					return key in this.map;
+				},
+				/* 구성된 value 값 존재여부 반환 */
+				containsValue: function (value) {
+					for (var prop in this.map) {
+						if (this.map[prop] == value) {
+							return true;
+						}
+					}
+					return false;
+				},
+				/* 구성된 데이터 초기화 */
+				clear: function () {
+					for (var prop in this.map) {
+						delete this.map[prop];
+					}
+				},
+				/*  key에 해당하는 데이터 삭제 */
+				remove: function (key) {
+					delete this.map[key];
+				},
+				/* 배열로 key 반환 */
+				keys: function () {
+					var arKey = new Array();
+					for (var prop in this.map) {
+						arKey.push(prop);
+					}
+					return arKey;
+				},
+				/* 배열로 value 반환 */
+				values: function () {
+					var arVal = new Array();
+					for (var prop in this.map) {
+						arVal.push(this.map[prop]);
+					}
+					return arVal;
+				},
+				/* Map에 구성된 개수 반환 */
+				size: function () {
+					var count = 0;
+					for (var prop in this.map) {
+						count++;
+					}
+					return count;
+				}
+			};
+
+			return new JqMap();
+
+		}
+	},
 	slide: {
 		init: function(target, sort, option){
 			if(sort == "slick") {
@@ -328,6 +395,55 @@ var COEX = COEX || {
 		}
 		
 	},
+	iscrolls: {
+		cash: null,
+		init: function(target, option, sort){
+			this.cash = this.cash ? this.cash : COEX.Map.init();
+
+			if(sort) {
+				if($("body").hasClass(sort)){
+					$(target)[0].iscrolls = new IScroll(target, option);
+				}
+			}
+			else{
+				$(target)[0].iscrolls = new IScroll(target, option);
+			}
+			this.cash.put(target, {sort: sort, option: option});
+
+		},
+		resize: function(){
+			var that = this;
+			if(that.cash){
+				$.each(that.cash.map, function(key, value){
+					if(value.sort) {
+
+						if($("body").hasClass(value.sort)){
+							if(!($(key)[0].iscrolls)){
+								$(key).removeAttr("style");
+								$($(key)[0].children[0]).removeAttr("style");
+								$(key)[0].iscrolls = new IScroll(key, value.option);
+								$(key)[0].iscrolls.refresh();
+							}
+						}
+						else{
+							if(($(key)[0].iscrolls)){
+								$(key).removeAttr("style");
+								$($(key)[0].children[0]).removeAttr("style");
+								$(key)[0].iscrolls.destroy();
+								$(key)[0].iscrolls = null;
+							}
+							
+						}
+						
+					}
+				});
+			}
+			else{
+				return;
+			}
+		},
+	},
+
 };
 
 /*돔컨텐츠로즈 전에 실행 함수-root엘리먼트만 존재하는시점*/
@@ -476,6 +592,35 @@ $(function(){
 	COEX.event.tap(TAB_NAV, TAB_CONTS);
 
 
+
+
+	
+
+
+
+});
+
+$(window).on("load", function(){
+
+	/*아이스크롤*/
+	if($("#iscroll01").length){
+		COEX.iscrolls.init("#iscroll01", { 
+			scrollbars: true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+			fadeScrollbars: true,
+		}, "pc");
+		if($("#iscroll01")[0].iscrolls){
+			$("#iscroll01")[0].iscrolls.refresh();
+		}	
+	}
+
+	/*아이스크롤 리사이징*/
+	$(window).on("resize",function(){	
+		COEX.iscrolls.resize();
+	});
+	
 
 });
 

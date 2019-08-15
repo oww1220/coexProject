@@ -668,9 +668,9 @@ border-radius:100%;display:table;}
 
 
   /*상세 스카이스크리퍼*/
-  .sub_wrap .regi_sky {position: absolute;top: 0;right: 0;height:100%;z-index: 1;background-color: #fff;bottom: 0;box-shadow: 0px 0px 25px -3px grey;}
+  .sub_wrap .regi_sky {position: fixed;top: 0;right: 0;height:calc(100%);z-index: 1;background-color: #fff;bottom: 0;box-shadow: 0px 0px 25px -3px grey;overflow: hidden;}
+  .sub_wrap .regi_sky .iScrollLoneScrollbar {right:auto !important;left:5px;}
   .sub_wrap .regi_sky .regi_sky_in {width: 480px;}
-  .sub_wrap .regi_sky .regi_sky_in .img {}
   .sub_wrap .regi_sky .regi_sky_in .img > img {width:auto;}
 
   .sub_wrap .regi_sky .detail_top {padding:89px 40px 40px;}
