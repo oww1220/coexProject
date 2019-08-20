@@ -221,102 +221,105 @@
 
                         <!--참관자 정보등록-->
                         <div class="observer_info">
-                            <div class="tab_nav" data-tab="tab-01">
-                                <ul class="clear_both">
-                                    <li class="on">
-                                        <a href="#">직접입력</a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#">파일 업로드</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab_cont tab-01">
-                                <!--직접입력-->
-                                <div class="observer_input">
-                                    <form action="">
 
-                                        <div class="table_wrap fixed">
-                                            <table>
-                                                <caption>직접입력</caption>
-                                                <colgroup>
-                                                    <col style="width:9%">
-                                                    <col style="width:15%">
-                                                    <col style="width:15%">
-                                                    <col style="width:31%">
-                                                    <col style="width:15%">
-                                                    <col style="width:15%">
-                                                </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">구분</th>
-                                                        <th scope="col">이름</th>
-                                                        <th scope="col">연락처</th>
-                                                        <th scope="col">이메일</th>
-                                                        <th scope="col">소속</th>
-                                                        <th scope="col">직책</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                        <td><input type="text" name="" id=""/></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="btn_w">
-                                            <ul class="signup_btns">
-                                                <li>
-                                                    <a href="#" class="signup_btn">관리자 승인요청</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </form>
+                            <div class="tabs_w tab-normal">
+                                <div class="tab_nav">
+                                    <ul class="clear_both">
+                                        <li class="on">
+                                            <a href="#">직접입력</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">파일 업로드</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <!--//직접입력-->
+                                <div class="tab_cont">
+                                    <!--직접입력-->
+                                    <div class="observer_input">
+                                        <form action="">
 
-                                <!--파일 업로드-->
-                                <div class="observer_file" style="display: none;">
-                                    <form action="">
-                                        <div class="file_bt_w">
-                                            <div class="file_bt">
-                                                <span>파일다운로드</span>
-                                                <input type="file"/>
+                                            <div class="table_wrap fixed">
+                                                <table>
+                                                    <caption>직접입력</caption>
+                                                    <colgroup>
+                                                        <col style="width:9%">
+                                                        <col style="width:15%">
+                                                        <col style="width:15%">
+                                                        <col style="width:31%">
+                                                        <col style="width:15%">
+                                                        <col style="width:15%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">구분</th>
+                                                            <th scope="col">이름</th>
+                                                            <th scope="col">연락처</th>
+                                                            <th scope="col">이메일</th>
+                                                            <th scope="col">소속</th>
+                                                            <th scope="col">직책</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                            <td><input type="text" name="" id=""/></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                        </div>
-                                        <div class="file_comp">
-                                            <p>파일명.cvs</p>
-                                        </div>
 
-                                        <ul class="depth_list">
-                                            <li>단체등록용 <a href="">파일 다운로드</a>하여 작성 후 업로드해 주세요.</li>
-                                            <li>양식에 맞지 않는 파일 업로드 시 오류의 원인이 됩니다.</li>
-                                        </ul>
+                                            <div class="btn_w">
+                                                <ul class="signup_btns">
+                                                    <li>
+                                                        <a href="#" class="signup_btn">관리자 승인요청</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--//직접입력-->
 
-                                        <div class="btn_w">
-                                            <ul class="signup_btns">
-                                                <li>
-                                                    <a href="#" class="signup_btn">관리자 승인요청</a>
-                                                </li>
+                                    <!--파일 업로드-->
+                                    <div class="observer_file" style="display: none;">
+                                        <form action="">
+                                            <div class="file_bt_w">
+                                                <div class="file_bt">
+                                                    <span>파일다운로드</span>
+                                                    <input type="file"/>
+                                                </div>
+                                            </div>
+                                            <div class="file_comp">
+                                                <p>파일명.cvs</p>
+                                            </div>
+
+                                            <ul class="depth_list">
+                                                <li>단체등록용 <a href="">파일 다운로드</a>하여 작성 후 업로드해 주세요.</li>
+                                                <li>양식에 맞지 않는 파일 업로드 시 오류의 원인이 됩니다.</li>
                                             </ul>
-                                        </div>
-                                    </form>
+
+                                            <div class="btn_w">
+                                                <ul class="signup_btns">
+                                                    <li>
+                                                        <a href="#" class="signup_btn">관리자 승인요청</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--//파일 업로드-->
                                 </div>
-                                <!--//파일 업로드-->
                             </div>
 
                         </div>

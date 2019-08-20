@@ -296,16 +296,25 @@ var COEX = COEX || {
 			else{
 				return;
 			}
-		},	
-		tap: function(tab_nav, tab_cont){
-			$(document).on("click", tab_nav, function(e){
-				var parent = $(this).parent().parent().data("tab");
-				var layer = (tab_cont + "." + parent + " > div");
-				var idx = $(this).index();
+		},
+		taps: function(tab_nav, callback){
+			var target = tab_nav + " li";
+			$(document).on("click", target, function(e){
+				var $this = $(this);
+				var $layer = $this.parent().parent().next(".tab_cont");
+				var idx = $this.index();
 
-				$(this).addClass("on").siblings().removeClass("on");
-				$(layer).eq(idx).show().siblings().hide();
-				//console.log(layer, idx);
+				function swap(){
+					$this.addClass("on").siblings().removeClass("on");
+					$layer.find("> div").eq(idx).show().siblings().hide();
+				} 
+				if(callback){
+					callback(swap);
+				}
+				else{
+					swap();
+				}
+				
 				e.preventDefault();
 			});
 		},
@@ -464,9 +473,7 @@ $(function(){
 		LAYER_BT_OPEN = ".layer_open_bt",
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
-		LAYER_DIV = ".pop_layer",
-		TAB_NAV = ".tab_nav li",
-		TAB_CONTS= ".tab_cont";
+		LAYER_DIV = ".pop_layer";
 
 
 
@@ -589,8 +596,12 @@ $(function(){
 
 
 	/*탭버튼*/
-	COEX.event.tap(TAB_NAV, TAB_CONTS);
-
+	COEX.event.taps(".tabs_w.tab-normal");
+	
+	COEX.event.taps(".tabs_w.tab-call01", function(swap){
+		alert("콜백");
+		swap();
+	});
 
 
 
