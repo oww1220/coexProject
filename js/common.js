@@ -144,10 +144,11 @@ var COEX = COEX || {
 			var that = this;
 			$(document).on("click", target, function(e){
 				var layer = $(this).data("layer");
+				var targetDom = $(this);
 				that.scrollTop = $(window).scrollTop();
 
 				if(callback){
-					callback(show, layer);
+					callback(show, layer, targetDom);
 				}
 				else{
 					show();
@@ -173,6 +174,7 @@ var COEX = COEX || {
 			var that = this;
 			$(document).on("click", target, function(e){
 				var layer;
+				var targetDom = $(this);
 				if(target == dimmed){
 					layer = $(parent);
 					//console.log("dimmed");
@@ -182,7 +184,7 @@ var COEX = COEX || {
 				}
 				
 				if(callback){
-					callback(hide, layer);
+					callback(hide, layer, targetDom);
 				}
 				else{
 					hide();
