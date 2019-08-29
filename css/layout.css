@@ -2,8 +2,41 @@
 
 #wrap {display:flex;min-height:100vh;flex-direction:column;}
 
-/*header*/
+/*상단배너*/
+.top_bn_w {position: relative;z-index:95;}
+.top_bn_w .inner {position: relative;}
+.top_bn_w .inner a {display:block;}
+.top_bn_w .inner img {max-width: 100%;display:block;margin:0 auto;}
+.top_bn_w .inner .top_bn_close {position:absolute;top:1rem;right:1rem;}
 
+/*header*/
+#header {position:relative;top:0;left:0;width:100%;height:45px;background-color:#4c6df7;z-index:90;-webkit-transition: all .3s ease-in-out;transition: all .3s ease-in-out;   -webkit-transform: translateY(0);transform: translateY(0);}
+#header.on {-webkit-transform: translateY(-45px);transform: translateY(-45px);}
+#header.fixed {position:fixed;}
+#header .inner {height:100%;position: relative;}
+
+
+.panel_btn {position: absolute;width: 25px;height: 19px;top: 50%;margin-top:-9px;right: 1rem;background-color:#4c6df7;}
+.panel_btn span{position: absolute;right: 0;height: 3px;background-color: #fff;
+transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;width: 100%;border-radius: 2px;
+}
+.panel_btn span.barTop{top: 0;}
+.panel_btn span.barMid{top: 8px;}
+.panel_btn span.barBot{bottom: 0;}
+.panel_btn.on .barTop{width: 100%;transform:rotate(45deg);-webkit-transform:rotate(45deg);top:8px;}
+.panel_btn.on .barBot{width: 100%;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);top:8px;}
+.panel_btn.on .barMid {width: 0;}
+
+/*패널*/
+.panel_W {position:fixed;top:0;right:0;width:100%;height:100%;z-index:80;-webkit-transform: translateX(100%);
+transform: translateX(100%);-webkit-transition: all .4s ease;transition: all .4s ease;}
+.panel_W.on {-webkit-transform: translateX(0);transform: translateX(0);}
+.panel_W .panel_in {-webkit-box-shadow: -1rem 0 3rem rgba(0,0,0,.6);box-shadow: -1rem 0 3rem rgba(0,0,0,.6);box-sizing: border-box;
+overflow: hidden;position: absolute;top: 0;right: 0;width: 26.3rem;height: 100%;background-color: #fff;}
+.panel_W .panel_list {overflow-x: hidden;overflow-y: auto;height:100%;}
+
+/*container*/
+#container {}
 
 
 
@@ -28,7 +61,6 @@
 .slick-loading .slick-slide {visibility: hidden;}
 .slick-vertical .slick-slide {display: block;height: auto;border: 1px solid transparent;}
 .slick-arrow.slick-hidden {display: none;}
-
 
 .banner_nav {position:absolute;left:0;bottom:7px;width:100%;font-size:0;line-height:0;text-align:center;z-index:2;}
 .banner_nav li {display:inline-block;margin:0 2px;vertical-align:bottom}
@@ -148,6 +180,8 @@ body.fixed {overflow: hidden; position: fixed;}
     body {min-width: 1200px;}
 
     .inner {width:100%;max-width:1200px;margin:0 auto;position: relative;}
+
+
 
     /*등록 리스트*/
     .regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:18px;box-shadow: 1px 10px 25px -5px grey;cursor: pointer;}

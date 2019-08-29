@@ -205,66 +205,80 @@ var COEX = COEX || {
 		},
 	},
 	event: {
-		toggle: function(target){
+		toggle: function(target, callback){
 
 			$(document).on("click", target, function(e) {
-				var layer = $("." + $(this).data("target"));
-				var sort = $(this).data("sort");
-				var onClass = $(this).data("on");
-				var siblings = $(this).data("siblings");
+				var targetDiv = $(this);
+				var layer = $("." + targetDiv.data("target"));
+				var sort = targetDiv.data("sort");
+				var onClass = targetDiv.data("on");
+				var siblings = targetDiv.data("siblings");
 				//console.log(sort, onClass, siblings);
-				if(onClass){
-					if(siblings){
-						$(this).parent().siblings().find(target).removeClass("on");
-						$(this).parent().siblings().find(target).siblings().removeClass("on");
+
+				function logic(){
+					
+					if(onClass){
+						if(siblings){
+							targetDiv.parent().siblings().find(target).removeClass("on");
+							targetDiv.parent().siblings().find(target).siblings().removeClass("on");
+						}
+						if(targetDiv.hasClass("on")){
+							targetDiv.removeClass("on");
+							layer.removeClass("on");
+						}
+						else{
+							targetDiv.addClass("on");
+							layer.addClass("on");
+						}	
 					}
-					if($(this).hasClass("on")){
-						$(this).removeClass("on");
-						layer.removeClass("on");
+	
+					if(layer.is(":visible")){
+						if(sort == "fade"){
+							layer.fadeOut();
+						}
+						else if (sort == "normal"){
+							layer.hide();
+						}
+						else if (sort == "none"){
+							return false;
+						}
+						else{
+							layer.slideUp();
+						}
 					}
 					else{
-						$(this).addClass("on");
-						layer.addClass("on");
-					}	
+						if(sort == "fade"){
+							if(siblings){
+								targetDiv.parent().siblings().find(target).siblings().fadeOut();
+							}
+							layer.fadeIn();
+						}
+						else if (sort == "normal"){
+							if(siblings){
+								targetDiv.parent().siblings().find(target).siblings().hide();
+							}
+							layer.show();
+						}
+						else if (sort == "none"){
+							return false;
+						}
+						else{
+							if(siblings){
+								targetDiv.parent().siblings().find(target).siblings().slideUp();
+							}
+							layer.slideDown();
+						}
+					}
+
 				}
 
-				if(layer.is(":visible")){
-					if(sort == "fade"){
-						layer.fadeOut();
-					}
-					else if (sort == "normal"){
-						layer.hide();
-					}
-					else if (sort == "none"){
-						return false;
-					}
-					else{
-						layer.slideUp();
-					}
+				if(callback) {
+					callback(logic, layer);
 				}
 				else{
-					if(sort == "fade"){
-						if(siblings){
-							$(this).parent().siblings().find(target).siblings().fadeOut();
-						}
-						layer.fadeIn();
-					}
-					else if (sort == "normal"){
-						if(siblings){
-							$(this).parent().siblings().find(target).siblings().hide();
-						}
-						layer.show();
-					}
-					else if (sort == "none"){
-						return false;
-					}
-					else{
-						if(siblings){
-							$(this).parent().siblings().find(target).siblings().slideUp();
-						}
-						layer.slideDown();
-					}
+					logic();
 				}
+				
 				e.preventDefault();
 			});
 		},
@@ -403,8 +417,48 @@ var COEX = COEX || {
 				$MYPAGE_REGILIST.off("click mouseenter mouseleave");
 				event();
 			});	
-		}
-		
+		},
+		fixedTop: function(){
+			var enScrollTop = 0,
+				beScrollTop = 0,
+				$header = $("#header");
+				$topBanner = $(".top_bn_w");
+				fixdTop = $header.offset().top;
+				paddingTop = $header.height();
+				scrollThreshold = 90;
+
+			if($topBanner.length && $topBanner.is(":visible")){
+				$header.removeClass("fixed");
+				$("#container").css({"padding-top": 0});
+			}
+			else{
+				$header.addClass("fixed");
+				$("#container").css({"padding-top": paddingTop});			
+			}
+
+			$(window).on('scroll', function(e) {
+				enScrollTop = window.scrollY;
+
+				if($topBanner.length && $topBanner.is(":visible")){
+					if(fixdTop <= window.scrollY) {
+						$header.addClass("fixed");
+					}
+					else {
+						$header.removeClass("fixed");
+					}
+				}
+				if (Math.abs(enScrollTop - beScrollTop) < scrollThreshold) return false;
+
+				if(!$("body").hasClass("pc")) {	
+					beScrollTop > enScrollTop ? $header.removeClass("on") : $header.addClass("on");
+				}
+				else{
+					$header.removeClass("on");
+				}
+
+				beScrollTop = enScrollTop;
+			});
+		},		
 	},
 	iscrolls: {
 		cash: null,
@@ -465,17 +519,20 @@ $(function(){
 
 	/*제이쿼리 객체 캐쉬 및 상수*/
 	var $BODY = $("body"),
+		$HEADER = $("#header"),
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
 		$REGISLIDE = $(".sub_wrap .regi_conts .slide ul"),
 		$REGI_LIST = $(".regi_list_wrap .regi_list"),
+		$TOP_BANNER = $(".top_bn_w"),
 		SELECTCUSTOM = ".select_custum",
 		TOGGLE = ".toggle_btn",
 		GOTARGET = ".go_target_bt"
 		LAYER_BT_OPEN = ".layer_open_bt",
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
-		LAYER_DIV = ".pop_layer";
+		LAYER_DIV = ".pop_layer",
+		SCROLL_Top = 0;
 
 
 
@@ -517,12 +574,60 @@ $(function(){
 		COEX.event.hoverClick($BODY, $REGI_LIST, ".regi_in");
 	}
 
+	/*해더 스크롤*/
+	COEX.event.fixedTop();
 
 	/*커스텀 셀렉트*/
 	COEX.event.customSelect(SELECTCUSTOM);
 
 	/*토글*/
 	COEX.event.toggle(TOGGLE);
+
+	COEX.event.toggle(".top_bn_close", function(logic, layer){
+		var paddingTop = $HEADER.height();
+		setTimeout(function(){
+			$HEADER.addClass("fixed");
+			$("#container").css({"padding-top": paddingTop});
+			$(".panel_W .panel_in").css({"padding-top": paddingTop});
+		},1000);
+		
+		logic();
+		
+	});
+	
+	COEX.event.toggle(".panel_btn", function(logic, layer){
+		$(window).off("resize.panel");
+		var paddingTop = 0;
+
+		if(layer.hasClass("on")){
+			$BODY.removeClass("fixed");
+			$(window).scrollTop(SCROLL_Top);
+		}
+		else{
+			SCROLL_Top = $(window).scrollTop();
+			$BODY.addClass("fixed");
+		}
+
+		function paddingCalculation() {
+			if($TOP_BANNER.length && $TOP_BANNER.is(":visible")){
+				paddingTop = $HEADER.height() + $TOP_BANNER.height();
+			}
+			else {
+				paddingTop = $HEADER.height();
+			}
+			layer.find(".panel_in").css({"padding-top": paddingTop});
+		}
+
+		paddingCalculation();
+
+
+		$(window).on("resize.panel",function(){	
+			paddingCalculation();
+		});
+
+
+		logic();
+	});
 
 	/*pc top으로 scroll*/
 	COEX.event.topScrollCh($GOTOP, $BODY);
@@ -633,7 +738,7 @@ $(window).on("load", function(){
 	$(window).on("resize",function(){	
 		COEX.iscrolls.resize();
 	});
-	
 
+	
 });
 
