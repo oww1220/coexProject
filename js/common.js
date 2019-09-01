@@ -546,17 +546,34 @@ $(function(){
 		COEX.event.topScrollCh($GOTOP, $BODY);
 	});
 
-	/*상단배너 슬라이드*/
+	/*메인 상단배너 슬라이드*/
 	if($(".top_bn_w ul").length && $.fn.slick) {
 		(function(){
 			COEX.slide.init($(".top_bn_w ul"), "slick", {
 				infinite: true,
 				autoplay: true,
 				arrows: false,
-				vertical: true,
 			});
 		})();
 	}
+
+	/*메인 슬라이드*/
+	if($(".pc .main_wrap .cols0 ul").length && $.fn.slick) {
+		(function(){
+			COEX.slide.init($(".pc .main_wrap .cols0 ul"), "slick", {
+				slidesToShow: 3, 
+				slidesToScroll: 1, 
+				infinite: true,
+				autoplay: true,
+				arrows: true,
+				responsive: [ 
+					{ breakpoint: 1024, settings: "unslick" }, 
+				],
+	
+			});
+		})();
+	}
+	
 	
 	/*메인 공지사항 슬라이드*/
 	if($NOTICE.length && $.fn.slick) {
@@ -566,6 +583,7 @@ $(function(){
 				autoplay: true,
 				arrows: false,
 				vertical: true,
+				verticalSwiping: true,
 			});
 		})();
 	}
