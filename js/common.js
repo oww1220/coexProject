@@ -546,6 +546,17 @@ $(function(){
 		COEX.event.topScrollCh($GOTOP, $BODY);
 	});
 
+	/*상단배너 슬라이드*/
+	if($(".top_bn_w ul").length && $.fn.slick) {
+		(function(){
+			COEX.slide.init($(".top_bn_w ul"), "slick", {
+				infinite: true,
+				autoplay: true,
+				arrows: false,
+				vertical: true,
+			});
+		})();
+	}
 	
 	/*메인 공지사항 슬라이드*/
 	if($NOTICE.length && $.fn.slick) {
