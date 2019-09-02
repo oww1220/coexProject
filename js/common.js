@@ -557,10 +557,10 @@ $(function(){
 		})();
 	}
 
-	/*메인 슬라이드*/
-	if($(".pc .main_wrap .cols0 ul").length && $.fn.slick) {
+	/*메인 상단 슬라이드*/
+	if($(".main_wrap .cols0 ul").length && $.fn.slick) {
 		(function(){
-			COEX.slide.init($(".pc .main_wrap .cols0 ul"), "slick", {
+			COEX.slide.init($(".main_wrap .cols0 ul"), "slick", {
 				slidesToShow: 3, 
 				slidesToScroll: 1, 
 				infinite: true,
@@ -570,6 +570,17 @@ $(function(){
 					{ breakpoint: 1024, settings: "unslick" }, 
 				],
 	
+			});
+		})();
+	}
+
+	/*메인 하단 슬라이드*/
+	if($(".main_wrap .cols4 ul").length && $.fn.slick) {
+		(function(){
+			COEX.slide.init($(".main_wrap .cols4 ul"), "slick", {
+				infinite: true,
+				autoplay: true,
+				arrows: true,
 			});
 		})();
 	}
