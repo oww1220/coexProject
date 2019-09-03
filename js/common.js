@@ -314,7 +314,8 @@ var COEX = COEX || {
 			}
 		},
 		taps: function(tab_nav, callback){
-			var target = tab_nav + " li";
+			var target = tab_nav + " .tab_nav li";
+			//console.log(target);
 			$(document).on("click", target, function(e){
 				var $this = $(this);
 				var $layer = $this.parent().parent().next(".tab_cont");
@@ -330,7 +331,6 @@ var COEX = COEX || {
 				else{
 					swap();
 				}
-				
 				e.preventDefault();
 			});
 		},
@@ -386,12 +386,14 @@ var COEX = COEX || {
 							var target = $(this).find(".hover");
 							if(!target.is(":visible")){
 								target.fadeIn();
+								target.addClass("on");
 							}
 						},
 						mouseleave: function(e){
 							var target = $(this).find(".hover");
 							if(target.is(":visible")){
 								target.fadeOut();
+								target.removeClass("on");
 							}
 						},
 					}, targetDiv);
@@ -402,10 +404,12 @@ var COEX = COEX || {
 							var target = $(this).find(".hover");
 							if(target.is(":visible")){
 								target.fadeOut();
+								target.removeClass("on");
 							}	
 							else{
+								$(".regi_list_wrap .regi_in .hover").fadeOut().removeClass("on");
 								target.fadeIn();
-								$(this).parent().siblings().find(".hover").fadeOut();
+								target.addClass("on");
 							}
 						},
 	
@@ -429,11 +433,11 @@ var COEX = COEX || {
 
 			if($topBanner.length && $topBanner.is(":visible")){
 				$header.removeClass("fixed");
-				$("#container").css({"padding-top": 0});
+				$header.css({"height": "auto"});
 			}
 			else{
 				$header.addClass("fixed");
-				$("#container").css({"padding-top": paddingTop});			
+				$header.css({"height": paddingTop});			
 			}
 
 			$(window).on('scroll', function(e) {
@@ -627,7 +631,7 @@ $(function(){
 		var paddingTop = $HEADER.height();
 		setTimeout(function(){
 			$HEADER.addClass("fixed");
-			$("#container").css({"padding-top": paddingTop});
+			$HEADER.css({"height": paddingTop});
 			$(".panel_W .panel_in").css({"padding-top": paddingTop});
 		},1000);
 		

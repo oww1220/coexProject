@@ -1,7 +1,7 @@
 @charset "utf-8";
-
+body {background-color: #4C6DF7;}
 img {width:100%;}
-#wrap {display:flex;min-height:100vh;flex-direction:column;background-color: #4C6DF7;}
+#wrap {display:flex;min-height:100vh;flex-direction:column;background-color: #fff;}
 
 /*상단배너*/
 .top_bn_w {position: relative;background-color:#fdf168;z-index:95;}
@@ -17,10 +17,10 @@ img {width:100%;}
 
 
 /*header*/
-#header {position:relative;top:0;left:0;width:100%;height:45px;background-color:#4c6df7;z-index:90;-webkit-transition: all .3s ease-in-out;transition: all .3s ease-in-out;   -webkit-transform: translateY(0);transform: translateY(0);}
-#header.on {-webkit-transform: translateY(-45px);transform: translateY(-45px);}
-#header.fixed {position:fixed;}
-#header .inner {height:100%;position: relative;display:-webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
+#header {position: relative;width:100%;background-color:#4c6df7;z-index:90;}
+#header.on .inner {-webkit-transform: translateY(-45px);transform: translateY(-45px);}
+#header.fixed .inner {position:fixed;}
+#header .inner {display:-webkit-flex;display:flex;-webkit-align-items: center;align-items: center;position:relative;top:0;left:0;width:100%;height:45px;background-color:#4c6df7;-webkit-transition: all .3s ease-in-out;transition: all .3s ease-in-out;   -webkit-transform: translateY(0);transform: translateY(0);}
 #header .logo_wrap {width: 70px;margin-right: auto;margin-left:1rem;}
 
 #header .gnb_wrap {margin-left: auto;margin-right:1rem;font-size: 0;}
@@ -52,7 +52,7 @@ overflow: hidden;position: absolute;top: 0;right: 0;width: 26.3rem;height: 100%;
 .panel_W .panel_list {overflow-x: hidden;overflow-y: auto;height:100%;}
 
 /*container*/
-#container {background-color: #fff;}
+#container {margin-top: auto;}
 
 
 
@@ -103,10 +103,10 @@ body.fixed {overflow: hidden; position: fixed;}
 
 /*등록 리스트*/
 .regi_list_wrap .regi_list img {width:100%;}
-.regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:1.8rem;box-shadow: 1px 10px 25px -5px grey;}
+.regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:1rem;box-shadow: 1px 10px 25px -5px grey;}
 .regi_list_wrap .regi_in .sum_w {position: relative;}
 .regi_list_wrap .regi_in .sum_w .img {}
-.regi_list_wrap .regi_in .hover {position:absolute;top:0;left:0;width:100%;height:100%;display:none;}
+.regi_list_wrap .regi_in .hover {position:absolute;top:0;left:0;width:100%;height:100%;border-radius:1rem;overflow: hidden;display:none;}
 .regi_list_wrap .regi_in .hover .btns {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;flex-flow: column;}
 .regi_list_wrap .regi_in .hover .btns a {display:inline-block;color:#fff;border:1px solid #fff;border-radius:5px;width:10rem;height:3rem;text-align:center;line-height:3.1rem;font-size:1.05rem;}
 .regi_list_wrap .regi_in .hover .btns a:hover {background-color:#fff;color:#4C6DF7;}
@@ -158,7 +158,7 @@ body.fixed {overflow: hidden; position: fixed;}
 .footer .family_wrap .family_btn {cursor:pointer;padding:0px 20px;height:35px;line-height:36px;box-sizing:border-box;}
 .footer .family_wrap ul {display:none;color: #7a7a7a;}
 .footer .family_wrap ul li {padding: 15px 20px;}
-.footer .family_wrap ul li a {color: #7a7a7a;}
+.footer .family_wrap ul li a {color: #7a7a7a;overflow: hidden;padding: 1px 0;text-overflow: ellipsis;white-space: nowrap;display: block;}
 
 .footer .link_wrap {font-size:0;text-align:center;margin-top:8px;}
 .footer .link_wrap ul {display:inline-block;max-width:240px;}
@@ -210,8 +210,7 @@ body.fixed {overflow: hidden; position: fixed;}
     .top_bn_w .inner .top_bn_close {position:absolute;top:50%;right:80px;margin-top:-7px;width:14px;height:14px;background:url("../images/icon/pc_main_top_close.png") no-repeat 0 0;}
 
     /*header*/
-    #header {position:relative;top:0;left:0;width:100%;height:130px;background-color:#4c6df7;z-index:90;}
-    #header .inner {max-width: 100%;}
+    #header .inner {max-width: 100%;width:100%;height:130px;}
     #header .logo_wrap {margin-left:80px;}
 
     #header .gnb_wrap {margin-right:80px;}
@@ -228,6 +227,9 @@ body.fixed {overflow: hidden; position: fixed;}
     .gnb_wrap .panel_btn.on .barTop{top:15px;}
     .gnb_wrap .panel_btn.on .barBot{top:15px;}
 
+    /*container*/
+    #container {margin-top:0;}
+
 
     /*패널*/
     .panel_W.on {-webkit-transform: translateX(0);transform: translateX(0);}
@@ -236,10 +238,11 @@ body.fixed {overflow: hidden; position: fixed;}
 
 
     /*등록 리스트*/
-    .regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:18px;box-shadow: 1px 10px 25px -5px grey;cursor: pointer;}
+    .regi_list_wrap .regi_in {width:270px;}
+    .regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:10px;box-shadow: 1px 10px 25px -5px grey;cursor: pointer;}
     .regi_list_wrap .regi_in .sum_w {position: relative;}
     .regi_list_wrap .regi_in .sum_w img {width:auto;}
-    .regi_list_wrap .regi_in .hover {position:absolute;top:0;left:0;width:100%;height:100%;display:none;}
+    .regi_list_wrap .regi_in .hover {position:absolute;top:0;left:0;width:100%;height:100%;border-radius:10px;overflow: hidden;display:none;}
     .regi_list_wrap .regi_in .hover .btns {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;flex-flow: column;}
     .regi_list_wrap .regi_in .hover .btns a {display:inline-block;color:#fff;border:1px solid #fff;border-radius:5px;width:120px;height:40px;text-align:center;line-height:40px;font-size:14px;}
     .regi_list_wrap .regi_in .hover .btns a:hover {background-color:#fff;color:#4C6DF7;}

@@ -467,7 +467,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .mypage_menu .on .regi .icon_wrap .icon {background-image: url("../images/icon/m_mypage_icon01_on.png");}
 .mypage_wrap .mypage_menu .on .coupon .icon_wrap .icon {background-image: url("../images/icon/m_mypage_icon02_on.png");}
 .mypage_wrap .mypage_menu .on .onebyone .icon_wrap .icon {background-image: url("../images/icon/m_mypage_icon03_on.png");}
-.mypage_wrap .mypage_menu li .icon_wrap b {font-size:1.05rem;position:absolute;top:-0.7rem;right:-0.7rem;width:1.5rem;height:1.5rem;line-height:1.6rem;border-radius:100%;background-color:#4C6DF7;text-align:center;color:#fff;font-weight:normal;text-indent: -1px;}
+.mypage_wrap .mypage_menu li .icon_wrap b {font-size:0.8rem;position:absolute;top:-0.7rem;right:-0.7rem;width:1.5rem;height:1.5rem;line-height:1.6rem;border-radius:100%;background-color:#4C6DF7;text-align:center;color:#fff;font-weight:normal;text-indent: -1px;}
 .mypage_wrap .mypage_menu .on .icon_wrap b {display:none;}
 .mypage_wrap .mypage_menu li span {font-size:1.15rem;display:block;margin-top:1rem;}
 .mypage_wrap .mypage_menu .on span {color:#4C6DF7;}
@@ -567,7 +567,7 @@ border-radius:100%;display:table;}
 .mypage_wrap .sub_frame .ticket_regi > strong {display:block;font-weight:normal;font-size: 1.7rem;text-align: center;}
 .mypage_wrap .sub_frame .ticket_regi .input_wrap {text-align:center;}
 .mypage_wrap .sub_frame .ticket_regi .input_wrap > div {display:inline-block;}
-.mypage_wrap .sub_frame .ticket_regi .input_wrap input {border:1px solid #e8e8e8;border-radius:5px;text-align:center;width:6rem;height:3rem;margin:0 0.25rem;font-size:1.15rem;display:inline-block;letter-spacing: 0.3rem;margin-top: 1.7rem;}
+.mypage_wrap .sub_frame .ticket_regi .input_wrap input {border:1px solid #e8e8e8;border-radius:5px;text-align:center;width:5.5rem;height:3rem;margin:0 0.25rem;font-size:1.15rem;display:inline-block;letter-spacing: 0.3rem;margin-top: 1.7rem;}
 .mypage_wrap .sub_frame .ticket_regi .btn_wrap a {width: 26.5rem;border-radius:5px;}
 .mypage_wrap .sub_frame .ticket_regi .guide {margin-top: 3rem;}
 .mypage_wrap .sub_frame .ticket_regi .guide .title {font-size: 1.5rem;}
