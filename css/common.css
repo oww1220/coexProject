@@ -81,8 +81,8 @@ caption {position:static;}
 hr {display:none;}
 
 /* input Design */
-select {padding:5px;border:1px solid #ccc;font-size:13px;background-color:#fff;}
-select.normal {padding:0;border:0;font-size:0.9rem;display:inline-block;}
+select {padding:5px;border:1px solid #ccc;font-size:13px;background-color:#fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;border-radius:0;background:url("../images/icon/m_sub_select_dw.png") no-repeat 100% center;background-size:0.5rem;padding-right:1rem;}
+select.normal {border:0;font-size:0.9rem;display:inline-block;}
 input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 .input {padding:5px;border:1px solid #e6e6e6;font-size:13px;color:#666;}
 
@@ -109,7 +109,8 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 /*-------------데스크탑-------------*/
 @media screen and (min-width:1024px){
 
-  select.normal {padding:0;border:0;font-size:14px;display:inline-block;}
+  select {border:1px solid #ccc;background:url("../images/icon/pc_sub_select_dw.png") no-repeat 100% center;background-size:9px;padding-right:15px;}
+  select.normal {font-size:14px;}
 
   .input_c {padding-top:0;}
   .input_c input[type=checkbox] + label {font-size:17px;padding-left:35px;line-height:25px;}

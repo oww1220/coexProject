@@ -33,6 +33,17 @@
 
 		<div class="sub_wrap">
 
+			<!--경로
+            <div class="path_wrap">
+                <div class="inner">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><span>회원가입</span></li>
+                    </ul>
+                </div>
+            </div>
+            //경로-->
+
 			<!--회원가입-->
 			<div class="signup_wrap">
 				<div class="inner">
@@ -42,6 +53,25 @@
 					<div class="signup_cont">
 						<form action="">
 							<ul class="signup_list">
+								<li>
+									<label for="">이름</label>
+									<input type="text" value="" />
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message">에러 메시지</span>
+								</li>
+								<li>
+									<strong>성별</strong>
+									<div class="radio_list">
+										<div class="input_r">
+											<input id="r01" type="radio" name="001"/>
+											<label for="r01">남</label>
+										</div>
+										<div class="input_r">
+											<input id="r02" type="radio" name="001"/>
+											<label for="r02">여</label>
+										</div>
+									</div>
+								</li>
 								<li>
 									<label for="">이메일 주소(ID)</label>
 									<input type="text"/>
@@ -91,7 +121,7 @@
 									<li>
 										<div class="input_c">
 											<input id="ch03" type="checkbox" />
-											<label for="ch03">마케팅 정보 수신동의(선택)</label>
+											<label for="ch03">마케팅 정보 수신동의(필수)</label>
 										</div>
 									</li>
 								</ul>
@@ -102,6 +132,7 @@
 								<li>
 									<a href="#" class="layer_open_bt signup_btn" data-layer="layer-t01">회원가입</a>
 								</li>
+								<!--
 								<li>
 									<a href="#"class="signup_btn border">
 									전시 주최자 가입신청
@@ -109,7 +140,7 @@
 											<p>'전시주최자 회원가입'은 일반 개인회원 가입 후 진행 가능하니, 개인회원 가입을 하지 않으신분은 일반 회원 가입 후 신청해주시기 바랍니다.</p>
 										</div>
 									</a>	
-								</li>
+								</li>-->
 							</ul>
 							<p class="signup_guide">
 								이미 회원이신가요? 
@@ -143,9 +174,10 @@
 
 						<div class="pop_cont">
 							<strong>회원가입을 환영합니다!</strong>
+							<!--
 							<div class="box">
 								<span>smp@naver.com</span>
-							</div>
+							</div>-->
 							<p>개인정보 확인 및 수정은 <a href="#">마이페이지 > 개인정보수정</a>에서 확인하실 수 있습니다.</p>
 							<div class="btn_wrap">
 								<a href="#" class="full">확인</a>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>코엑스 프로젝트</title>
+    <style type="text/css">
+    *,*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+    html,body{width:100%;height:100%;}
+    body {font-family:Malgun Gothic,'맑은고딕',Dotum,'돋움',sans-serif;font-size:12px;color:#666;}
+    html,body,div,span,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+    sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+    figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,h1,h2,h3,h4,h5,h6 {margin:0;padding:0;list-style:none; -webkit-text-size-adjust:none; }
+    img {width:100%;height:auto;vertical-align:top;vertical-align:top;border:0;line-height:0;}
+    a {color:#666;text-decoration:none;}
+    table {width:100%;border-collapse:collapse;border-spacing:0;}
+    tbody, tfoot, thead, tr, th, td {table-layout:fixed;word-break:break-all;}
+    .tit {font-size:20px;color:#515151;font-weight:bold;padding:10px 0 10px 5px;}
+    .table_row {border-top:1px solid #666;border-bottom:2px solid #999;margin-bottom:20px;}
+    .table_row table {width:100%;}
+    .table_row table tbody tr.sky th, .table_row table tbody tr.sky td {background:#d2f6f6;}
+    .table_row table tbody tr.none {text-decoration:line-through;}
+    .table_row table tbody tr.yellow td {background:#ffeeca;color:#000;}
+    .table_row table tbody tr.yellow td:first-child {background:none;}
+    .table_row table tbody {border-top:1px solid #666;}
+    .table_row table thead th {padding:5px;background:#d9d9d9;border-left:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;color:#333;}
+    .table_row table thead th.sub {background: #ededed;}
+    .table_row table tbody td {padding:5px;border-top:1px solid #c3c3c3;border-left:1px solid #c3c3c3;}
+    .table_row table tbody td.first {font-weight:bold;color:#333;}
+    .table_row table tbody td a:hover {text-decoration: underline;}
+    .table_row table tbody td.check {color:blue;}
+    .table_row table tbody th {text-align:center;background:#f9f9f9;color:#515151;border-top:1px solid #c3c3c3;}
+    .table_row table tbody tr:first-child th, .table_row table tbody tr:first-child td {border-top:0;}
+    .table_row table th:first-child, .table_row table tbody td:first-child {border-left:0;}
+    .table_row table tbody tr:hover th, tr:hover td {background:#f5f5f5 !important;}
+    .text_area {padding:5px;margin-bottom:20px;color:#666;border:2px solid #ccc;line-height:1.5;}
+    .text_area a {display:block;padding:3px;text-decoration: none;}
+    .text_area a:hover {text-decoration: underline;}
+    .red {color:red;}
+    .blue {color:blue;}
+    .ac {text-align:center;}
+    </style>
+</head>
+<body style="min-width:700px;padding:0 5px;">
+    <!-- contents -->
+    <section>
+        <p class="tit"><strong>[2019년 코엑스 프로젝트]</strong>코딩리스트</p>
+
+        <p style="text-align:right;margin-bottom:5px;">ver.1.0 ()</p>
+        <div class="table_row">
+            <table>     
+                <colgroup>
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="15%" />
+                    <col width="7%" />
+                    <col width="*" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="4">분류</th>
+                        <th rowspan="2">기본파일명</th>
+                        <th rowspan="2">최종작업일</th>
+                        <th rowspan="2">비고</th>
+                    </tr>
+                    <tr>
+                        <th class="sub">1Depth</th>
+                        <th class="sub">2Depth</th>
+                        <th class="sub">3Depth</th>
+                        <th class="sub">4Depth</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+					<!-- 레이아웃 -->
+                    <tr class="sky">
+						<td class="first">레이아웃</td>
+						<td>메인</td>
+						<td></td>
+						<td></td>
+                        <td><a href="html/main.html" target="_blank">main.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>해더, 푸터</td>
+						<td></td>
+						<td></td>
+                        <td><a href="html/layout.html" target="_blank">layout.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+
+                    <!-- //레이아웃 -->
+
+                    <!-- 검색 -->
+                    <tr class="sky">
+						<td class="first">검색</td>
+						<td>완료</td>
+						<td></td>
+						<td></td>
+						<td><a href="html/search.html" target="_blank">search.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <!-- //검색 -->
+
+                    <!-- 사전등록 -->
+                    <tr class="sky">
+						<td class="first">사전등록</td>
+						<td>전시회 리스트</td>
+						<td></td>
+						<td></td>
+						<td><a href="html/regi_list.html" target="_blank">regi_list.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>부대행사 리스트</td>
+						<td></td>
+						<td></td>
+						<td><a href="html/regi_list2.html" target="_blank">regi_list2.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>전시회/부대행사 상세</td>
+						<td>유료</td>
+						<td></td>
+						<td><a href="html/regi_free_view.html" target="_blank">regi_free_view.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>무료</td>
+						<td></td>
+						<td><a href="html/regi_free_view2.html" target="_blank">regi_free_view2.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>예정</td>
+						<td></td>
+						<td><a href="html/regi_free_view3.html" target="_blank">regi_free_view3.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>단체</td>
+						<td></td>
+						<td><a href="html/regi_free_view4.html" target="_blank">regi_free_view4.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>전시회/부대행사 완료</td>
+						<td>단체</td>
+						<td></td>
+						<td><a href="html/regi_pay_complete_group.html" target="_blank">regi_pay_complete_group.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>주문</td>
+						<td>장바구니</td>
+						<td></td>
+						<td><a href="html/cart_list.html" target="_blank">cart_list.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>사전등록 설문</td>
+						<td>무료</td>
+						<td><a href="html/survey.html" target="_blank">survey.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td></td>
+						<td>유료</td>
+						<td><a href="html/survey2.html" target="_blank">survey2.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>결제완료 및 티켓발권</td>
+						<td></td>
+						<td><a href="html/regi_pay_complete_normal.html" target="_blank">regi_pay_complete_normal.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>온라인디렉토리</td>
+						<td>리스트</td>
+						<td></td>
+						<td><a href="html/directory_list.html" target="_blank">directory_list.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>상세</td>
+						<td></td>
+						<td><a href="html/directory_view.html" target="_blank">directory_view.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>참관객 정보등록</td>
+						<td></td>
+						<td></td>
+						<td><a href="html/regi_pay_input_group.html" target="_blank">regi_pay_input_group.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+
+                    <!--
+                    <tr class="sky">
+						<td class="first">사전등록</td>
+						<td>등록중 행사 리스트</td>
+						<td></td>
+						<td></td>
+						<td><a href="html/regi_list.html" target="_blank">regi_list.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>등록중행사-무료</td>
+						<td>view</td>
+						<td></td>
+						<td><a href="html/regi_free_view.html" target="_blank">regi_free_view.html</a></td>
+						<td></td>
+						<td class="check">업제정보 레이어</td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>정보입력</td>
+						<td>일반</td>
+						<td><a href="html/regi_free_input_normal.html" target="_blank">regi_free_input_normal.html</a></td>
+						<td></td>
+						<td class="check">약관완료 레이어</td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td></td>
+						<td>바이어</td>
+						<td><a href="html/regi_free_input_buyer.html" target="_blank">regi_free_input_buyer.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>등록완료</td>
+						<td></td>
+						<td><a href="html/regi_free_complete.html" target="_blank">regi_free_complete.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>등록중행사-유료</td>
+						<td>view</td>
+						<td></td>
+						<td><a href="html/regi_pay_view.html" target="_blank">regi_pay_view.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>정보입력</td>
+						<td>일반</td>
+						<td><a href="html/regi_pay_input_normal.html" target="_blank">regi_pay_input_normal.html</a></td>
+						<td></td>
+						<td class="check">쿠폰함 레이어</td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td></td>
+						<td>단체</td>
+						<td><a href="html/regi_pay_input_group.html" target="_blank">regi_pay_input_group.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td>등록완료</td>
+						<td>일반</td>
+						<td><a href="html/regi_pay_complete_normal.html" target="_blank">regi_pay_complete_normal.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td></td>
+						<td></td>
+						<td>단체</td>
+						<td><a href="html/regi_pay_complete_group.html" target="_blank">regi_pay_complete_group.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>등록예정 행사 리스트</td>
+						<td></td>
+						<td></td>
+						<td><a href="html/regi_schedule_list.html" target="_blank">regi_schedule_list.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>
+                    <tr>
+						<td class="first"></td>
+						<td>등록예정행사</td>
+						<td>view</td>
+						<td></td>
+						<td><a href="html/regi_schedule_view.html" target="_blank">regi_schedule_view.html</a></td>
+						<td></td>
+						<td class="check"></td>
+					</tr>-->
+                    <!-- //사전등록 -->
+                    
+                    <!--이벤트-->
+                    <tr class="sky">
+                        <td class="first">이벤트</td>
+                        <td>리스트</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/event_list.html" target="_blank">event_list.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>이벤트 없을시</td>
+                        <td></td>
+                        <td><a href="html/event_list_none.html" target="_blank">event_list_none.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/event_detail.html" target="_blank">event_detail.html</a></td>
+                        <td></td>
+                        <td class="check">쿠폰발급 레이어</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>이벤트 종료시</td>
+                        <td></td>
+                        <td><a href="html/event_detail_end.html" target="_blank">event_detail_end.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <!--//이벤트-->
+
+                    <!--로그인-->
+                    <tr class="sky">
+                        <td class="first">로그인</td>
+                        <td>로그인</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/login.html" target="_blank">login.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>비밀번호찾기</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/member_find_pw.html" target="_blank">member_find_pw.html</a></td>
+                        <td></td>
+                        <td class="check">입력오류 레이어-이메일</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/member_find_pw2.html" target="_blank">member_find_pw2.html</a></td>
+                        <td></td>
+                        <td class="check">입력오류 레이어-휴대폰번호</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/member_find_pw3.html" target="_blank">member_find_pw3.html</a></td>
+                        <td></td>
+                        <td class="check">재설정 발송완료 레이어-이메일</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/member_find_pw4.html" target="_blank">member_find_pw4.html</a></td>
+                        <td></td>
+                        <td class="check">재설정 발송완료 레이어-휴대폰번호</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>비밀번호재설정</td>
+                        <td>이메일</td>
+                        <td></td>
+                        <td><a href="html/member_pw_reset.html" target="_blank">member_pw_reset.html</a></td>
+                        <td></td>
+                        <td class="check">재설정 완료 레이어</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>휴대폰번호</td>
+                        <td></td>
+                        <td><a href="html/member_pw_reset2.html" target="_blank">member_pw_reset2.html</a></td>
+                        <td></td>
+                        <td class="check">재설정 완료 레이어</td>
+                    </tr>
+                    <!--//로그인-->
+
+                    <!--회원가입-->
+                    <tr class="sky">
+                        <td class="first">회원가입</td>
+                        <td>회원가입</td>
+                        <td>일반</td>
+                        <td></td>
+                        <td><a href="html/signup.html" target="_blank">signup.html</a></td>
+                        <td></td>
+                        <td class="check">가입완료 레이어</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>인증번호</td>
+                        <td></td>
+                        <td><a href="html/signup2.html" target="_blank">signup2.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <!--회원가입-->
+
+                    <!--마이페이지-->
+                    <tr class="sky">
+                        <td class="first">마이페이지</td>
+                        <td>서브메인</td>
+                        <td>기본</td>
+                        <td></td>
+                        <td><a href="html/mypage_main.html" target="_blank">mypage_main.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>데이터 없을시</td>
+                        <td></td>
+                        <td><a href="html/mypage_main_none.html" target="_blank">mypage_main_none.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>회원정보 관리</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/mypage_modify.html" target="_blank">mypage_modify.html</a></td>
+                        <td></td>
+                        <td class="check">정보수정완료 레이어, 회원탈퇴완료 레이어</td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>나의사전등록</td>
+                        <td>list</td>
+                        <td></td>
+                        <td><a href="html/mypage_regi_list.html" target="_blank">mypage_regi_list.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>상세-무료</td>
+                        <td>일반</td>
+                        <td><a href="html/mypage_regi_free.html" target="_blank">mypage_regi_free.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>상세-유료</td>
+                        <td>일반</td>
+                        <td><a href="html/mypage_regi_pay01.html" target="_blank">mypage_regi_pay01.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td></td>
+                        <td>단체</td>
+                        <td><a href="html/mypage_regi_pay02.html" target="_blank">mypage_regi_pay02.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>쿠폰함</td>
+                        <td>쿠폰리스트</td>
+                        <td></td>
+                        <td><a href="html/mypage_coupon_list.html" target="_blank">mypage_coupon_list.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>쿠폰상세</td>
+                        <td></td>
+                        <td><a href="html/mypage_coupon_view.html" target="_blank">mypage_coupon_view.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>초대권등록</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/mypage_invitation.html" target="_blank">mypage_invitation.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>알림함</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/mypage_onebyone.html" target="_blank">mypage_onebyone.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>전시관리플랫폼 가입신청</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/signup3.html" target="_blank">signup3.html</a></td>
+                        <td></td>
+                        <td class="check">사업자번호 조회레이어, 사업자번호 등록레이어, 신청완료레이어</td>
+                    </tr>
+                    <!--//마이페이지-->
+
+                    <!--FNB-->
+                    <tr class="sky">
+                        <td class="first">FNB</td>
+                        <td>개인정보 처리방침</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/privacy.html" target="_blank">privacy.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>사전등록이용안내</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="html/regi_guide.html" target="_blank">regi_guide.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>공지사항</td>
+                        <td>리스트</td>
+                        <td></td>
+                        <td><a href="html/notice_list.html" target="_blank">notice_list.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td></td>
+                        <td>뷰</td>
+                        <td></td>
+                        <td><a href="html/notice_view.html" target="_blank">notice_view.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"></td>
+                        <td>고객센터</td>
+                        <td>자주묻는 질문</td>
+                        <td></td>
+                        <td><a href="html/questions.html" target="_blank">questions.html</a></td>
+                        <td></td>
+                        <td class="check"></td>
+                    </tr>
+                    <!--FNB-->
+
+                    
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
