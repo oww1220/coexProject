@@ -278,7 +278,7 @@ var COEX = COEX || {
 				else{
 					logic();
 				}
-				
+				return false;
 				e.preventDefault();
 			});
 		},
