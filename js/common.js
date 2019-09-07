@@ -534,6 +534,7 @@ $(function(){
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
 		LAYER_DIV = ".pop_layer",
+		HEADER_H = $HEADER.height(),
 		SCROLL_Top = 0;
 
 
@@ -660,12 +661,17 @@ $(function(){
 		}
 
 		function paddingCalculation() {
+			
 			if($TOP_BANNER.length && $TOP_BANNER.is(":visible")){
-				paddingTop = $HEADER.height() + $TOP_BANNER.height();
+				paddingTop = HEADER_H + $TOP_BANNER.height();
 			}
 			else {
-				paddingTop = $HEADER.height();
+				paddingTop = HEADER_H;
 			}
+			
+			//console.log(HEADER_H);
+
+
 			layer.find(".panel_in").css({"padding-top": paddingTop});
 		}
 
