@@ -525,7 +525,6 @@ $(function(){
 		$HEADER = $("#header"),
 		$GOTOP = $(".footer .btnTop"),
 		$NOTICE = $(".main_wrap .cols_notice ul"),
-		$REGISLIDE = $(".sub_wrap .regi_conts .slide ul"),
 		$REGI_LIST = $(".regi_list_wrap .regi_list"),
 		$TOP_BANNER = $(".top_bn_w"),
 		SELECTCUSTOM = ".select_custum",
@@ -602,15 +601,24 @@ $(function(){
 		})();
 	}
 
-	/*사전등록 슬라이드*/
-	if($REGISLIDE.length && $.fn.slick) {
+
+	/*Online Directory 슬라이드*/
+	if($(".sub_wrap .directory_cont .slide ul").length && $.fn.slick) {
 		(function(){
-			var slide = COEX.slide.init($REGISLIDE, "slick", {
+			var $target = $(".sub_wrap .directory_cont .slide ul");
+			var $texts = $(".sub_wrap .directory_cont .texts li");
+			var slide = COEX.slide.init($target, "slick", {
 				infinite: true,
 				autoplay: true,
+				adaptiveHeight: true,
+			});
+			
+			$target.on("afterChange", function(event, slick, currentSlide){
+				$texts.eq(currentSlide).addClass("on").siblings().removeClass("on");
 			});
 		})();
 	}
+
 
 	/*사전등록 리스트:pc-hover, mo-click*/
 	if($REGI_LIST.length){
@@ -697,14 +705,13 @@ $(function(){
 		hide();
 	});
 
-	/*업체정보 레이어*/
+	/*업체정보 레이어
 	if($(".layer_open_company").length){
 		
 		COEX.layer.open(".layer_open_company", LAYER_DIM, LAYER_DIV, function (show, layer){	
 			show();
 			var $target = $("." + layer + " .slide ul");
 			var $texts = $("." + layer + " .texts li");
-			//console.log($target);
 			COEX.slide.init($target, "slick", {
 				infinite: true,
 				autoplay: true,
@@ -712,7 +719,6 @@ $(function(){
 			});
 
 			$target.on("afterChange", function(event, slick, currentSlide){
-				//console.log(currentSlide);
 				$texts.eq(currentSlide).addClass("on").siblings().removeClass("on");
 			});
 
@@ -722,7 +728,7 @@ $(function(){
 			var $target = layer;
 			$target.find(".slide ul").slick("unslick");
 		});
-	}
+	}*/
 	
 
 	/*pc용 달력*/
