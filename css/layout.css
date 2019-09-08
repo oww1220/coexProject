@@ -162,7 +162,7 @@ body.fixed {overflow: hidden; position: fixed;}
 .search_list_w .search_list .flag .flag_item.red {color: #ff7979;border-color: #ff7979;}
 .search_list_w .search_list .flag .flag_item + .flag_item {margin-left:0.5rem;}
 .search_list_w .search_list .flag .payment {font-size:1.05rem;line-height:1.6rem;display:inline-block;vertical-align:middle;}
-.search_list_w .search_list .flag .payment:before {position:relative;bottom:0.15rem;margin-right:0.3rem;display:inline-block;vertical-align:middle;content:"";width:1.5rem;height:1.5rem;background-repeat: no-repeat;background-position:0 0;background-size: 100%;}
+.search_list_w .search_list .flag .payment:before {position:relative;bottom:0.15rem;margin-right:0.3rem;display:inline-block;vertical-align:middle;content:"";width:1.5rem;height:1.5rem;background-repeat: no-repeat;background-position:0 0;background-size: contain;}
 .search_list_w .search_list .flag .payment.free {color: #222;}
 .search_list_w .search_list .flag .payment.pay {color: #4c6df7;}
 .search_list_w .search_list .flag .payment.free:before {background-image: url("../images/icon/m_main_cols1_ic02.png");}
