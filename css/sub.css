@@ -58,7 +58,7 @@
 .select_custum {box-sizing:border-box;position: relative;}
 .select_custum ~ .select_custum {margin-top:0.5rem;}
 .select_custum > button {position:relative;width:100%;font-size:1.15rem;height:3.3rem;line-height:3.4rem;background-color:#fff;box-sizing: border-box;border:1px solid #E8E8E8;border-radius:5px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 1px 2rem;}
-.select_custum.select > button {color:#4c6df7;}
+.select_custum.select > button {color:#222;}
 .select_custum.on > button {border:2px solid #4c6df7;border-bottom:0;border-radius:5px 5px 0px 0px;line-height:3.3rem;color:#888;}
 .select_custum > button:after {position:absolute;content:"";top:1.3rem;right:1rem;width:0.6rem;height:0.6rem;background:url("../images/icon/m_sub_select_dw.png") no-repeat center center;background-size:100%;}
 .select_custum.on > button:after{background-image:url("../images/icon/m_sub_select_up.png");}
@@ -113,6 +113,8 @@
 .sub_wrap .regi_sky .detail_top .term p {font-size:1.05rem;display:inline-block;}
 .sub_wrap .regi_sky .detail_top .term span {font-size:1rem;border:1px solid #FF6280;color:#FF6280;display:inline-block;padding:0 0.3rem;height:1.5rem;line-height:1.65rem;border-radius:5px;margin-right:0.5rem;}
 
+.sub_wrap .regi_sky .detail_cont .signup_btns {margin:2rem 1rem;}
+.sub_wrap .regi_sky .detail_cont .signup_btns li + li {margin-top: 0.5rem;}
 .sub_wrap .regi_sky .detail_cont .btn_wrap {margin-top:0;}
 .sub_wrap .regi_sky .detail_cont .btn_wrap a {width:100%;margin:0;border-radius:0;}
 .sub_wrap .regi_sky .detail_cont .select_wrap {padding:1rem;border-top:1px solid #E8E8E8;} 
@@ -130,6 +132,17 @@
 .sub_wrap .regi_sky .detail_cont .price_wrap li.sale p b {text-decoration: line-through;font-weight:normal;}
 .sub_wrap .regi_sky .detail_cont .price_wrap li.total p {font-size:1.15rem;color: #FF6280;}
 .sub_wrap .regi_sky .detail_cont .price_wrap li.total p b {font-size:2.5rem;margin-left:0.5rem;}
+
+.sub_wrap .regi_sky .detail_cont .prices_wrap ul {margin:0 1rem;background-color: #F5F5F5;overflow: hidden;border-radius: 0.5rem;}
+.sub_wrap .regi_sky .detail_cont .prices_wrap ul li {position: relative;padding: 1.5rem;}
+.sub_wrap .regi_sky .detail_cont .prices_wrap ul li + li {border-top:1px solid #fff;}
+.sub_wrap .regi_sky .detail_cont .prices_wrap ul li strong {display: block;font-weight: normal;font-size:1.05rem;} 
+.sub_wrap .regi_sky .detail_cont .prices_wrap ul li span {display: block;text-align: right;margin-top:1rem;padding-right:3rem;font-size:1.05rem;} 
+.sub_wrap .regi_sky .detail_cont .prices_wrap ul li button {position:absolute;bottom:1.5rem;right:1.5rem;width:1.2rem;height:1.2rem;font: 0/0 a;background:url("../images/icon/mo_regi_close.png") no-repeat 0 0;background-size: 100%;} 
+.sub_wrap .regi_sky .detail_cont .prices_wrap .total {padding:1.5rem;margin-top:1rem;border-top:1px dashed #222;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
+.sub_wrap .regi_sky .detail_cont .prices_wrap .total strong {font-size:1.2rem;font-weight: normal;}
+.sub_wrap .regi_sky .detail_cont .prices_wrap .total span {font-size:1.6rem;margin-left: auto;}
+.sub_wrap .regi_sky .detail_cont .prices_wrap .total span b {font-size:1.5rem;}
 
 .sub_wrap .regi_sky .detail_bottom  {padding:1rem}
 .sub_wrap .regi_sky .detail_bottom .depth_list li {font-size:1.05rem;}
@@ -168,6 +181,12 @@ margin:0 0.5rem;border:1px solid #222;border-radius: 5px;font-size:1.15rem;paddi
 .sub_wrap .regi_conts .links li + li a {background-color:#222;color:#fff;}
 
 .sub_wrap .regi_conts .table_wrap {margin-top: 1.7rem;}
+
+.sub_wrap .regi_conts .details_w {margin:2rem 0;}
+.sub_wrap .regi_conts .details_w button {display: block;width: 5rem;height: 5rem;background: url("../images/icon/m_regi_more.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
+.sub_wrap .regi_conts .details_w button.on {display:none;}
+.sub_wrap .regi_conts .details_w .details_cont {display:none;}
+
 
 /*신청자 정보*/
 .sub_wrap .proposer_info {margin-top: 2rem;position: relative;}
@@ -811,8 +830,8 @@ border-radius:100%;display:table;}
 
   .select_custum {box-sizing:border-box;position: relative;}
   .select_custum ~ .select_custum {margin-top:10px;}
-  .select_custum > button {position:relative;width:100%;font-size:18px;height:60px;line-height:60px;background-color:#fff;box-sizing: border-box;border:1px solid #E8E8E8;border-radius:5px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 1px 60px;}
-  .select_custum.select > button {color:#4c6df7;}
+  .select_custum > button {position:relative;width:100%;font-size:16px;height:60px;line-height:60px;background-color:#fff;box-sizing: border-box;border:1px solid #E8E8E8;border-radius:5px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 1px 60px;}
+  .select_custum.select > button {color:#222;}
   .select_custum.on > button {border:2px solid #4c6df7;border-bottom:0;border-radius:5px 5px 0px 0px;line-height:59px;color:#888;}
   .select_custum > button:after {position:absolute;content:"";top:26px;right:35px;width:9px;height:9px;background:url("../images/icon/pc_sub_select_dw.png") no-repeat center center;background-size:100%;}
   .select_custum.on > button:after{background-image:url("../images/icon/pc_sub_select_up.png");}
@@ -820,7 +839,7 @@ border-radius:100%;display:table;}
   .select_custum.on .select_list {display:block;}
   .select_custum .select_list ul {width:100%;box-sizing: border-box;background-color: #fff;border:2px solid #4c6df7;border-top:0;border-radius:0px 0px 5px 5px;text-align:center;padding:5px 0 30px;}
   .select_custum .select_list ul li {}
-  .select_custum .select_list ul li a {display:block;font-size:18px;height:35px;line-height:35px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 1px 10px;}
+  .select_custum .select_list ul li a {display:block;font-size:16px;height:35px;line-height:35px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 1px 10px;}
   .select_custum .select_list ul li a:hover {color:#4c6df7;}
 
 
@@ -861,6 +880,8 @@ border-radius:100%;display:table;}
   .sub_wrap .regi_sky .detail_top .term p {font-size:14px;display:inline-block;}
   .sub_wrap .regi_sky .detail_top .term span {font-size:12px;border:1px solid #FF6280;color:#FF6280;display:inline-block;padding:0 4px;height:24px;line-height:24px;border-radius:5px;margin-right:10px;}
 
+  .sub_wrap .regi_sky .detail_cont .signup_btns {margin:40px 20px;}
+  .sub_wrap .regi_sky .detail_cont .signup_btns li + li {margin-top: 10px;}
   .sub_wrap .regi_sky .detail_cont .btn_wrap {margin-top:0;}
   .sub_wrap .regi_sky .detail_cont .btn_wrap a {width:100%;margin:0;border-radius:0;}
   .sub_wrap .regi_sky .detail_cont .select_wrap {padding:20px;border-top:1px solid #E8E8E8;} 
@@ -878,6 +899,17 @@ border-radius:100%;display:table;}
   .sub_wrap .regi_sky .detail_cont .price_wrap li.sale p b {text-decoration: line-through;font-weight:normal;}
   .sub_wrap .regi_sky .detail_cont .price_wrap li.total p {font-size:18px;color: #FF6280;}
   .sub_wrap .regi_sky .detail_cont .price_wrap li.total p b {font-size:40px;margin-left:10px;}
+
+  .sub_wrap .regi_sky .detail_cont .prices_wrap ul {margin:0 20px;background-color: #F5F5F5;overflow: hidden;border-radius: 5px;}
+  .sub_wrap .regi_sky .detail_cont .prices_wrap ul li {position: relative;padding: 35px;}
+  .sub_wrap .regi_sky .detail_cont .prices_wrap ul li + li {border-top:1px solid #fff;}
+  .sub_wrap .regi_sky .detail_cont .prices_wrap ul li strong {display: block;font-weight: normal;font-size:16px;} 
+  .sub_wrap .regi_sky .detail_cont .prices_wrap ul li span {display: block;text-align: right;margin-top:20px;padding-right:70px;font-size:16px;} 
+  .sub_wrap .regi_sky .detail_cont .prices_wrap ul li button {position:absolute;bottom:35px;right:35px;width:13px;height:13px;font: 0/0 a;background:url("../images/icon/pc_regi_close.png") no-repeat 0 0;background-size: 100%;} 
+  .sub_wrap .regi_sky .detail_cont .prices_wrap .total {padding:30px 45px;margin-top:20px;border-top:1px dashed #222;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
+  .sub_wrap .regi_sky .detail_cont .prices_wrap .total strong {font-size:18px;font-weight: normal;}
+  .sub_wrap .regi_sky .detail_cont .prices_wrap .total span {font-size:25px;margin-left: auto;}
+  .sub_wrap .regi_sky .detail_cont .prices_wrap .total span b {font-size:22px;}
 
   .sub_wrap .regi_sky .detail_bottom  {padding:30px 40px;}
   .sub_wrap .regi_sky .detail_bottom .depth_list li {font-size:14px;}
@@ -915,6 +947,9 @@ border-radius:100%;display:table;}
   .sub_wrap .regi_conts .links li + li a {background-color:#222;color:#fff;}
 
   .sub_wrap .regi_conts .table_wrap {margin-top: 70px;}
+
+  .sub_wrap .regi_conts .details_w {margin:60px 0;}
+  .sub_wrap .regi_conts .details_w button {width: 70px;height: 70px;background: url("../images/icon/pc_regi_more.png") no-repeat 0 0;}
 
 
   /*신청자 정보*/

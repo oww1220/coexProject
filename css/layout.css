@@ -167,9 +167,10 @@ body.fixed {overflow: hidden; position: fixed;}
 .search_list_w .search_list .flag .payment.pay {color: #4c6df7;}
 .search_list_w .search_list .flag .payment.free:before {background-image: url("../images/icon/m_main_cols1_ic02.png");}
 .search_list_w .search_list .flag .payment.pay:before {background-image: url("../images/icon/m_main_cols1_ic01.png");}
-.search_list_w .search_list .flag .guide {font-size:0.9rem;color:#FF6280;position:absolute;left:4.5rem;top:0.2rem;width:100%;line-height:1.3;}
 .search_list_w .search_list .dt_bt {width:6rem;height:6rem;background:url("../images/icon/mo_search_dt.png") no-repeat center center;background-size:contain;font: 0/0 a;}
 .search_list_w .search_list .dt_bt.join {background-image: url("../images/icon/mo_search_dt2.png");}
+.search_list_w .search_list .guide {font-size:0.9rem;color:#FF6280;line-height:1.3;margin-top:0.5rem;}
+
 .search_list_w .text_list {border-top:1px solid #e8e8e8;}
 .search_list_w .text_list > li {padding:1.5rem 0;border-bottom:1px solid #e8e8e8;}
 .search_list_w .text_list > li a {display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
@@ -376,9 +377,10 @@ body.fixed {overflow: hidden; position: fixed;}
     .search_list_w .search_list .flag .payment.free:before {background-image: url("../images/icon/pc_main_cols1_ic02.png");}
     .search_list_w .search_list .flag .payment.pay:before {background-image: url("../images/icon/pc_main_cols1_ic01.png");}
 
-    .search_list_w .search_list .flag .guide {font-size:14px;color:#FF6280;position:absolute;left:4.5rem;top:0.2rem;width:100%;line-height:1.3;}
     .search_list_w .search_list .dt_bt {width:99px;height:99px;background:url("../images/icon/pc_search_dt.png") no-repeat center center;background-size:contain;font: 0/0 a;}
     .search_list_w .search_list .dt_bt.join {background-image: url("../images/icon/pc_search_dt2.png");}
+    .search_list_w .search_list .guide {font-size:14px;margin-top:10px;}
+
 
     .search_list_w .text_list > li {padding:30px 40px;}
     .search_list_w .text_list > li a .flag_item {height: 22px;font-size: 12px;padding: 0;line-height: 23px;border-radius: 5px;border: 1px solid #222;width:55px;flex: none;margin-right:40px;}
