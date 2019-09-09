@@ -640,7 +640,7 @@ $(function(){
 		setTimeout(function(){
 			$HEADER.addClass("fixed");
 			$HEADER.css({"height": paddingTop});
-			$(".panel_W .panel_in").css({"padding-top": paddingTop});
+			$(".panel_w .panel_in").css({"padding-top": paddingTop});
 		},1000);
 		
 		logic();
@@ -653,11 +653,13 @@ $(function(){
 
 		if(layer.hasClass("on")){
 			$BODY.removeClass("fixed");
+			$HEADER.removeClass("pt_open");
 			$(window).scrollTop(SCROLL_Top);
 		}
 		else{
 			SCROLL_Top = $(window).scrollTop();
 			$BODY.addClass("fixed");
+			$HEADER.addClass("pt_open");
 		}
 
 		function paddingCalculation() {
@@ -683,6 +685,18 @@ $(function(){
 		});
 
 
+		logic();
+	});
+
+	COEX.event.toggle(".panel_s_btn", function(logic, layer){
+		$(".panel_s_close").addClass("on");
+		$BODY.addClass("fixed");
+		logic();
+	});
+
+	COEX.event.toggle(".panel_s_close", function(logic, layer){
+		$(".panel_s_btn").removeClass("on");
+		$BODY.removeClass("fixed");
 		logic();
 	});
 

@@ -65,16 +65,63 @@
 				<!--//초대권등록-->
 
 				<!--로그인,아웃-->
-					<!--로그아웃 시-->
-					<!--//로그아웃 시-->
+				<div class="log_wrap">
+					<!--로그아웃 시
+					<ul class="link">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>
+					//로그아웃 시-->
 
 					<!--로그인 시-->
+					<ul class="link">
+						<li><a href="#">로그아웃</a></li>
+					</ul>
+					<div class="mypage_bt_w">
+						<a href="#" class="mypage_bt toggle_btn" data-target="mypage_bt_list" data-sort="normal">
+							<div class="icon_wrap">
+								<div class="icon">아이콘</div>
+								<b>99</b>
+							</div>
+						</a>
+						<div class="mypage_bt_list">
+							<strong>마이페이지</strong>
+							<ul>
+								<li>
+									<a href="">회원정보 관리</a>
+								</li>
+								<li>
+									<a href="">나의 사전등록 관리</a>
+								</li>
+								<li>
+									<a href="">쿠폰함</a>
+								</li>
+								<li>
+									<a href="">초대권 등록</a>
+								</li>
+								<li>
+									<a href="">전시관리 플랫폼</a>
+								</li>
+								<li>
+									<a href="">알림함</a>
+								</li>
+							</ul>
+						</div>
+							
+					</div>
 					<!--//로그인 시-->
+				</div>
 				<!--//로그인,아웃-->
+
+				<!--검색버튼-->
+				<div class="search_bt_w">
+					<button type="button" class="panel_s_btn" data-target="panel_s_w" data-sort="none" data-on="true">검색열기</button>
+				</div>
+				<!--//검색버튼-->
 
 				<!--패널 열기 버튼-->
 				<div class="panel_bt_w">
-					<button type="button" class="panel_btn" data-target="panel_W" data-sort="none" data-on="true">
+					<button type="button" class="panel_btn" data-target="panel_w" data-sort="none" data-on="true">
 						<span class="barTop"></span>
 						<span class="barMid"></span>
 						<span class="barBot"></span>
@@ -89,15 +136,89 @@
 	</header>
 	<!--//해더-->
 
-	<!--패널부분-->
-	<div class="panel_W">
+	<!--사이트맵 패널-->
+	<div class="panel_w">
 		<div class="panel_in">
 			<div class="panel_list">
-				<div>패널</div>
+
+				<div class="site_m">
+
+					<div class="site_list">
+						<ul>
+							<li>
+								<strong>전시회</strong>
+								<ul class="depth">
+									<li>
+										<a href="#">유료</a>
+									</li>
+									<li>
+										<a href="#">무료</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<strong>부대행사</strong>
+								<ul class="depth">
+									<li>
+										<a href="#">유료</a>
+									</li>
+									<li>
+										<a href="#">무료</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<strong><a href="">이벤트</a></strong>
+							</li>
+							<li>
+								<strong>고객센터</strong>
+								<ul class="depth">
+									<li>
+										<a href="#">사전등록 이용안내</a>
+									</li>
+									<li>
+										<a href="#">공지사항</a>
+									</li>
+									<li>
+										<a href="#">FAQ</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="panel_link">
+						<a href="#">코엑스 행사일정 바로가기</a>
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 	</div>
-	<!--//패널부분-->
+	<!--//사이트맵 패널-->
+
+	<!--검색 패널-->
+	<div class="panel_s_w">
+		<div class="panel_in">
+			<div class="panel_list">
+
+				<div class="search_m">
+					<button type="button" class="panel_s_close" data-target="panel_s_w" data-sort="none" data-on="true">검색닫기</button>			
+
+					<div class="search_input_w">
+						<div class="search_input">
+							<input type="text" placeholder="검색어를 입력해 주세요">
+							<button type="button">검색</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--//검색 패널-->
+
 
 	<!--컨텐츠-->
 	<div id="container">

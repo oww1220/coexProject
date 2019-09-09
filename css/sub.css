@@ -233,9 +233,7 @@ margin:0 0.5rem;border:1px solid #222;border-radius: 5px;font-size:1.15rem;paddi
 .sub_wrap .directory_lists .company_list ul li p {font-size:1.1rem;text-align:center;margin-top:1rem;}
 
 .sub_wrap .search_input_w {margin:0 1rem;}
-.sub_wrap .search_input_w .search_input {position: relative;}
-.sub_wrap .search_input_w .search_input input {width:100%;border:0;border-bottom:2px solid #222;height:3rem;font-size:1.2rem;line-height:3.1rem;box-sizing:border-box;padding-right:4rem;box-sizing:border-box;}
-.sub_wrap .search_input_w .search_input button {position: absolute;top:0;right:1rem;width:2rem;height:2rem;background:url("../images/icon/mo_regi_search.png") no-repeat center center;background-size:contain;font: 0/0 a;}
+
 
 
 /*Online Directory 상세*/
@@ -1001,9 +999,7 @@ border-radius:100%;display:table;}
   .sub_wrap .directory_lists .company_list ul li p {font-size:16px;text-align:center;margin-top:10px;}
 
   .sub_wrap .search_input_w {margin:50px 0 0;}
-  .sub_wrap .search_input_w .search_input {position: relative;width:600px;margin:0 auto;}
-  .sub_wrap .search_input_w .search_input input {width:100%;border:0;border-bottom:2px solid #222;height:60px;font-size:18px;line-height:60px;box-sizing:border-box;}
-  .sub_wrap .search_input_w .search_input button {position: absolute;top:50%;right:0;margin-top:-15px;width:30px;height:30px;background:url("../images/icon/pc_regi_search.png") no-repeat center center;background-size:contain;font: 0/0 a;}
+
 
   /*Online Directory 상세*/
   .sub_wrap .directory_cont {padding:0;}
