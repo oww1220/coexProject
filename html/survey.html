@@ -35,158 +35,156 @@
 		<div class="sub_wrap">
 
 			<!--사전등록-->
-            <div class="regi_wrap">
+            <div class="cart_wrap">
 
                 <div class="inner">
+
+                    <div class="cart_path">
+                        <ul>
+                            <li><span>장바구니</span></li>
+                            <li class="on"><span>사전등록 설문</span></li>
+                            <li><span>티켓 결제</span></li>
+                            <li><span>결제완료 및 티켓발권</span></li>
+                        </ul>
+                    </div>
 
                     <div class="sub_h2">
 						<h2>결제완료 및 티켓발권</h2>
 					</div>
 
-                    <div class="cart_wrap">
-                        <div class="cart_path">
-                            <ul>
-                                <li><span>장바구니</span></li>
-                                <li class="on"><span>사전등록 설문</span></li>
-                                <li><span>티켓 결제</span></li>
-                                <li><span>결제완료 및 티켓발권</span></li>
-                            </ul>
-                        </div>
-
-                        <!--신청자 정보-->
-                        <div class="proposer_info">
-                            <form action="">
-                                <div class="proposer_cont">
-                                    <div class="title">신청자 정보</div>
-                                    <div class="agree">
-                                        <div class="input_c">
-                                            <input id="ch01" type="checkbox">
-                                            <label for="ch01">행사 주최자의 <span class="layer_open_bt" data-layer="layer-t01">개인정보취급방침 및 서비스 이용약관에 동의</span>합니다.</label>
-                                        </div>
+                    <!--신청자 정보-->
+                    <div class="proposer_info">
+                        <form action="">
+                            <div class="proposer_cont">
+                                <div class="title">신청자 정보</div>
+                                <div class="agree">
+                                    <div class="input_c">
+                                        <input id="ch01" type="checkbox">
+                                        <label for="ch01">행사 주최자의 <span class="layer_open_bt" data-layer="layer-t01">개인정보취급방침 및 서비스 이용약관에 동의</span>합니다.</label>
                                     </div>
-                                    <ul class="signup_list">
-                                        <li>
-                                            <label for="">이메일 주소</label>
-                                            <input type="text" value="smp@coex.co.kr" readonly=""/>
-                                            <span class="help_message">도움말 메시지</span>
-                                            <span class="error_message">에러 메시지</span>
-                                        </li>
-                                        <li>
-                                            <label for="">연락처</label>
-                                            <input type="text" value="010-1234-5678" readonly=""/>
-                                            <span class="help_message">도움말 메시지</span>
-                                            <span class="error_message">에러 메시지</span>
-                                        </li>
-                                        <li>
-                                            <label for="">이름</label>
-                                            <input type="text" value="홍길동" readonly=""/>
-                                            <span class="help_message">도움말 메시지</span>
-                                            <span class="error_message">에러 메시지</span>
-                                        </li>
-                                        <li>
-                                            <strong>성별</strong>
-                                            <div class="radio_list">
-                                                <div class="input_r">
-                                                    <input id="r01" type="radio" name="001"/>
-                                                    <label for="r01">남</label>
-                                                </div>
-                                                <div class="input_r">
-                                                    <input id="r02" type="radio" name="001"/>
-                                                    <label for="r02">여</label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <label for="">연령</label>
-                                            <select name="" id="">
-                                                <option value="">선택하세요</option>
-                                                <option value="">20세</option>
-                                            </select>
-                                        </li>
-                                    </ul>
                                 </div>
+                                <ul class="signup_list">
+                                    <li>
+                                        <label for="">이메일 주소</label>
+                                        <input type="text" value="smp@coex.co.kr" readonly=""/>
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <label for="">연락처</label>
+                                        <input type="text" value="010-1234-5678" readonly=""/>
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <label for="">이름</label>
+                                        <input type="text" value="홍길동" readonly=""/>
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <strong>성별</strong>
+                                        <div class="radio_list">
+                                            <div class="input_r">
+                                                <input id="r01" type="radio" name="001"/>
+                                                <label for="r01">남</label>
+                                            </div>
+                                            <div class="input_r">
+                                                <input id="r02" type="radio" name="001"/>
+                                                <label for="r02">여</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="">연령</label>
+                                        <select name="" id="">
+                                            <option value="">선택하세요</option>
+                                            <option value="">20세</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                <div class="proposer_cont">
-                                    <div class="title">설문항목</div>
-                                    <ul class="signup_list">
-                                        <li>
-                                            <strong>관심분야</strong>
-                                            <div class="chk_list">
-                                                <div class="input_c">
-                                                    <input id="ch001" type="checkbox">
-                                                    <label for="ch001">캐릭터</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch002" type="checkbox">
-                                                    <label for="ch002">애니메이션</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch003" type="checkbox">
-                                                    <label for="ch003">웹콘텐츠(웹툰, 웹소설)</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch004" type="checkbox">
-                                                    <label for="ch004">뉴콘텐츠(VR, AR)</label>
-                                                </div>
+                            <div class="proposer_cont">
+                                <div class="title">설문항목</div>
+                                <ul class="signup_list">
+                                    <li>
+                                        <strong>관심분야</strong>
+                                        <div class="chk_list">
+                                            <div class="input_c">
+                                                <input id="ch001" type="checkbox">
+                                                <label for="ch001">캐릭터</label>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <label for="">종사분야</label>
-                                            <select name="" id="">
-                                                <option value="">선택하세요</option>
-                                                <option value="">종사분야</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <label for="">관람목적</label>
-                                            <select name="" id="">
-                                                <option value="">선택하세요</option>
-                                                <option value="">관람목적</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <strong>전시회 인지경로</strong>
-                                            <div class="chk_list">
-                                                <div class="input_c">
-                                                    <input id="ch101" type="checkbox">
-                                                    <label for="ch101">초청장</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch102" type="checkbox">
-                                                    <label for="ch102">신문광고</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch103" type="checkbox">
-                                                    <label for="ch103">언론(방송/신문/인터넷)</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch104" type="checkbox">
-                                                    <label for="ch104">SNS(블로그, 트위터 등)</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch105" type="checkbox">
-                                                    <label for="ch105">이메일(뉴스레터)</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch106" type="checkbox">
-                                                    <label for="ch106">공문 및 팩스</label>
-                                                </div>
-                                                <div class="input_c">
-                                                    <input id="ch107" type="checkbox">
-                                                    <label for="ch107">기타</label>
-                                                </div>
+                                            <div class="input_c">
+                                                <input id="ch002" type="checkbox">
+                                                <label for="ch002">애니메이션</label>
                                             </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                            <div class="input_c">
+                                                <input id="ch003" type="checkbox">
+                                                <label for="ch003">웹콘텐츠(웹툰, 웹소설)</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch004" type="checkbox">
+                                                <label for="ch004">뉴콘텐츠(VR, AR)</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="">종사분야</label>
+                                        <select name="" id="">
+                                            <option value="">선택하세요</option>
+                                            <option value="">종사분야</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="">관람목적</label>
+                                        <select name="" id="">
+                                            <option value="">선택하세요</option>
+                                            <option value="">관람목적</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <strong>전시회 인지경로</strong>
+                                        <div class="chk_list">
+                                            <div class="input_c">
+                                                <input id="ch101" type="checkbox">
+                                                <label for="ch101">초청장</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch102" type="checkbox">
+                                                <label for="ch102">신문광고</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch103" type="checkbox">
+                                                <label for="ch103">언론(방송/신문/인터넷)</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch104" type="checkbox">
+                                                <label for="ch104">SNS(블로그, 트위터 등)</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch105" type="checkbox">
+                                                <label for="ch105">이메일(뉴스레터)</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch106" type="checkbox">
+                                                <label for="ch106">공문 및 팩스</label>
+                                            </div>
+                                            <div class="input_c">
+                                                <input id="ch107" type="checkbox">
+                                                <label for="ch107">기타</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                <div class="btn_wrap">
-                                    <a href="#" class="blue">티켓결제</a>
-                                </div>
-                            </form>
-                        </div>
-                        <!--//신청자 정보-->
+                            <div class="btn_wrap">
+                                <a href="#" class="blue">티켓결제</a>
+                            </div>
+                        </form>
                     </div>
+                    <!--//신청자 정보-->
                 </div>
             </div>
             <!--//사전등록-->
