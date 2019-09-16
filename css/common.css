@@ -86,6 +86,10 @@ select.normal {border:0;font-size:0.9rem;display:inline-block;}
 input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 .input {padding:5px;border:1px solid #e6e6e6;font-size:13px;color:#666;}
 
+.sort_select {position: relative;display:inline-block;vertical-align: middle;margin-left: 1rem;}
+.sort_select select {display: block;opacity: 0;position: absolute;left: 0;top: 0;z-index: 1;width: 100%;height: 100%;direction: ltr;margin:0 !important;background: 0}
+.sort_select .selText {padding:0.5rem;border:0;font-size:1rem;background-color:#fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;border-radius:0;background:url("../images/icon/m_sub_select_dw.png") no-repeat 100% center;background-size:0.5rem;padding-right:1rem;letter-spacing: 0px;}
+
 .input_c {display:inline-block;padding-top: 0.2rem;}
 .input_c input {overflow:hidden;position:absolute;left:-1000px;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0, 0, 0, 0);z-index:-1000;visibility:hidden;}
 .input_c input[type=checkbox] + label {display:block;font-size: 1.15rem;position:relative;padding-left:2.3rem;line-height:1.6rem;text-align: left;}
@@ -114,6 +118,9 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 
   select {border:1px solid #ccc;background:url("../images/icon/pc_sub_select_dw.png") no-repeat 100% center;background-size:9px;padding-right:15px;}
   select.normal {font-size:14px;}
+
+  .sort_select {margin-left: 40px;}
+  .sort_select .selText {padding:5px;font-size:14px;background:url("../images/icon/pc_sub_select_dw.png") no-repeat 100% center;background-size:9px;padding-right:15px;}
 
   .input_c {padding-top:0;}
   .input_c input[type=checkbox] + label {font-size:17px;padding-left:35px;line-height:25px;}
