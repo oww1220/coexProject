@@ -10,6 +10,7 @@
 
 .main_wrap .cols1 {position: relative;z-index: 1;padding: 1.5rem 0;}
 .main_wrap .cols1 .inner {position: relative;}
+.main_wrap .cols1 .main_list li {width:14rem;}
 .main_wrap .cols1 h3 {padding:0 1rem;color:#222;font-size:2rem;margin-bottom:1.5rem;}
 .main_wrap .cols1 h3 a {color:#222;}
 
@@ -23,7 +24,7 @@
 .main_wrap .cols2 .regi_list li {display: inline-block;float:none;width: 20rem;vertical-align: top;text-align: left;margin-right:1rem;margin-top:0;}
 .main_wrap .cols2 .archive_w {padding-top:3rem;}
 
-.main_wrap .cols3 {position: relative;z-index: 1;padding: 1.5rem 0;}
+.main_wrap .cols3 {position: relative;z-index: 1;padding: 1.5rem 0;background-color:#F5F5F5;}
 .main_wrap .cols3 .tit_w {padding:0 1rem;margin-bottom:1.5rem;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
 .main_wrap .cols3 .tit_w > a {display:none;}
 .main_wrap .cols3 .tit_w > p {font-size:1.05rem;margin-left:1rem;color:#444;}
@@ -32,7 +33,7 @@
 .main_wrap .cols3 .regi_list_wrap .regi_in .tops {box-shadow:none;}
 .main_wrap .cols3 .regi_list ul {white-space: nowrap;overflow-x: scroll;overflow-y: hidden;-webkit-overflow-scrolling: touch;padding: 0 1rem;font-size: 0;text-align: center;}
 .main_wrap .cols3 .regi_list ul::-webkit-scrollbar {display: none}
-.main_wrap .cols3 .regi_list li {display: inline-block;float:none;width: 20rem;vertical-align: top;text-align: left;margin-right:1rem;margin-top:0;}
+.main_wrap .cols3 .regi_list li {display: inline-block;float:none;width: 14rem;vertical-align: top;text-align: left;margin-right:1rem;margin-top:0;}
 .main_wrap .cols3 .regi_in .hover .link {position:absolute;display:block;font:0/0 a;top:0;left:0;width:100%;height:100%;}
 .main_wrap .cols3 .regi_in .hover .date {font-size:1.1rem;position:absolute;bottom:0;left:0;width:100%;padding:1rem 1rem 0.8rem;box-sizing:border-box;color:#fff;text-align:center;line-height:1.3;background:url("../images/icon/pc_date_bg.png") repeat 0 0;letter-spacing:0;-webkit-transform: translateY(100%);transform: translateY(100%);-webkit-transition: all .4s ease;transition: all .4s ease;}
 .main_wrap .cols3 .regi_in .hover.on .date {-webkit-transform: translateY(0%);transform: translateY(0%);}
@@ -72,8 +73,8 @@
 /*-------------데스크탑-------------*/
 @media screen and (min-width:1024px){
 
-  .main_wrap:before {height:340px;}
-  .main_wrap .inner {overflow:hidden;}
+  .main_wrap:before {height:510px;}
+  .main_wrap .inner {}
 
   .main_wrap .cols0 {padding: 100px 0 50px;}
   .main_wrap .cols0 h3 {padding:0;font-size:40px;margin-bottom:50px;}
