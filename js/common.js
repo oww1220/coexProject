@@ -855,6 +855,7 @@ $(function(){
 				panel_w.removeClass("on");
 				if(!mypage.has(e.target).length){
 					$HEADER.removeClass("pt_open");
+					mypage.find(".mypage_bt_list").hide();
 				}
 				if(!panel_s_w.hasClass("on")){
 					$BODY.removeClass("fixed");
