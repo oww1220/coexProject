@@ -845,7 +845,7 @@ $(function(){
 			if(family.find("ul").is(":visible")){
 				family.find(".family_btn").removeClass("on");
 				family.find("ul").removeClass("on").slideUp();
-				alert(1);
+				//alert(1);
 			}
 		}
 
