@@ -538,7 +538,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .signup_list li input::-webkit-input-placeholder {color:#e8e8e8; font-style:italic;}
 .signup_list li input::-moz-placeholder {color:#e8e8e8;font-style:italic;}
 
-.signup_list li input {width:100%;border:0;border-bottom:1px solid #E8E8E8;height:3.5rem;font-size:1.2rem;line-height:3.6rem;transition:.3s all ease;box-sizing:border-box;margin-top:0.5rem;}
+.signup_list li input {width:100%;border:0;border-bottom:1px solid #E8E8E8;font-size:1.2rem;padding: 1.2rem 0 1rem;line-height:1;transition:.3s all ease;box-sizing:border-box;margin-top:0.5rem;}
 .signup_list li input:focus {border-bottom:2px solid #4C6DF7;}
 .signup_list li input:read-only,
 .signup_list li input:disabled {border-bottom:1px solid #E8E8E8 !important;background-color: #fff;}
@@ -554,7 +554,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .signup_list li.button {position: relative;}
 .signup_list li.button input {padding-right: 8.5rem;box-sizing: border-box;}
 .signup_list li.button .button_wrap {position: absolute;top:1rem;right:0;}
-.signup_list li.button button {border: 2px solid #222;width:8rem;height: 3.4rem;font-size: 1.05rem;line-height: 3.4rem;background-color:#fff;border-radius:5px;letter-spacing:-1px;}
+.signup_list li.button button {border: 2px solid #222;width:8rem;font-size: 1.05rem;line-height:1;padding:1.2rem 0 1rem;background-color:#fff;border-radius:5px;letter-spacing:-1px;}
 .signup_list li.button .button_wrap input[type=file] {position: absolute;top:0;left:0;width:100%;height:100%;opacity:0;}
 .signup_list li.button .time {position: absolute;top:0.9rem;right:9rem;font-size: 1.05rem;line-height: 2.7rem;letter-spacing:-1px;color: #FF6280;}
 .signup_list li.button.chk label {margin-bottom:2rem;}
@@ -574,7 +574,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .sub_wrap .btn_w {text-align: center;}
 .sub_wrap .btn_w .signup_btns {display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;}
 .sub_wrap .btn_w .signup_btns li {width:100%;max-width:30rem;}
-.sub_wrap .signup_btn {display: inline-block;font-size: 1.15rem;height:4rem;line-height: 4.2rem;width: 100%;background-color: #4c6df7;color:#fff;text-align:center;border-radius:5px;box-sizing:border-box;}
+.sub_wrap .signup_btn {display: inline-block;font-size: 1.15rem;padding:1.4rem 0 1.3rem;line-height: 1;width: 100%;background-color: #4c6df7;color:#fff;text-align:center;border-radius:5px;box-sizing:border-box;}
 .sub_wrap .signup_btns {margin-top:3rem;}
 .sub_wrap .signup_btns ~ .signup_btns {margin-top:3.5rem;}
 .sub_wrap .signup_btns .signup_btn {margin-top:0;position: relative;}
@@ -1406,7 +1406,7 @@ border-radius:100%;display:table;}
   .signup_list li + li {margin-top:40px;}
   .signup_list li label {font-size:15px;}
   .signup_list li > strong {font-size:15px;}
-  .signup_list li input {height: 65px;line-height: 65px;font-size: 18px;border-bottom:2px solid #E8E8E8;margin-top:5px;}
+  .signup_list li input {font-size: 18px;border-bottom:2px solid #E8E8E8;margin-top:5px;padding:20px 0;}
   .signup_list li input:focus {border-bottom:3px solid #4C6DF7;}
   .signup_list li input:read-only,
   .signup_list li input:disabled {border-bottom:2px solid #E8E8E8 !important;}
@@ -1415,7 +1415,7 @@ border-radius:100%;display:table;}
   .signup_list li.error input:focus{border-bottom:3px solid #FF6280;}
   .signup_list li.button input {padding-right: 130px;}
   .signup_list li.button .button_wrap {top:28px;right:0;}
-  .signup_list li.button button {width:120px;height: 40px;font-size: 14px;line-height: 40px;}
+  .signup_list li.button button {width:120px;height: 45px;font-size: 14px;line-height: 40px;padding:0;}
   .signup_list li.button.chk label {margin-bottom:20px;}
   .signup_list li.button.chk .button_wrap {top: 47px;}
   .signup_list li.button .time {top:28px;right:150px;font-size: 14px;line-height: 40px;}
@@ -1430,7 +1430,7 @@ border-radius:100%;display:table;}
   .sub_wrap .btn_w {text-align: center;}
   .sub_wrap .btn_w .signup_btns {display: inline-block;}
   .sub_wrap .btn_w .signup_btns li {width:250px;max-width: auto;}
-  .sub_wrap .signup_btn {height:70px;line-height: 70px;font-size: 18px;margin-top: 60px;}
+  .sub_wrap .signup_btn {height:70px;line-height: 70px;font-size: 18px;margin-top: 60px;padding:0;}
   .sub_wrap .signup_btns {margin-top:60px;}
   .sub_wrap .signup_btns ~ .signup_btns {margin-top:80px;}
   .sub_wrap .signup_btns .signup_btn {margin-top:0px;}

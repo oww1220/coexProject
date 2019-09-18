@@ -12,14 +12,14 @@
 .main_wrap .cols0 .on_off_bt {display: inline-block;vertical-align:middle;}
 .main_wrap .cols0 .on_off_bt input[type="checkbox"] {position: absolute;visibility: hidden;}
 .main_wrap .cols0 .on_off_bt label {overflow: hidden;display: block;position: relative;width: 6rem;height: 2rem;border-radius: 0.5rem;background-color: #4c6df7;transition-duration: 0.2s;border:1px solid #fff;cursor: pointer;}
-.main_wrap .cols0 .on_off_bt label span {position: absolute;right: 0px;top: 0px;z-index: 2;width: 3rem;height: 2rem;background-color: #fff;transition-duration: 0.2s;}
+.main_wrap .cols0 .on_off_bt label span {position: absolute;right: -1rem;top: -0.5rem;z-index: 2;width: 4rem;height: 3rem;background-color: #fff;transition-duration: 0.2s;}
 .main_wrap .cols0 .on_off_bt label:before,
 .main_wrap .cols0 .on_off_bt label:after{position: absolute;top: 0;width: 3rem;font-size: 0.9rem;line-height: 2.15rem;color: #fff;text-align: center;}
 .main_wrap .cols0 .on_off_bt label:before {z-index:1;left: 0;background-color: #4c6df7;content: 'ON';}
 .main_wrap .cols0 .on_off_bt label:after {z-index:3;right: 0;color:#4c6df7;background-color: #fff;content: 'OFF';}
 .main_wrap .cols0 .on_off_bt input:checked + label:before {z-index:3;color:#4c6df7;background-color: #fff;background-image:none;}
 .main_wrap .cols0 .on_off_bt input:checked + label:after {z-index:1;color:#fff;background-color: #4c6df7;background-image:none;}
-.main_wrap .cols0 .on_off_bt input:checked + label span {transform: translateX(-3rem);}
+.main_wrap .cols0 .on_off_bt input:checked + label span {transform: translateX(-4rem);}
 
 .main_wrap .cols1 {position: relative;z-index: 1;padding: 1.5rem 0;}
 .main_wrap .cols1 .inner {position: relative;}
@@ -101,7 +101,7 @@
   .main_wrap .cols0 .on_off_w {top:13px;right:0;}
   .main_wrap .cols0 .on_off_w p {font-size:14px;margin-right:10px;}
   .main_wrap .cols0 .on_off_bt label {width: 80px;height: 25px;border-radius: 5px;}
-  .main_wrap .cols0 .on_off_bt label span {width: 40px;height: 25px;}
+  .main_wrap .cols0 .on_off_bt label span {width: 40px;height: 25px;top:0;right:0;}
   .main_wrap .cols0 .on_off_bt label:before,
   .main_wrap .cols0 .on_off_bt label:after{width: 40px;font-size: 14px;line-height: 25px;}
   .main_wrap .cols0 .on_off_bt input:checked + label span {transform: translateX(-40px);}
