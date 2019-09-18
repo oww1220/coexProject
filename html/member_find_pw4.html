@@ -53,26 +53,51 @@
 					<div class="signup_cont">
 						<form action="">
 							<div class="signup_top">	
-								<p>가입하신 ID(이메일 주소 혹은 휴대폰번호)를 입력해주세요.</p>
+								<p>회원가입 시 등록하신 이름, 이메일, 휴대폰 번호, 생년을 입력해주세요.</p>
 							</div>
 							<ul class="signup_list">
 								<li>
-									<label for="">이메일 주소</label>
-									<input type="text"/>
+									<label for="">이름</label>
+									<input type="text" placeholder="이름">
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message">에러 메시지</span>
+								</li>
+								
+								<li>
+									<label for="">이메일</label>
+									<input type="text" placeholder="이메일"/>
 									<span class="help_message">도움말 메시지</span>
 									<span class="error_message">에러 메시지</span>
 								</li>
 								<li>
 									<label for="">휴대폰 번호</label>
-									<input type="text"/>
+									<input type="text" placeholder="휴대폰 번호"/>
 									<span class="help_message">도움말 메시지</span>
 									<span class="error_message">에러 메시지</span>
 								</li>
-
+								<li>
+									<label for="">생년</label>
+									<input type="text" placeholder="생년">
+									<span class="help_message">도움말 메시지</span>
+									<span class="error_message">에러 메시지</span>
+								</li>
+								<li>
+									<strong>비밀번호 재설정 링크 수신방법</strong>
+									<div class="chk_list">
+										<div class="input_c">
+											<input id="ch001" type="checkbox">
+											<label for="ch001">이메일</label>
+										</div>
+										<div class="input_c">
+											<input id="ch002" type="checkbox">
+											<label for="ch002">휴대폰 번호</label>
+										</div>
+									</div>
+								</li>
 							</ul>
 							<ul class="signup_btns">
 								<li>
-									<a href="#" class="layer_open_bt signup_btn" data-layer="layer-t01">확인</a>
+									<a href="#" class="signup_btn" id="test01" data-layer="layer-t01">확인</a>
 								</li>
 							</ul>
 						</form>

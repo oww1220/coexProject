@@ -98,15 +98,15 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 
 .input_r {display:inline-block;padding-top: 0.2rem;}
 .input_r input {overflow:hidden;position:absolute;left:-1000px;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0, 0, 0, 0);z-index:-1000;visibility:hidden;}
-.input_r input[type=radio] + label {display:block;font-size: 1.15rem;position:relative;padding-left:2.3rem;line-height:1.6rem;color:#222;text-align: left;}
+.input_r input[type=radio] + label {display:block;font-size: 1.15rem;position:relative;padding-left:2.3rem;line-height:1.6rem;color:#222;text-align: left;min-height: 1.7rem;}
 .input_r input[type=radio] + label:before {display:block;content:'';width:1.8rem;height: 1.8rem;position:absolute;top:-0.2rem;left:0;background: url("../images/icon/m_sub_radio_off.png") no-repeat 0 0;background-size: contain;}
 .input_r input[type=radio]:checked + label:before {background-image:url("../images/icon/m_sub_radio_on.png");}
 
 .input_date .pc {display:none;}
 .input_date .mo {display:block;}
 
-#container .pc {display:none !important;}
-#container .mo {display:block !important;}
+#wrap .pc {display:none !important;}
+#wrap .mo {display:block !important;}
 
 /*-------------테블릿-------------*/
 @media screen and (min-width:768px){
@@ -128,7 +128,7 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
   input[type=checkbox]:checked + label:before {background-image:url("../images/icon/pc_sub_chk_on.png");}
 
   .input_r {padding-top:0;}
-  .input_r input[type=radio] + label {font-size:17px;padding-left:35px;line-height:25px;}
+  .input_r input[type=radio] + label {font-size:17px;padding-left:35px;line-height:25px;min-height: 25px;}
   .input_r input[type=radio] + label:before {top: 0px;width:25px;height:25px;background-image:url("../images/icon/pc_sub_radio_off.png");}
   input[type=radio]:checked + label:before {background-image:url("../images/icon/pc_sub_radio_on.png");}
 
@@ -136,7 +136,7 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
   .input_date .pc button {position:absolute;top:24px;right:20px;width:20px;height:22px;background:url("../images/icon/pc_sub_calander.png") no-repeat 0 0;font: 0/0 a;}
   .input_date .mo {display:none;}
 
-  #container .pc {display:block !important;}
-  #container .mo {display:none !important;}
+  #wrap .pc {display:block !important;}
+  #wrap .mo {display:none !important;}
 
 }

@@ -826,6 +826,15 @@ $(function(){
 		swap();
 	});
 
+	$(".pc .gnb_wrap .log_wrap .mypage_bt_w").on({
+		mouseenter: function(e){
+			$(this).find(".mypage_bt_list").show();
+		},
+		mouseleave: function(e){
+			$(this).find(".mypage_bt_list").hide();
+		},
+	});
+
 	var TOUCH_EVENT = ("ontouchstart" in window) ? "touchstart" : "click";
 
 	/*영역외 닫기*/
@@ -857,7 +866,7 @@ $(function(){
 					$HEADER.removeClass("pt_open");
 					mypage.find(".mypage_bt_list").hide();
 				}
-				if(!panel_s_w.hasClass("on")){
+				if(!panel_s_w.hasClass("on")){					
 					$BODY.removeClass("fixed");
 				}
 			}
