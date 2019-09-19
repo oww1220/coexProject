@@ -152,7 +152,7 @@ overflow: hidden;position: absolute;top: 0;right: 0;width: 26.3rem;height: 100%;
 
 /*레이어*/
 body.fixed {overflow: hidden; position: fixed;}
-.pop_layer {position: fixed;display:none;z-index: 110;width:80%;left:0;max-width: 350px;}
+.pop_layer {position: fixed;display:none;z-index: 110;width:100%;left:0;max-width: 350px;}
 .pop_layer .pop_inner {overflow: hidden;border-radius: 10px;background-color:#fff;margin:15px;position: relative;}
 .pop_layer .pop_cont {padding:2.5rem 1.55rem;position: relative;box-sizing:border-box;}
 .pop_layer .layer_close_bt {position: absolute;top: 1.5rem;right: 1.5rem;width: 1.5rem;height: 1.5rem;font: 0/0 a;background: url("../images/icon/pc_sub_close_btn.png") no-repeat 0 0;background-size:100%;}
@@ -172,7 +172,7 @@ body.fixed {overflow: hidden; position: fixed;}
 .main_list li {display: inline-block;width: 20rem;vertical-align: top;text-align: left;margin-right:1rem;}
 .main_list .list_in .img_wrap {position: relative;}
 .main_list .list_in .img_wrap .flag {position: absolute;top:1rem;left:1rem;}
-.main_list .list_in .img_wrap .flag .flag_item {display:-webkit-inline-flex;display:inline-flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;width:4.5rem;height:4.5rem;vertical-align: top;border-radius: 100%;font-size: 0.9rem;line-height: 1.2;text-align: center;}
+.main_list .list_in .img_wrap .flag .flag_item {display:-webkit-inline-flex;display:inline-flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;width:4.5rem;height:4.5rem;vertical-align: top;border-radius: 100%;font-size: 0.9rem;line-height: 1.2;text-align: center;box-sizing:border-box;padding-top:0.1rem;}
 .main_list .list_in .img_wrap .flag .flag_item + .flag_item {margin-left:0.5rem;}
 .main_list .list_in .img_wrap .flag .flag_item.red {background-color: #ff7979;color:#fff;}
 .main_list .list_in .img_wrap .flag .flag_item.blue {background-color:#4c6df7;color:#fff;}
@@ -253,13 +253,21 @@ body.fixed {overflow: hidden; position: fixed;}
 
 /*등록 리스트*/
 .regi_list_wrap .regi_list img {width:100%;}
-.regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:1rem;box-shadow: 1px 10px 25px -5px grey;}
+.regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:1rem;}
 .regi_list_wrap .regi_in .sum_w {position: relative;}
 .regi_list_wrap .regi_in .sum_w .img {}
+.regi_list_wrap .regi_in .sum_w .img .flag {position: absolute;top:1rem;left:1rem;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item {display:-webkit-inline-flex;display:inline-flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;width:4.5rem;height:4.5rem;vertical-align: top;border-radius: 100%;font-size: 0.9rem;line-height: 1.2;text-align: center;box-sizing:border-box;padding-top:0.1rem;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item + .flag_item {margin-left:0.5rem;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item.red {background-color: #ff7979;color:#fff;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item.blue {background-color:#4c6df7;color:#fff;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item.yellow {background-color: #fdf168;color:#222;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item.black {background-color: #222;color:#fff;}
+.regi_list_wrap .regi_in .sum_w .img .flag_item.gray {background-color: #e8e8e8;color:#222;}
 .regi_list_wrap .regi_in .hover {position:absolute;top:0;left:0;width:100%;height:100%;border-radius:1rem;overflow: hidden;display:none;}
 .regi_list_wrap .regi_in .hover .btns {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;flex-flow: column;}
-.regi_list_wrap .regi_in .hover .btns a {display:inline-block;color:#fff;border:1px solid #fff;border-radius:5px;width:10rem;height:3rem;text-align:center;line-height:3.1rem;font-size:1.05rem;}
-.regi_list_wrap .regi_in .hover .btns a:hover {background-color:#fff;color:#4C6DF7;}
+.regi_list_wrap .regi_in .hover .btns a {display:inline-block;color:#fff;border:1px solid #fff;border-radius:5px;width:12rem;height:3.5rem;text-align:center;line-height:3.6rem;font-size:1.1rem;}
+.regi_list_wrap .regi_in .hover .btns a:hover {background-color:#fff;color:#222;}
 .regi_list_wrap .regi_in .hover .btns a + a {margin-top:0.5rem;}
 .regi_list_wrap .regi_in .hover .dim {position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.7;}
 .regi_list_wrap .regi_list > ul > li {width:22rem;margin:1.5rem auto 0;}
@@ -269,6 +277,12 @@ body.fixed {overflow: hidden; position: fixed;}
 #container .sub_wrap li.none p {color: #888;font-size: 1.15rem;margin-top: 1rem;}
 #container .sub_wrap .more_bt {width:100%;margin:2rem 0 0;border:0 !important;}
 #container .sub_wrap .more_bt .list_in a {display: block;width: 5rem;height: 5rem;background: url("../images/icon/m_sub_more_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
+
+.regi_list_wrap .regi_list .hover_list {padding:3rem 1rem 0;}
+.regi_list_wrap .regi_list .hover_list li {float: left;width: 50%;margin:0 0 1.8rem;}
+.regi_list_wrap .regi_list .hover_list li:nth-child(odd) .regi_in {margin-right:0.5rem;}
+.regi_list_wrap .regi_list .hover_list li:nth-child(even) .regi_in {margin-left:0.5rem;}
+
 
 .regi_list_wrap .regi_in .infos_w {margin-top:1.5rem;} 
 .regi_list_wrap .regi_in .infos_w .flag_w {display:-webkit-flex;display:flex;margin-bottom:0.7rem;} 
@@ -472,7 +486,7 @@ body.fixed {overflow: hidden; position: fixed;}
     .main_list li.slick-slide {width: 373px !important;}
     .main_list li + li {margin-left:41px;}
     .main_list .list_in .img_wrap .flag {top:20px;left:20px;}
-    .main_list .list_in .img_wrap .flag .flag_item {width:50px;height:50px;border-radius: 100px;font-size: 12px;line-height: 1.1;}
+    .main_list .list_in .img_wrap .flag .flag_item {width:50px;height:50px;border-radius: 100px;font-size: 12px;line-height: 1.1;padding:0;}
     .main_list .list_in .img_wrap .flag .flag_item + .flag_item {margin-left:5px;}
     .main_list .list_in .event_wrap .flag {margin-bottom: 13px;}
     .main_list .list_in .event_wrap .flag .flag_item {height:22px;font-size:12px;padding: 0 15px;line-height: 23px;border-radius: 5px;border:1px solid #222;}
@@ -543,13 +557,19 @@ body.fixed {overflow: hidden; position: fixed;}
 
     /*등록 리스트*/
     .regi_list_wrap .regi_in {width:270px;}
-    .regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:10px;box-shadow: 1px 10px 25px -5px grey;cursor: pointer;}
+    .regi_list_wrap .regi_in .tops {position: relative;overflow: hidden;border-radius:10px;cursor: pointer;}
     .regi_list_wrap .regi_in .sum_w {position: relative;}
     .regi_list_wrap .regi_in .sum_w img {width:auto;}
+    .regi_list_wrap .regi_in .sum_w .img .flag {top:20px;left:20px;}
+    .regi_list_wrap .regi_in .sum_w .img .flag .flag_item {width:50px;height:50px;border-radius: 100px;font-size: 12px;line-height: 1.1;padding:0;}
+    .regi_list_wrap .regi_in .sum_w .img .flag .flag_item + .flag_item {margin-left:5px;}
+    .main_list .list_in .event_wrap .flag {margin-bottom: 13px;}
+    .main_list .list_in .event_wrap .flag .flag_item {height:22px;font-size:12px;padding: 0 15px;line-height: 23px;border-radius: 5px;border:1px solid #222;}
+    .main_list .list_in .event_wrap .flag .flag_item + .flag_item {margin-left:5px;}
     .regi_list_wrap .regi_in .hover {position:absolute;top:0;left:0;width:100%;height:100%;border-radius:10px;overflow: hidden;display:none;}
     .regi_list_wrap .regi_in .hover .btns {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;flex-flow: column;}
-    .regi_list_wrap .regi_in .hover .btns a {display:inline-block;color:#fff;border:1px solid #fff;border-radius:5px;width:120px;height:40px;text-align:center;line-height:40px;font-size:14px;}
-    .regi_list_wrap .regi_in .hover .btns a:hover {background-color:#fff;color:#4C6DF7;}
+    .regi_list_wrap .regi_in .hover .btns a {display:inline-block;color:#fff;border:1px solid #fff;border-radius:5px;width:190px;height:50px;text-align:center;line-height:50px;font-size:14px;}
+    .regi_list_wrap .regi_in .hover .btns a:hover {background-color:#fff;color:#222;}
     .regi_list_wrap .regi_in .hover .btns a + a {margin-top:10px;}
     .regi_list_wrap .regi_in .hover .dim {position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.7;}
     .regi_list_wrap .regi_list > ul > li {width:270px;float:left;margin:0px 55px 60px 0px;}
@@ -562,6 +582,12 @@ body.fixed {overflow: hidden; position: fixed;}
     #container .sub_wrap li.none p {color: #888;font-size: 14px;margin-top: 20px;}
     #container .sub_wrap .more_bt {width:100%;margin:20px 0 0;border:0 !important;}
     #container .sub_wrap .more_bt .list_in a {display: block;width: 80px;height: 80px;background: url("../images/icon/m_sub_more_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
+
+    .regi_list_wrap .regi_list .hover_list {padding:60px 0 0;}
+    .regi_list_wrap .regi_list .hover_list li {float: left;width: 270px;margin: 0px 55px 60px 0px;}
+    .regi_list_wrap .regi_list .hover_list li:nth-child(odd) .regi_in {margin-right:0;}
+    .regi_list_wrap .regi_list .hover_list li:nth-child(even) .regi_in {margin-left:0;}
+    .regi_list_wrap .regi_list .hover_list li:nth-child(4n) {margin-right:0;}
 
     .regi_list_wrap .regi_in .infos_w {margin-top:20px;} 
     .regi_list_wrap .regi_in .infos_w .flag_w {display:-webkit-flex;display:flex;margin-bottom:13px;} 

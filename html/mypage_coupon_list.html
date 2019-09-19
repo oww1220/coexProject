@@ -33,7 +33,7 @@
 
 		<div class="sub_wrap">
 
-			<!--마이페이지-->
+            <!--마이페이지-->
 			<div class="mypage_wrap">
 				<div class="inner">
 					<div class="sub_h2">
@@ -42,23 +42,33 @@
 
                     <div class="mypage_conts">
 
-                        <div class="sub_frame">
+                        <div class="main_frame">
 
-                            <div class="top">
-                                <div class="sum">
-                                    <div class="info_w">
-                                        <div class="info_in">
-                                            <div class="img">
-                                                <img src="../images/banner/main_cols2_bn02.png" alt=""/>
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">0193100266@naver.com 님</div>
-                                                <div class="mail">smp@naver.com</div>
-                                                <a href="#">회원정보수정</a>
-                                            </div>
+                            <div class="sum">
+                                <div class="info_w">
+                                    <div class="info_in">
+                                        <div class="img">
+                                            <img src="../images/banner/main_cols2_bn02.png" alt=""/>
                                         </div>
-                                    </div>
+                                        <div class="info">
+                                            <div class="name">smpsmpsmp 님</div>
+                                            <div class="mail">smp@naver.com</div>
+                                            <a href="#">회원정보관리</a>
+                                        </div>
+                                    </div> 
                                 </div>
+                                <div class="btn_w">
+                                    <ul class="signup_btns">
+                                        <li>
+                                            <a href="#" class="signup_btn border">초대권 등록</a>
+                                        </li>
+                                        <!--
+                                        <li>
+                                            <a href="#" class="signup_btn border">전시관리 플랫폼 바로가기</a>
+                                        </li>-->
+                                    </ul>
+                                </div>
+
                                 <div class="mypage_menu">
                                     <ul class="clear_both">
                                         <li>
@@ -68,7 +78,7 @@
                                                         <div class="icon">아이콘</div>
                                                         <b>3</b>
                                                     </div>                  
-                                                    <span>나의 사전등록 내역</span>
+                                                    <span>나의 사전등록</span>
                                                 </a>
                                             </div>
                                         </li>
@@ -97,87 +107,93 @@
                                 </div>
                             </div>
 
-                            <!--쿠폰 -->
-                            <div class="coupon_wrap">
+                            <div class="frame_cont">
 
-                                <!--쿠폰 리스트-->
-                                <div class="coupon_list">
-                                    <div class="sort">
-                                        <select name="" id="" class="normal">
-                                            <option value="">등록마감임박순</option>
-                                        </select>
+                                <!--쿠폰 -->
+                                <div class="coupon_wrap">
+
+                                    <!--쿠폰 리스트-->
+                                    <div class="coupon_list">
+                                        <div class="sort">
+                                            <div class="sort_select">
+                                                <select name="" id="">
+                                                    <option value="DISP_ROOT">사용여부</option>
+                                                    <option class="bestSubCate1" data-name="사용함" value="1">사용함</option>
+                                                    <option class="bestSubCate2" data-name="사용안함" value="2">사용안함</option>
+                                                </select>
+                                                <div class="selText" data-name="사용여부">사용여부</div>
+                                            </div>
+                                        </div>
+                                        <ul class="clear_both">
+                                            <li class="e_end">
+                                                <a href="#">
+                                                    <div class="coupon_in type02">
+                                                        <div>
+                                                            <strong>캐릭터페어 사전등록 커피 쿠폰</strong>
+                                                            <div class="infos">
+                                                                <p><em>유효기간</em><span>~2019.07.21</span></p>
+                                                                <p><em>유형</em><span>초대권</span></p>
+                                                                <p><em>상태</em><span>발행완료</span></p>
+                                                            </div>
+                                                            <div class="end"><span>사용<br/>완료</span></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="coupon_in type02">
+                                                        <div>
+                                                            <strong>캐릭터페어 사전등록 커피 쿠폰</strong>
+                                                            <div class="infos">
+                                                                <p><em>유효기간</em><span>~2019.07.21</span></p>
+                                                                <p><em>유형</em><span>초대권</span></p>
+                                                                <p><em>상태</em><span>발행완료</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="coupon_in type01">
+                                                        <div>
+                                                            <strong>캐릭터페어 사전등록 커피 쿠폰</strong>
+                                                            <div class="infos">
+                                                                <p><em>유효기간</em><span>~2019.07.21</span></p>
+                                                                <p><em>유형</em><span>교환권</span></p>
+                                                                <p><em>상태</em><span>발행완료</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="more_bt">
+                                                <div class="list_in">
+                                                    <a href="#">더보기</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <!--리스트 없을 시-->
+                                        <ul class="clear_both">
+                                            <li class="none">
+                                                <div class="list_in">
+                                                    <p>쿠폰이 없습니다.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!--//리스트 없을 시-->
+                                    
                                     </div>
-                                    <ul class="clear_both">
-                                        <li class="e_end">
-                                            <a href="#">
-                                                <div class="coupon_in type01">
-                                                    <div>
-                                                        <strong>캐릭터페어 사전등록 커피 쿠폰</strong>
-                                                        <div class="infos">
-                                                            <p><em>유효기간</em><span>~2019.07.21</span></p>
-                                                            <!--
-                                                            <p><em>유형</em><span>초대권</span></p>-->
-                                                            <p><em>상태</em><span>발행완료</span></p>
-                                                        </div>
-                                                        <div class="end"><span>사용<br/>완료</span></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="coupon_in type01">
-                                                    <div>
-                                                        <strong>캐릭터페어 사전등록 커피 쿠폰</strong>
-                                                        <div class="infos">
-                                                            <p><em>유효기간</em><span>~2019.07.21</span></p>
-                                                            <!--
-                                                            <p><em>유형</em><span>초대권</span></p>-->
-                                                            <p><em>상태</em><span>발행완료</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="coupon_in type01">
-                                                    <div>
-                                                        <strong>캐릭터페어 사전등록 커피 쿠폰</strong>
-                                                        <div class="infos">
-                                                            <p><em>유효기간</em><span>~2019.07.21</span></p>
-                                                            <!--
-                                                            <p><em>유형</em><span>초대권</span></p>-->
-                                                            <p><em>상태</em><span>발행완료</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                    <!--//쿠폰 리스트-->
 
-                                        <li class="more_bt">
-                                            <div class="list_in">
-                                                <a href="#">더보기</a>
-                                            </div>
-                                        </li>
-                                    </ul>
 
-                                    <!--리스트 없을 시-->
-                                    <ul class="clear_both">
-                                        <li class="none">
-                                            <div class="list_in">
-                                                <p>쿠폰이 없습니다.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!--//리스트 없을 시-->
-                                
                                 </div>
-                                <!--//쿠폰 리스트-->
-
-
+                                <!--//쿠폰 -->
+                                
                             </div>
-                            <!--//쿠폰 -->
 
                             
 
@@ -188,8 +204,6 @@
 				</div>
 			</div>
 			<!--//마이페이지-->
-
-
 
 		</div>
 			

@@ -151,94 +151,12 @@
                                 
 							</ul>
 
-							<div class="signup_tit">
-                                <h3>담당자 정보</h3>
-                                <span>*가 표시된 항목은 필수 입력 값입니다.</span>
-                            </div>
-
-							<ul class="signup_list">
-								<li>
-									<label for="">아이디(ID)</label>
-									<input type="text" value="Smpcoex" readonly/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">성명</label>
-									<input type="text" value="홍길동" readonly/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">부서 <em>*</em></label>
-									<input type="text"/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">직위 <em>*</em></label>
-									<input type="text"/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">회사전화 <em>*</em></label>
-									<input type="text"/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">회사팩스 </label>
-									<input type="text"/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">휴대폰 <em>*</em></label>
-									<input type="text"/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li>
-									<label for="">이메일</label>
-									<input type="text" value="smp@coex.co.kr" readonly/>
-									<span class="help_message">도움말 메시지</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-								<li class="button chk">
-									<label for="">근무지 주소 </label>
-									<div class="input_c">
-										<input id="ch01" type="checkbox" />
-										<label for="ch01">업체정보와 동일</label>
-									</div>
-									<input type="text"/>
-                                    <div class="button_wrap">
-                                        <button type="button">우편번호 찾기</button>
-                                    </div>
-									<span class="help_message">우편번호 필드</span>
-									<span class="error_message">에러 메시지</span>
-									
-								</li>
-                                <li class="merge">
-                                    <label for="">소재지 주소</label>
-									<input type="text"/>
-									<span class="help_message">소재지 주소</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-                                <li class="merge">
-                                    <label for="">소재지 상세 주소</label>
-									<input type="text"/>
-									<span class="help_message">상세 주소</span>
-									<span class="error_message">에러 메시지</span>
-								</li>
-							</ul>
-
 							<ul class="signup_btns type02">
 								<li>
 									<a href="#" class="signup_btn border">취소</a>
 								</li>
 								<li>
-									<a href="#"class="layer_open_bt  signup_btn" data-layer="layer-t01">승인요청</a>
+									<a href="#"class="layer_open_bt  signup_btn" data-layer="layer-t01">다음</a>
 								</li>
 							</ul>
 							
@@ -249,22 +167,22 @@
 			</div>
 			<!--//회원가입-->
 
-			<!--가입완료 레이어-->
+			<!--신청후 승인전 레이어-->
 			<!--js::pop_layer:parent, layer-t01:target--->
 			<div class="pop_layer signup layer-t01">
 				<div class="pop_inner">
-					<div class="pop_cont">
-						<strong>전시주최자 가입신청이<br/>정상적으로 등록되었습니다.</strong>
+					<div class="pop_cont low">
+						<strong>전시주최자 가입신청이<br/>접수되어 관리자 승인 검토중입니다.</strong>
 
 						<p>관리자의 승인 완료 후, 승인 메일이 발송되니 확인 부탁드립니다.</p>
 						<div class="btn_wrap">
-							<a href="#" class="full">확인</a>
+							<a href="#">확인</a>
 						</div>
 						<a href="#"class="layer_close_bt" data-layer="layer-t01">닫기</a>	
 					</div>
 				</div>
 			</div>
-			<!--//가입완료 레이어-->
+			<!--//신청후 승인전 레이어-->
 
 			<!--사업자번호 조회 레이어-->
 			<!--js::pop_layer:parent, layer-t02:target--->

@@ -23,7 +23,9 @@
 
 .main_wrap .cols1 {position: relative;z-index: 1;padding: 1.5rem 0;}
 .main_wrap .cols1 .inner {position: relative;}
-.main_wrap .cols1 .main_list li {}
+.main_wrap .cols1 .main_list li {width:17rem;}
+.main_wrap .cols1 .main_list li .list_in .event_wrap > span {letter-spacing: -1px;}
+.main_wrap .cols1 .main_list li .list_in .event_wrap > em {letter-spacing: -1px;}
 .main_wrap .cols1 h3 {padding:0 1rem;color:#222;font-size:2rem;margin-bottom:1.5rem;}
 .main_wrap .cols1 h3 a {color:#222;}
 
@@ -111,6 +113,8 @@
   .main_wrap .cols1 .main_list li {width: 270px;float:left;margin-bottom:50px;}
   .main_wrap .cols1 .main_list li + li {margin-left:41px;}
   .main_wrap .cols1 .main_list li:nth-child(5n){margin-left: 0px;}
+  .main_wrap .cols1 .main_list li .list_in .event_wrap > span {letter-spacing: 0px;}
+  .main_wrap .cols1 .main_list li .list_in .event_wrap > em {letter-spacing: 0px;}
 
   .main_wrap .cols2 {padding:100px 0;background-color:#F5F5F5;}
   .main_wrap .cols2 .inner {position: relative;overflow: hidden;}
