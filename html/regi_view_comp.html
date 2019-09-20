@@ -39,6 +39,7 @@
             <div class="regi_wrap">
 
                 <!--우측 스카이-->
+                <!--<div class="regi_sky" id="iscroll01">-->
                 <div class="regi_sky">
 
                     <div class="regi_sky_in">
@@ -69,7 +70,10 @@
                                     </ul>
                                 </div>
 
-                                <h4>캐릭터<br/>라이센싱페어</h4>
+                                <h4>
+                                <span>이벤트 진행중</span>
+                                캐릭터<br/>라이센싱페어
+                                </h4>
 
                                 <div class="info">
                                     <ul class="clear_both">
@@ -79,6 +83,8 @@
                                     </ul>
                                 </div>
 
+                                <div class="end">사전등록이 이미 완료된 전시회입니다.</div>
+                                <!--
                                 <div class="guide">
                                     <p>본 전시회는 현재 <span>유료 사전등록 진행중</span>입니다.</p>
                                 </div>
@@ -86,7 +92,7 @@
                                 <div class="term">
                                     <span>사전등록 기간</span>
                                     <p>2019년 5월 1일 ~ 2019년 7월 13일까지</p>
-                                </div>
+                                </div>-->
 
                             </div>
                             <!--//디테일 영역-->
@@ -96,66 +102,113 @@
                                 <form action="">
 
                                     <div class="select_wrap">
-                                        <div class="select_custum">
-                                            <button type="button">단체</button>
-                                            <input type="hidden" id="" value="4"/>
+                                        <div class="select_custum disabled">
+                                            <button type="button">일반</button>
+                                            <input type="hidden" id="" value="1"/>
                                             <div class="select_list">
                                                 <ul>
                                                     <li>
-                                                        <a href="#" data-val="4">단체</a>
+                                                        <a href="#" data-val="1">일반</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="2">바이어</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="3">업계종사자</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="4">단체(25인 이상)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="select_custum disabled">
+                                            <button type="button">비즈니스데이(7/3~7/4) : 20,000원</button>
+                                            <input type="hidden" id="" value="1"/>
+                                            <div class="select_list">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" data-val="11">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="13">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="14">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="15">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li class="soldout">
+                                                        <a href="#" data-val="15">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="16">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li class="soldout">
+                                                        <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li class="soldout">
+                                                        <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         
+                                        <!--
                                         <div class="select_num clear_both">
                                             <strong>수량</strong>
-                                            <div class="amount_w">
-                                                <div class="amount">
-                                                    <button type="button"class="minus">-</button>
-                                                    <input type="number" value="2" data-min-amount="1" data-max-amount="1234"><!-- 최소/최대 수량이 정해져 있을 경우, data-min-amount/data-max-amount 속성 추가, 속성이 없는 경우 최소값은 해당 value 값을 참조-->
-                                                    <button type="button"class="plus">+</button>
-                                                </div>
-                                                <span>장</span>
-                                            </div>
+                                            <p><span>0</span>장</p>
                                         </div>
+
+                                        <div class="select_num clear_both on">
+                                            <strong>수량</strong>
+                                            <p><span>25</span>장</p>
+                                        </div>-->
 
                                     </div>
 
+                                    <!--
                                     <div class="prices_wrap">
-                                        <!--
                                         <ul>
                                             <li>
                                                 <strong>001 바이어/비지니스 데이</strong>
                                                 <span>35,000원</span>
-                                                <button type="button">닫기</button>
+                                                <button type="button" onclick="$(this).parent().hide()">닫기</button>
                                             </li>
                                             <li>
                                                 <strong>001 바이어/비지니스 데이 001 바이어/비지니스 데이</strong>
                                                 <span>35,000원</span>
-                                                <button type="button">닫기</button>
+                                                <button type="button" onclick="$(this).parent().hide()">닫기</button>
                                             </li>
-                                        </ul>-->
+                                        </ul>
+                                    </div>
 
-                                    </div>
                                     <div class="total">
-                                        <strong>총 티켓 금액</strong>
-                                        <span><b>125,000</b> 원</span>
-                                    </div>
+                                        <strong>총 결제 금액</strong>
+                                        <span><b>35,000</b> 원</span>
+                                    </div>-->
 
                                     <ul class="signup_btns">
                                         <li>
-                                            <a href="#" class="signup_btn border layer_open_bt" data-layer="layer-t02">신청하기</a>
+                                            <a href="#" class="signup_btn border disabled">장바구니</a>
                                         </li>
-                                        <!--
                                         <li>
-                                            <a href="#" class="signup_btn">사전등록 바로가기</a>
-                                        </li>-->
+                                            <a href="#" class="signup_btn disabled">사전등록 바로가기</a>
+                                        </li>
                                     </ul>
-
                                 </form>
                             </div>
-                            <!--//버튼및 폼-->
+
                             <div class="regit_btn btn_wrap">
                                 <!--
                                 <a href="#" class="blue">선택 완료</a>-->
@@ -163,6 +216,7 @@
                                 <!--
                                 <a href="#" class="black">1:1문의</a>-->
                             </div>
+                            <!--//버튼및 폼-->
                             <!--하단 내용 영역-->
                             <div class="regi_detail_bottom">
                                 <ul class="depth_list">
@@ -376,37 +430,6 @@
                                 </li>
                             </ul>
                         </div>
-
-                        <div class="search_list_w">
-                            <h4>통합 전시회</h4>
-                            <ul class="search_list">
-                                <li>
-                                    <div class="view">
-                                        <div class="img">
-                                            <img src="../images/banner/search_bn01.png" alt="banner">
-                                        </div>
-                                        <div class="info_W">
-                                            <div class="flag clear_both">
-                                                <div class="flag_item">행사개최 D-32</div>
-                                                <div class="flag_item red">이벤트</div>
-                                            </div>
-                                            <h4>캐릭터 라이센싱페어</h4>
-                                            <div class="infos">
-                                                <ul class="clear_both">
-                                                    <li><i>등록기간</i>2019.04.10 - 2019.07.10</li>
-                                                    <li><i>행사기간</i>2019.04.10 - 2019.07.10</li>
-                                                    <li><i>행사장소</i>코엑스 A,B Hall</li>
-                                                </ul>
-                                            </div>
-                                            <div class="flag clear_both">
-                                                <div class="payment free">무료</div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="dt_bt layer_enrollment" data-layer="layer-t01">자세히 보기</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
     
                         <div class="search_list_w">
                             <h4>부대행사</h4>
@@ -468,7 +491,31 @@
                             </ul>
                         </div>
     
-                        
+                        <div class="search_list_w">
+                            <h4>쿠폰 이벤트</h4>
+                            <ul class="search_list">
+                                <li>
+                                    <div class="view">
+                                        <div class="img">
+                                            <img src="../images/banner/search_bn01.png" alt="banner">
+                                        </div>
+                                        <div class="info_W">
+                                            <div class="flag clear_both">
+                                                <div class="flag_item">사전등록이벤트</div>
+                                            </div>
+                                            <h4>캐릭터 라이센싱페어</h4>
+                                            <div class="infos">
+                                                <ul class="clear_both">
+                                                    <li class="blue">2019.04.10 - 2019.04.13</li>
+                                                </ul>
+                                            </div>
+    
+                                        </div>
+                                        <a href="#" class="dt_bt join">참여하기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
@@ -483,46 +530,89 @@
                         <form action="">
                             <div class="prch_scroll">
                                 <div class="select_wrap">
-                                    <div class="select_custum">
-                                        <button type="button">단체</button>
-                                        <input type="hidden" id="" value="4"/>
+                                    <div class="select_custum disabled">
+                                        <button type="button">일반</button>
+                                        <input type="hidden" id="" value="1"/>
                                         <div class="select_list">
                                             <ul>
                                                 <li>
-                                                    <a href="#" data-val="4">단체</a>
+                                                    <a href="#" data-val="1">일반</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="2">바이어</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="3">업계종사자</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="4">단체(25인 이상)</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                                    
-                                    <div class="select_num clear_both">
-                                        <strong>수량</strong>
-                                        <div class="amount_w">
-                                            <div class="amount">
-                                                <button type="button"class="minus">-</button>
-                                                <input type="number" value="2" data-min-amount="1" data-max-amount="1234"><!-- 최소/최대 수량이 정해져 있을 경우, data-min-amount/data-max-amount 속성 추가, 속성이 없는 경우 최소값은 해당 value 값을 참조-->
-                                                <button type="button"class="plus">+</button>
-                                            </div>
-                                            <span>장</span>
+                                    <div class="select_custum disabled">
+                                        <button type="button">비즈니스데이(7/3~7/4) : 20,000원</button>
+                                        <input type="hidden" id="" value="2"/>
+                                        <div class="select_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-val="11">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="13">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="14">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="15">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li class="soldout">
+                                                    <a href="#" data-val="15">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="16">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li class="soldout">
+                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li class="soldout">
+                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     
 
                                 </div>
 
+
                             </div>
+                            <!--
                             <div class="total">
                                 <strong>총 결제 금액</strong>
                                 <span><b>35,000</b> 원</span>
-                            </div>
+                            </div>-->
                         </form>
                     </div>
                 </div>
                 <div class="prchController">
                     <div class="btn_w">
-                        <ul class="signup_btns">
+                        <ul class="signup_btns type02">
                             <li>
-                                <a href="#" class="signup_btn border">신청하기</a>
+                                <a href="#" class="signup_btn border disabled">장바구니</a>
+                            </li>
+                            <li>
+                                <a href="#" class="signup_btn disabled">사전등록 바록가기</a>
                             </li>
                         </ul>
                     </div>
@@ -640,62 +730,107 @@
 
                                                 <div class="select_wrap">
                                                     <div class="select_custum">
-                                                        <button type="button">단체</button>
-                                                        <input type="hidden" id="" value="4">
+                                                        <button type="button">참관구분</button>
+                                                        <input type="hidden" id="" value=""/>
                                                         <div class="select_list">
                                                             <ul>
                                                                 <li>
-                                                                    <a href="#" data-val="4">단체</a>
+                                                                    <a href="#" data-val="1">일반</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="2">바이어</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="3">업계종사자</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="4">단체(25인 이상)</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="select_custum">
+                                                        <button type="button">티켓옵션</button>
+                                                        <input type="hidden" id="" value=""/>
+                                                        <div class="select_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" data-val="11">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="13">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="14">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="15">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li class="soldout">
+                                                                    <a href="#" data-val="15">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="16">비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li class="soldout">
+                                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li class="soldout">
+                                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="12">비즈니스데이(7/3~7/4) ,비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4), 비즈니스데이(7/3~7/4) : 20,000원</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     
+                                                    <!--
                                                     <div class="select_num clear_both">
                                                         <strong>수량</strong>
-                                                        <div class="amount_w">
-                                                            <div class="amount">
-                                                                <button type="button" class="minus">-</button>
-                                                                <input type="number" value="2" data-min-amount="1" data-max-amount="1234"><!-- 최소/최대 수량이 정해져 있을 경우, data-min-amount/data-max-amount 속성 추가, 속성이 없는 경우 최소값은 해당 value 값을 참조-->
-                                                                <button type="button" class="plus">+</button>
-                                                            </div>
-                                                            <span>장</span>
-                                                        </div>
+                                                        <p><span>0</span>장</p>
                                                     </div>
+
+                                                    <div class="select_num clear_both on">
+                                                        <strong>수량</strong>
+                                                        <p><span>25</span>장</p>
+                                                    </div>-->
 
                                                 </div>
 
                                                 <div class="prices_wrap">
-                                                    <!--
                                                     <ul>
                                                         <li>
                                                             <strong>001 바이어/비지니스 데이</strong>
                                                             <span>35,000원</span>
-                                                            <button type="button">닫기</button>
+                                                            <button type="button" onclick="$(this).parent().hide()">닫기</button>
                                                         </li>
                                                         <li>
                                                             <strong>001 바이어/비지니스 데이 001 바이어/비지니스 데이</strong>
                                                             <span>35,000원</span>
-                                                            <button type="button">닫기</button>
+                                                            <button type="button" onclick="$(this).parent().hide()">닫기</button>
                                                         </li>
-                                                    </ul>-->
-
-                                                </div>
-                                                <div class="total">
-                                                    <strong>총 티켓 금액</strong>
-                                                    <span><b>125,000</b> 원</span>
+                                                    </ul>
+                                                    <div class="total">
+                                                        <strong>총 결제 금액</strong>
+                                                        <span><b>35,000</b> 원</span>
+                                                    </div>
                                                 </div>
 
                                                 <ul class="signup_btns">
                                                     <li>
-                                                        <a href="#" class="signup_btn border layer_open_bt" data-layer="layer-t02">신청하기</a>
+                                                        <a href="#" class="signup_btn border">장바구니</a>
                                                     </li>
-                                                    <!--
                                                     <li>
                                                         <a href="#" class="signup_btn">사전등록 바로가기</a>
-                                                    </li>-->
+                                                    </li>
                                                 </ul>
-
                                             </form>
                                         </div>
 
@@ -734,27 +869,6 @@
 				</div>
 			</div>
 			<!--//사전등록 레이어-->
-
-            <!--사전등록 없이 단체 신청 클릭시 레이어-->
-			<!--js::pop_layer:parent, layer-t02:target--->
-			<div class="pop_layer signup layer-t02">
-				<div class="pop_inner">
-					<div class="pop_scroll">
-
-						<div class="pop_cont">
-							<strong>회원님의 개인사전등록 완료 후 재시도해주세요.</strong>
-							<p>단체 사전등록은 신청자 본인의 사전등록 완료 후 신청가능합니다.</p>
-							<div class="btn_wrap">
-								<a href="#">확인</a>
-							</div>
-						</div>
-						<a href="#" class="layer_close_bt" data-layer="layer-t02">닫기</a>
-                    
-					</div>	
-				</div>
-			</div>
-			<!--//사전등록 없이 단체 신청 클릭시 레이어-->
-
             <div class="layer_dimmed">레이어 배경</div>
 
 
@@ -769,7 +883,86 @@
 	<footer id="footer" class="footer">
 
 		<div class="inner">
-	
+
+			<div class="logo_wrap">
+				<img src="../images/icon/pc_footer_logo.png" alt="로고">
+			</div>
+
+			<div class="sns_wrap">
+				<ul class="clear_both">
+					<li class="twitter">
+						<a href="#">트위터</a>
+					</li>
+					<li class="instagram">
+						<a href="#">인스타그램</a>
+					</li>
+					<li class="facebook">
+						<a href="#">페이스북</a>
+					</li>
+					<li class="blog">
+						<a href="#">블로그</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="family_wrap">
+				<div class="family_in">
+					<ul class="clear_both family_target">
+						<li>
+							<a href="#">창원컨벤션센터</a>
+						</li>
+						<li>
+							<a href="#">CoexMall</a>
+						</li>
+						<li>
+							<a href="#">KITA</a>
+						</li>
+						<li>
+							<a href="#">WTC Seoul</a>
+						</li>
+						<li>
+							<a href="#">KTNET</a>
+						</li>
+						<li>
+							<a href="#">CALT</a>
+						</li>
+						<li>
+							<a href="#">CAAM</a>
+						</li>
+					</ul>
+					<div class="family_btn toggle_btn" data-target="family_target" data-on="true">Family Site</div>
+				</div>
+			</div>
+
+			<div class="link_wrap">
+				<ul class="clear_both">
+					<li>
+						<a href="#">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="#">이메일무단수집거부</a>
+					</li>
+					<li>
+						<a href="#">취소및환불정책</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="copyright_wrap">
+				<ul class="clear_both">
+					<li>서울특별시 강남구 영동대로 513 (삼성동, 코엑스) 06164</li>
+					<li>문의전화 : 02-6000-0114</li>
+					<li>COPYRIGHT 2015-2019 © COEX</li>
+					<li>ALL RIGHTS RESERVED.</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="btnTop" style="display: block;">
+			<a href="#">
+				탑으로
+			</a>
 		</div>
 
 	</footer>

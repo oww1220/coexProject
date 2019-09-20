@@ -451,7 +451,7 @@ body.fixed {overflow: hidden; position: fixed;}
     /*패널*/
     .panel_w {width: 480px;}
     .panel_w .panel_in {width: 480px;}
-    .panel_w.on .panel_in {-webkit-box-shadow: 0px 240px 30px rgba(0,0,0,.6);box-shadow: 0px 240px 30px rgba(0,0,0,.6);}
+    .panel_w.on .panel_in {-webkit-box-shadow: 0px 125px 30px rgba(0,0,0,.6);box-shadow: 0px 125px 30px rgba(0,0,0,.6);}
     .panel_w .panel_list .site_m {padding:60px;}
     .panel_w .panel_list .site_list > ul > li + li {margin-top:40px;padding-top:40px;}
     .panel_w .panel_list .site_list > ul > li > strong {width:145px;font-size:26px;width:100%;}

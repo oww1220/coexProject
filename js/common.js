@@ -476,6 +476,178 @@ var COEX = COEX || {
 
 				beScrollTop = enScrollTop;
 			});
+		},
+		amount: function(target){
+			var minus = target + " .minus",
+				plus = target + " .plus",
+				input = target + " input";
+
+			function isNumber(s) {
+				s += ''; 
+				s = s.replace(/^\s*|\s*$/g, '');
+				if (isNaN(s)) return false;
+				return true;
+			}
+
+			//console.log(minus, plus, input);
+
+			$(document).on("click", minus, function(e){
+				var $amountInput 	= $(this).siblings("input");
+				var minAmount 		= Number($amountInput.data("minAmount")) || 1;
+				var maxAmount 		= Number($amountInput.data("maxAmount")) || 999999;
+				var packageAmount 	= Number($amountInput.data("packageAmount")) || 1;
+				var checkedAmount 	= Number($amountInput.val());
+				var currentAmount	= Number($amountInput.val());
+				
+				// min,max 유효성 체크
+				if ( minAmount > packageAmount ){
+					if( (minAmount % packageAmount) > 0 ){
+						minAmount = ( minAmount + (packageAmount - (minAmount % packageAmount)));
+					} else {
+						minAmount = minAmount;
+					}
+				} else {
+					minAmount = packageAmount;
+				}
+				
+				if( maxAmount > packageAmount ){
+					if ( (maxAmount % packageAmount) > 0 ){
+						maxAmount = ( maxAmount - (maxAmount % packageAmount ));
+					} else {
+						maxAmount = maxAmount; 
+					}
+				} else {
+					maxAmount = packageAmount;
+				}
+				
+				if( checkedAmount % packageAmount > 0 ){
+					checkedAmount = checkedAmount - (checkedAmount % packageAmount);
+				}
+				
+				if( currentAmount <= maxAmount ){
+					for( var i=0; i < packageAmount; i++ ){
+						checkedAmount --;
+					}
+				}
+				
+				if( checkedAmount < minAmount ){
+					alert("최소수량은 " + minAmount + "장 이상입니다." );
+					checkedAmount = minAmount;
+				} else if( checkedAmount > maxAmount ){
+					checkedAmount = maxAmount;
+					//alert("최대 수량은 " + maxAmount + "장입니다.");
+				} 
+				
+				$amountInput.val(checkedAmount);
+				$amountInput.data("prevCount" , checkedAmount);
+				
+				
+				e.preventDefault();
+			});
+
+			$(document).on("click", plus, function(e){
+				var $amountInput 	= $(this).siblings("input");
+				var minAmount 		= Number($amountInput.data("minAmount")) || 1;
+				var maxAmount 		= Number($amountInput.data("maxAmount")) || 999999;
+				var packageAmount 	= Number($amountInput.data("packageAmount")) || 1;
+				var checkedAmount 	= Number($amountInput.val());
+				
+				// min,max 유효성 체크
+				if ( minAmount > packageAmount ){
+					if( (minAmount % packageAmount) > 0 ){
+						minAmount = ( minAmount + (packageAmount - (minAmount % packageAmount)));
+					} else {
+						minAmount = minAmount;
+					}
+				} else {
+					minAmount = packageAmount;
+				}
+				
+				if( maxAmount > packageAmount ){
+					if ( (maxAmount % packageAmount) > 0 ){
+						maxAmount = ( maxAmount - (maxAmount % packageAmount ));
+					} else {
+						maxAmount = maxAmount /* - packageAmount;  */
+					}
+				} else {
+					maxAmount = maxAmount;
+				}
+				
+				if( checkedAmount%packageAmount > 0 ){
+					checkedAmount = checkedAmount - (checkedAmount%packageAmount);
+				}
+				
+				if( checkedAmount < minAmount ){
+					checkedAmount = minAmount;
+				} else if( checkedAmount >= maxAmount ){
+					checkedAmount = maxAmount;
+					alert("최대 수량은 " + maxAmount + "장입니다.");
+				} else {
+					for( var i=0; i < packageAmount; i++ ){
+						checkedAmount ++;
+					}
+				} 
+				
+				$amountInput.val(checkedAmount);
+				$amountInput.data("prevCount" , checkedAmount);
+				
+				e.preventDefault();
+			});
+
+			$(document).on("change keyup", input , function(e){
+		
+				if( $(this).parents(".amount").find(".minus").size() > 0 || $(this).hasClass("amountInput") ){
+					var $amountInput 	= $(this);
+					var minAmount 		= Number($amountInput.data("minAmount")) || 1;
+					var maxAmount 		= Number($amountInput.data("maxAmount")) || 999999;
+					var packageAmount 	= Number($amountInput.data("packageAmount")) || 1;
+					var checkedAmount 	= Number($amountInput.val());
+					
+					// min,max 유효성 체크
+					if ( minAmount > packageAmount ){
+						if( (minAmount % packageAmount) > 0 ){
+							minAmount = ( minAmount + (packageAmount - (minAmount % packageAmount)));
+						} else {
+							minAmount = minAmount;
+						}
+					} else {
+						minAmount = packageAmount;
+					}
+					
+					if( maxAmount > packageAmount ){
+						if ( (maxAmount % packageAmount) > 0 ){
+							maxAmount = ( maxAmount - (maxAmount % packageAmount ));
+						} else {
+							maxAmount = maxAmount; 
+						}
+					} else {
+						maxAmount = packageAmount;
+					}
+					
+					if( e.type == "change" ){
+						if( checkedAmount < minAmount ){
+							alert("최소수량은 " + minAmount + "장 이상입니다." );
+							$amountInput.val(minAmount);
+							$amountInput.data("prevCount", minAmount);
+						}
+						else if( checkedAmount > maxAmount ){
+							alert("최대 수량은 " + maxAmount + "장입니다.");
+							$amountInput.val(maxAmount);
+							$amountInput.data("prevCount", maxAmount);
+						}
+						else {
+							$amountInput.data("prevCount", checkedAmount);
+						}
+					}
+					
+					if( e.type == "keyup" ){
+						if( isNumber($(this).val()) == false ){
+							$amountInput.val($amountInput.data("prevCount"));
+						}	
+					}	
+				}
+			});
+
 		},		
 	},
 	iscrolls: {
@@ -734,6 +906,11 @@ $(function(){
 
 	/*pc top으로 scroll*/
 	COEX.event.topScrollCh($GOTOP, $BODY);
+
+	/*amount*/
+	if($(".amount_w").length) {
+		COEX.event.amount(".amount_w");
+	}
 
 	/*top으로*/
 	COEX.event.goTop($GOTOP);
