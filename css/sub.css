@@ -222,8 +222,8 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 
 .sub_wrap .regi_conts .details_w {margin:2rem 0;}
 .sub_wrap .regi_conts .details_w button {display: block;width: 5rem;height: 5rem;background: url("../images/icon/m_regi_more.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
-.sub_wrap .regi_conts .details_w button.on {display:none;}
-.sub_wrap .regi_conts .details_w .details_cont {display:none;}
+.sub_wrap .regi_conts .details_w button.on {}
+.sub_wrap .regi_conts .details_w .details_cont {display:none;margin-bottom: 2rem;}
 
 .sub_wrap .progress_info {}
 .sub_wrap .progress_info strong {font-size: 2.1rem;margin-top:0;line-height: 1.3;font-weight: normal;display:block;color:#4C6DF7;text-align: center;}
@@ -261,6 +261,7 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 /*Online Directory 리스트*/
 .sub_wrap .directory_wrap {padding: 3rem 0rem 6rem;}
 .sub_wrap .directory_lists {margin-top: 2rem;padding: 0 1rem;}
+.sub_wrap .directory_lists > h3 {font-size:1.7rem;margin-bottom:1rem;}
 .sub_wrap .directory_lists .company_list ul {display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;flex-flow: row;flex-wrap: wrap;}
 .sub_wrap .directory_lists .company_list ul li {width:50%;margin-top:2.5rem;}
 .sub_wrap .directory_lists .company_list ul li img {max-width:100%;display:block;margin:0 auto;width:auto;}
@@ -567,8 +568,8 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .signup_list:after {content:"";display:block;clear:both;}
 .signup_list li {position: relative;}
 .signup_list li + li {margin-top:2rem;}
-.signup_list li label {display:block;color:#888;font-size:1.05rem;}
-.signup_list li > strong {display: block;color: #888;font-size: 1.05rem;font-weight:normal;}
+.signup_list li > label {display:block;color:#222;font-size:1.2rem;font-weight: bold;}
+.signup_list li > strong {display: block;color: #222;font-size: 1.2rem;font-weight:bold;}
 .signup_list li label em {color:#FF6280;}
 
 .signup_list li input::-ms-input-placeholder {color:#e8e8e8;font-style:italic;}
@@ -1217,7 +1218,7 @@ border-radius:100%;display:table;}
 
 
   /*상세 컨텐츠*/
-  .sub_wrap .regi_conts {max-width:1080px;width:auto;margin:0 auto;}
+  .sub_wrap .regi_conts {max-width:1080px;width:auto;margin:0 auto;min-height: 950px;}
 
   .sub_wrap .regi_conts .details .tit{margin-top: 0;}
   .sub_wrap .regi_conts .details .tit h4{font-size: 40px;line-height: 1.4;}
@@ -1246,6 +1247,8 @@ border-radius:100%;display:table;}
 
   .sub_wrap .regi_conts .details_w {margin:60px 0;}
   .sub_wrap .regi_conts .details_w button {width: 70px;height: 70px;background: url("../images/icon/pc_regi_more.png") no-repeat 0 0;}
+  .sub_wrap .regi_conts .details_w button.on {}
+  .sub_wrap .regi_conts .details_w .details_cont {display:none;margin-bottom: 60px;}
 
 
   .sub_wrap .progress_info {padding-top: 100px;border-top: 1px solid #e8e8e8;}
@@ -1285,6 +1288,7 @@ border-radius:100%;display:table;}
   /*Online Directory 리스트*/
   .sub_wrap .directory_wrap {padding: 110px 0 200px;}
   .sub_wrap .directory_lists {margin-top: 40px;padding: 0;}
+  .sub_wrap .directory_lists > h3 {font-size:30px;margin-bottom:40px;}
   .sub_wrap .directory_lists .company_list ul {display:block;margin:50px 0 0 0;}
   .sub_wrap .directory_lists .company_list ul li {width:25%;float:left;margin:0 0 50px 0;}
   .sub_wrap .directory_lists .company_list ul li img {max-width:100%;display:block;margin:0 auto;}
@@ -1476,7 +1480,7 @@ border-radius:100%;display:table;}
   .pop_layer.enrollment .right_conts {display:block;overflow: hidden;position: absolute;top:0;right:0;height: 100%;}
   .pop_layer.enrollment .right_conts .body {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;width: 480px;height:100%;min-height: 650px;background-color: #fff;-ms-box-sizing: border-box;-o-box-sizing: border-box;z-index: 1;}
   .pop_layer.enrollment .right_conts .body_in {height: 100%;overflow-y: auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-  .pop_layer.enrollment .right_conts .body_in h3 {padding:40px 0 15px;font-size:30px;text-align:center;}
+  .pop_layer.enrollment .right_conts .body_in h3 {padding:40px 20px 15px;font-size:26px;}
   .pop_layer.enrollment .right_conts .body_in .select_wrap {border:0;}
   .pop_layer.enrollment .right_conts .body_in .prices_wrap .total strong,
   .pop_layer.enrollment .right_conts .body_in .prices_wrap ul li strong {width:auto;text-align:left;}
@@ -1553,11 +1557,11 @@ border-radius:100%;display:table;}
   .sub_wrap .event_wrap .event_list .info > span {font-size:14px;}
   .sub_wrap .event_wrap .event_list .info > p {font-size:18px;margin:10px 0 20px;}
   .sub_wrap .event_wrap .event_list .info > em {font-size:14px;}
-  .sub_wrap .event_wrap .event_list .type01 li {float: left;width: 360px;margin:0 60px 100px 0;}
+  .sub_wrap .event_wrap .event_list .type01 li {float: left;width: 270px;margin:0 40px 100px 0;}
   .sub_wrap .event_wrap .event_list .type02 li {float: left;width: 570px;margin:0 60px 100px 0;}
   .sub_wrap .event_wrap .event_list li:nth-child(odd) a {margin-right:0px;}
   .sub_wrap .event_wrap .event_list li:nth-child(even) a {margin-left:0px;}
-  .sub_wrap .event_wrap .event_list .type01 li:nth-child(3n) {margin-right:0;}
+  .sub_wrap .event_wrap .event_list .type01 li:nth-child(4n) {margin-right:0;}
   .sub_wrap .event_wrap .event_list .type02 li:nth-child(2n) {margin-right:0;}
   .sub_wrap .event_wrap .event_list .type01 .more_bt,
   .sub_wrap .event_wrap .event_list .type02 .more_bt {width:100%;margin:0;}
@@ -1597,8 +1601,8 @@ border-radius:100%;display:table;}
 
   .signup_list {}
   .signup_list li + li {margin-top:40px;}
-  .signup_list li label {font-size:15px;}
-  .signup_list li > strong {font-size:15px;}
+  .signup_list li > label {font-size:17px;}
+  .signup_list li > strong {font-size:17px;}
   .signup_list li input {font-size: 18px;border-bottom:2px solid #E8E8E8;margin-top:5px;padding:20px 0;}
   .signup_list li input:focus {border-bottom:3px solid #4C6DF7;}
   .signup_list li input:read-only,

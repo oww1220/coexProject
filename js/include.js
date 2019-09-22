@@ -209,6 +209,7 @@ $(function(){
 					</div>
 
 					<div class="search_input_list">
+						<h3>인기검색어</h3>
 						<ul>
 							<li><a href="#">#커피</a></li>
 							<li><a href="#">#디자인</a></li>
@@ -254,9 +255,10 @@ $(function(){
 				</ul>
 			</div>
 
+			<!--
 			<div class="footer_btn">
 				<a href="#">전시관리 플랫폼 바로가기</a>
-			</div>
+			</div>-->
 
 			<div class="family_wrap">
 				<div class="family_in">
@@ -297,6 +299,9 @@ $(function(){
 					</li>
 					<li>
 						<a href="#">취소및환불정책</a>
+					</li>
+					<li class="pc">
+						<a href="#">전시관리 플랫폼 바로가기</a>
 					</li>
 				</ul>
 			</div>
