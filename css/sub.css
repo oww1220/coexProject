@@ -596,14 +596,14 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .signup_list li input:read-only,
 .signup_list li input:disabled {border-bottom:1px solid #E8E8E8 !important;background-color: #fff;}
 .signup_list li span {margin-top:0.5rem;display: none;}
-.signup_list li .help_message {color:#4C6DF7;font-size:1rem;}
+.signup_list li .help_message {color:#4C6DF7;font-size:1rem;line-height: 1.3;}
 .signup_list li input:focus ~ .help_message {display: block;}
 .signup_list li.error input:focus ~ .help_message {display: none;}
 .signup_list li input:read-only ~ .help_message {display: none;}
 .signup_list li.error .error_message {display: block;}
 .signup_list li.error input,
 .signup_list li.error input:focus{border-bottom:2px solid #FF6280;}
-.signup_list li .error_message {color:#FF6280;font-size:1rem;}
+.signup_list li .error_message {color:#FF6280;font-size:1rem;line-height: 1.3;}
 .signup_list li.button {position: relative;}
 .signup_list li.button input {padding-right: 8.5rem;box-sizing: border-box;}
 .signup_list li.button .button_wrap {position: absolute;top:1rem;right:0;}
