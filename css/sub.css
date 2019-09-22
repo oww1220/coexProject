@@ -222,7 +222,7 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 
 .sub_wrap .regi_conts .details_w {margin:2rem 0;}
 .sub_wrap .regi_conts .details_w button {display: block;width: 5rem;height: 5rem;background: url("../images/icon/m_regi_more.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
-.sub_wrap .regi_conts .details_w button.on {}
+.sub_wrap .regi_conts .details_w button.on {background-image:url("../images/icon/m_regi_close_more.png");}
 .sub_wrap .regi_conts .details_w .details_cont {display:none;margin-bottom: 2rem;}
 
 .sub_wrap .progress_info {}
@@ -244,6 +244,21 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .proposer_cont .signup_list .chk_list > div {display:block;margin-top:1rem;}
 .sub_wrap .proposer_info .btn_wrap {margin-top: 2.5rem;}
 .sub_wrap .proposer_info .btn_wrap a {height: 8rem;line-height: 8.2rem;width: 8rem;border-radius: 100%;}
+
+.sub_wrap .proposer_info .proposer_info_list {margin-top:2rem;}
+.sub_wrap .proposer_info .proposer_info_list ul {display: inline-block;}
+.sub_wrap .proposer_info .proposer_info_list li {text-align: left;}
+.sub_wrap .proposer_info .proposer_info_list li + li {margin-top:1rem;}
+.sub_wrap .proposer_info .proposer_info_list li strong {color: #222;font-size: 1.2rem;width: 6rem;display: inline-block;vertical-align: middle;}
+.sub_wrap .proposer_info .proposer_info_list li span {color: #222;font-size: 1.2rem;display: inline-block;vertical-align: middle;}
+.sub_wrap .proposer_info .proposer_guide {margin-top: 1.2rem;text-align: center;border: 1px solid #4c6df7;border-radius: 5px;padding: 1rem;}
+.sub_wrap .proposer_info .proposer_guide p {color:#4c6df7;line-height: 1.4;font-size: 1.2rem;}
+.sub_wrap .proposer_info .notice_w_bottom {background-color: #374260;padding:2rem 1rem;margin-top:5rem;margin-bottom: -6rem;}
+.sub_wrap .proposer_info .notice_w_bottom h4 {color:#fff;font-size: 1.7rem;}
+.sub_wrap .proposer_info .notice_w_bottom .depth_list {margin-top:1.5rem;}
+.sub_wrap .proposer_info .notice_w_bottom .depth_list > li {color:#fff;font-size: 0.9rem;}
+.sub_wrap .proposer_info .notice_w_bottom .depth_list > li:before {background-color: #fff;}
+
 
 /*참관자 정보등록*/
 .sub_wrap .observer_wrap {padding: 3rem 0rem 6rem;}
@@ -479,8 +494,8 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .event_wrap .event_detail .event_in {position:relative;}
 .sub_wrap .event_wrap .event_detail .event_in .event_end {display:none;}
 .sub_wrap .event_wrap .event_detail .event_in.end .event_end {display: block;}
-.sub_wrap .event_wrap .event_detail .event_in .end_flag {position: absolute;top:0;left:0;height:100%;width:100%;display:-webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;background:url("../images/icon/m_sub_event_end.png") no-repeat center center;background-size:18rem;z-index: 1;}
-.sub_wrap .event_wrap .event_detail .event_in .end_flag > div {text-align:center;} 
+.sub_wrap .event_wrap .event_detail .event_in .end_flag {position: absolute;top:0;left:0;height:100%;width:100%;display:-webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;background:url("../images/icon/m_event_ends.png") no-repeat center center;background-size:20rem;z-index: 1;}
+.sub_wrap .event_wrap .event_detail .event_in .end_flag > div {text-align:center;display: none;} 
 .sub_wrap .event_wrap .event_detail .event_in .end_flag > div strong {display:block;font-size:3.3rem;color:#FDF168;} 
 .sub_wrap .event_wrap .event_detail .event_in .end_flag > div p {font-size:1.1rem;color:#fff;margin-top:1rem;} 
 .sub_wrap .event_wrap .event_detail .event_in.end:after {display:block;content:'';position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-color: #000;font: 0/0 a;opacity: 0.3;}
@@ -628,12 +643,17 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .sub_wrap .signup_btns .signup_btn.down {background-color:#fff;border:1px solid #CCCCCC;color:#222;}
 .sub_wrap .signup_btns .signup_btn.facebook {background-color:#445D99;}
 .sub_wrap .signup_btns .signup_btn.twitter {background-color:#1CA1F1;}
-.sub_wrap .signup_btns .signup_btn.kakao {background-color:#FFE600;}
+.sub_wrap .signup_btns .signup_btn.kakao {background-color:#FFE600;color:#222;}
 .sub_wrap .signup_btns .signup_btn.naver {background-color:#06CF5D;}
+.sub_wrap .signup_btns .signup_btn.terminate {background-color:#e8e8e8;color: #222;}
 .sub_wrap .signup_btns .signup_btn.facebook:before {background-image:url("../images/icon/m_signup_btn01.png");}
 .sub_wrap .signup_btns .signup_btn.twitter:before {background-image:url("../images/icon/m_signup_btn02.png");}
 .sub_wrap .signup_btns .signup_btn.kakao:before {background-image:url("../images/icon/m_signup_btn03.png");}
 .sub_wrap .signup_btns .signup_btn.naver:before {background-image:url("../images/icon/m_signup_btn04.png");}
+.sub_wrap .signup_btns .signup_btn.facebook.terminate:before {background-image:url("../images/icon/m_signup_btn01_off.png");}
+.sub_wrap .signup_btns .signup_btn.twitter.terminate:before {background-image:url("../images/icon/m_signup_btn02_off.png");}
+.sub_wrap .signup_btns .signup_btn.kakao.terminate:before {background-image:url("../images/icon/m_signup_btn03_off.png");}
+.sub_wrap .signup_btns .signup_btn.naver.terminate:before {background-image:url("../images/icon/m_signup_btn04_off.png");}
 .sub_wrap .signup_btns .signup_btn.down:before {background-image:url("../images/icon/m_signup_btn05.png");position:relative;display:inline-block;vertical-align:middle;top:-0.2rem;left:auto;width:1.3rem;height:1.3rem;margin-right:0.5rem;margin-top:0;}
 .sub_wrap .signup_btns.type02 {zoom:1;}
 .sub_wrap .signup_btns.type02:after {content:"";display:block;clear:both;}
@@ -731,6 +751,10 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .sub_wrap .notice_wrap .questions_list .cont .icon {color:#FF6280;margin-right:1rem;}
 
 
+ /*사용자 가이드*/
+ .sub_wrap .use_guide_wrap {padding: 3rem 0rem 0;}
+ .sub_wrap .use_guide_wrap .use_guide_info img {width:100%;}
+ .sub_wrap .use_guide_wrap .use_guide_info .col.even {background-color: #f5f5f5;}
 
 
 /*마이페이지*/
@@ -1247,7 +1271,7 @@ border-radius:100%;display:table;}
 
   .sub_wrap .regi_conts .details_w {margin:60px 0;}
   .sub_wrap .regi_conts .details_w button {width: 70px;height: 70px;background: url("../images/icon/pc_regi_more.png") no-repeat 0 0;}
-  .sub_wrap .regi_conts .details_w button.on {}
+  .sub_wrap .regi_conts .details_w button.on {background-image:url("../images/icon/pc_regi_close_more.png");}
   .sub_wrap .regi_conts .details_w .details_cont {display:none;margin-bottom: 60px;}
 
 
@@ -1260,10 +1284,11 @@ border-radius:100%;display:table;}
 
 
   /*신청자 정보*/
-  .sub_wrap .proposer_info {margin-top: 40px;border:1px solid #e8e8e8;border-radius:5px;padding:0px 210px 90px;}
-  .sub_wrap .proposer_cont {padding:0;}
+  .sub_wrap .proposer_info {margin-top: 40px;border:1px solid #e8e8e8;border-radius:5px;padding:0px;overflow: hidden;}
+  .sub_wrap .proposer_cont {padding:0;width:640px;margin:0 auto;}
   .sub_wrap .proposer_cont .title {text-align:center;font-size: 40px;margin-top: 90px;line-height: 1.3;}
-  .sub_wrap .proposer_cont .agree {margin-top:30px;text-align:center;border:1px solid #e8e8e8;border-radius:5px;padding:30px 0;}
+  .sub_wrap .proposer_cont + .proposer_cont .title {padding-top:60px;border-top:1px solid #e8e8e8;}
+  .sub_wrap .proposer_cont .agree {text-align:center;border:1px solid #e8e8e8;border-radius:5px;padding:30px 0;margin:30px 0 0;}
   .sub_wrap .proposer_cont .agree span {text-decoration:underline;}
   .sub_wrap .proposer_cont .signup_list {width:500px;margin:40px auto 0;}
   .sub_wrap .proposer_cont .signup_list .radio_list {margin-top:20px;}
@@ -1271,6 +1296,20 @@ border-radius:100%;display:table;}
   .sub_wrap .proposer_cont .signup_list .chk_list > div {display:block;margin-top:20px;}
   .sub_wrap .proposer_info .btn_wrap {margin-top: 60px;}
   .sub_wrap .proposer_info .btn_wrap a {height: 180px;line-height: 180px;width: 180px;border-radius: 100%;font-size: 20px;}
+
+  .sub_wrap .proposer_info .proposer_info_list {margin-top:60px;margin-left: 60px;}
+  .sub_wrap .proposer_info .proposer_info_list ul {display: inline-block;}
+  .sub_wrap .proposer_info .proposer_info_list li {text-align: left;}
+  .sub_wrap .proposer_info .proposer_info_list li + li {margin-top:20px;}
+  .sub_wrap .proposer_info .proposer_info_list li strong {color: #222;font-size: 17px;width: 100px;display: inline-block;vertical-align: middle;}
+  .sub_wrap .proposer_info .proposer_info_list li span {color: #222;font-size: 17px;display: inline-block;vertical-align: middle;}
+  .sub_wrap .proposer_info .proposer_guide {margin-top: 50px;text-align: center;border: 2px solid #4c6df7;border-radius: 5px;padding: 30px 50px;}
+  .sub_wrap .proposer_info .proposer_guide p {color:#4c6df7;line-height: 1.7;font-size: 17px;}
+  .sub_wrap .proposer_info .notice_w_bottom {background-color: #374260;padding:50px;margin-top:70px;margin-bottom: 0;}
+  .sub_wrap .proposer_info .notice_w_bottom h4 {color:#fff;font-size: 30px;}
+  .sub_wrap .proposer_info .notice_w_bottom .depth_list {margin-top:25px;}
+  .sub_wrap .proposer_info .notice_w_bottom .depth_list > li {color:#fff;font-size: 14px;}
+  .sub_wrap .proposer_info .notice_w_bottom .depth_list > li:before {background-color: #fff;}
 
   /*참관자 정보등록*/
   .sub_wrap .observer_wrap {padding: 110px 0 200px;}
@@ -1348,7 +1387,6 @@ border-radius:100%;display:table;}
   .sub_wrap .cart_path {display:block;position: absolute;top:10px;left:auto;right:0;width:100%;text-align:right;}
   .sub_wrap .cart_path ul li + li:before {width:7px;height: 10px;background:url("../images/icon/m_sub_path_arr.png") no-repeat center center;background-size:5px;margin:0 20px;}
   .sub_wrap .cart_path ul li span {font-size:18px;}
-  .sub_wrap .cart_wrap .proposer_info {padding: 0px 279px 90px;}
 
   .sub_wrap .cart_view {margin:0;}
   .sub_wrap .cart_chk_all {margin:0;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;padding:35px 40px;border-bottom:1px solid #e8e8e8;}
@@ -1444,6 +1482,7 @@ border-radius:100%;display:table;}
   .sub_wrap .complete_wrap .complete_top.group .view .info_W {width: 800px;}
   .sub_wrap .complete_wrap .banners {margin:60px 0 0;}
 
+
   /*약관완료 레이어*/
   .pop_layer.agree {width: 100%;max-width: 1200px;width: 1200px;}
   .pop_layer.agree .pop_inner {border-radius: 10px;margin: 15px;}
@@ -1534,7 +1573,7 @@ border-radius:100%;display:table;}
   .sub_wrap .event_wrap .event_detail img {width:auto;}
   .sub_wrap .event_wrap .event_detail .btn_wrap {margin-top: 0px;}
   .sub_wrap .event_wrap .event_detail .btn_wrap  > a {height:180px;line-height: 182px;width: 180px;font-size: 20px;}
-  .sub_wrap .event_wrap .event_detail .event_in .end_flag {background-image:url("../images/icon/pc_sub_event_end.png");background-size:600px;}
+  .sub_wrap .event_wrap .event_detail .event_in .end_flag {background-image:url("../images/icon/pc_event_ends.png");background-size:600px;}
   .sub_wrap .event_wrap .event_detail .event_in .end_flag > div strong {font-size:100px;} 
   .sub_wrap .event_wrap .event_detail .event_in .end_flag > div p {font-size:18px;margin-top:30px;} 
 
@@ -1637,6 +1676,10 @@ border-radius:100%;display:table;}
   .sub_wrap .signup_btns .signup_btn.twitter:before {background-image:url("../images/icon/pc_signup_btn02.png");}
   .sub_wrap .signup_btns .signup_btn.kakao:before {background-image:url("../images/icon/pc_signup_btn03.png");}
   .sub_wrap .signup_btns .signup_btn.naver:before {background-image:url("../images/icon/pc_signup_btn04.png");}
+  .sub_wrap .signup_btns .signup_btn.facebook.terminate:before {background-image:url("../images/icon/pc_signup_btn01_off.png");}
+  .sub_wrap .signup_btns .signup_btn.twitter.terminate:before {background-image:url("../images/icon/pc_signup_btn02_off.png");}
+  .sub_wrap .signup_btns .signup_btn.kakao.terminate:before {background-image:url("../images/icon/pc_signup_btn03_off.png");}
+  .sub_wrap .signup_btns .signup_btn.naver.terminate:before {background-image:url("../images/icon/pc_signup_btn04_off.png");}
   .sub_wrap .signup_btns .signup_btn.down:before {background-image:url("../images/icon/pc_signup_btn05.png");top:-2px;left:auto;width:17px;height:17px;margin-right:7px;margin-top:0px;}
   
   .sub_wrap .signup_btns.type02 li {margin-top:0;padding-right:10px;}
@@ -1729,7 +1772,10 @@ border-radius:100%;display:table;}
   .sub_wrap .notice_wrap .questions_list .cont .icon {margin-right:40px;}
   .sub_wrap .notice_wrap .questions_list li.more_bt {margin-top:60px !important;}
 
-
+   /*사용자 가이드*/
+  .sub_wrap .use_guide_wrap {padding: 110px 0 0;}
+  .sub_wrap .use_guide_wrap .use_guide_info img {width:auto;}
+  .sub_wrap .use_guide_wrap .use_guide_info .col.even {background-color: #f5f5f5;}
 
   /*마이페이지*/
   .sub_wrap .mypage_wrap {padding: 110px 0 200px;}
