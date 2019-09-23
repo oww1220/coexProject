@@ -291,9 +291,10 @@ var COEX = COEX || {
 		goTarget:function(target){
 			$(document).on("click", target, function(e){
 				var hrefString = $(this).attr("href");
+				var header_h = $("body").hasClass("pc") ? 100 : 0;
 				var offsetTop = $(hrefString).offset();
 				if(offsetTop){
-					offsetTop = offsetTop.top;
+					offsetTop = offsetTop.top - header_h;
 					$("html, body").stop().animate({"scrollTop": offsetTop}, 1000);
 				}
 				e.preventDefault();
@@ -722,7 +723,6 @@ $(function(){
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
 		LAYER_DIV = ".pop_layer",
-		HEADER_H = $HEADER.height(),
 		SCROLL_Top = 0;
 
 
@@ -857,6 +857,7 @@ $(function(){
 
 		if(layer.hasClass("on")){
 			$BODY.removeClass("fixed");
+
 			$HEADER.removeClass("pt_open");
 			$(window).scrollTop(SCROLL_Top);
 		}
@@ -867,17 +868,21 @@ $(function(){
 		}
 
 		function paddingCalculation() {
+
 			
+			/*
 			if($TOP_BANNER.length && $TOP_BANNER.is(":visible")){
-				paddingTop = HEADER_H + $TOP_BANNER.height();
+				paddingTop = $HEADER.height() + $TOP_BANNER.height();
 			}
 			else {
-				paddingTop = HEADER_H;
+				paddingTop = $HEADER.height();
 			}
+			*/
+			var banner_h = $TOP_BANNER.length && $TOP_BANNER.is(":visible") ? $TOP_BANNER.height() : 0; 
+			var header_h = $BODY.hasClass("pc") ? 100 : 45;
+
+			paddingTop = header_h + banner_h;
 			
-			//console.log(HEADER_H);
-
-
 			layer.find(".panel_in").css({"padding-top": paddingTop});
 		}
 
@@ -1043,8 +1048,9 @@ $(function(){
 					$HEADER.removeClass("pt_open");
 					mypage.find(".mypage_bt_list").hide();
 				}
-				if(!panel_s_w.hasClass("on")){					
+				if(!panel_s_w.hasClass("on") && !$(".pop_layer").is(":visible")){					
 					$BODY.removeClass("fixed");
+					//console.log(2);
 				}
 			}
 
@@ -1055,8 +1061,9 @@ $(function(){
 			if(panel_s_w.is(":visible")){
 				search_bt_w.find("button").removeClass("on");
 				panel_s_w.removeClass("on");
-				if(!panel_w.hasClass("on")){
+				if(!panel_w.hasClass("on") && !$(".pop_layer").is(":visible")){
 					$BODY.removeClass("fixed");
+					//console.log(1);
 				}
 			}
 		}
@@ -1077,6 +1084,9 @@ $(function(){
 
 	});
 
+
+	/*qr코드 레이어*/
+	$(".qr_bt.layer_open_bt").trigger('click');
 
 
 });
