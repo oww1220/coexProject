@@ -80,7 +80,7 @@ $(function(){
 										<a href="">나의 사전등록 관리</a>
 									</li>
 									<li>
-										<a href="">쿠폰함</a>
+										<a href="">이벤트함</a>
 									</li>
 									<li>
 										<a href="">초대권 등록</a>
@@ -169,13 +169,13 @@ $(function(){
 								
 								<ul class="depth">
 									<li>
-										<a href="#">공지사항</a>
-									</li>
-									<li>
-										<a href="#">FAQ</a>
-									</li>
-									<li>
 										<a href="#">사전등록 이용안내</a>
+									</li>
+									<li>
+										<a href="#">자주묻는 질문</a>
+									</li>
+									<li>
+										<a href="#">공지사항</a>
 									</li>
 								</ul>
 							</li>
@@ -300,9 +300,10 @@ $(function(){
 					<li>
 						<a href="#">취소및환불정책</a>
 					</li>
+					<!--
 					<li class="pc">
 						<a href="#">전시관리 플랫폼</a>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 

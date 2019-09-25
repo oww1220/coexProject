@@ -121,7 +121,7 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
   select.normal {font-size:14px;}
 
   .sort_select {margin-left: 40px;}
-  .sort_select .selText {padding:5px;font-size:14px;background:url("../images/icon/pc_sub_select_dw.png") no-repeat 100% center;background-size:9px;padding-right:15px;}
+  .sort_select .selText {padding:5px;font-size:16px;background:url("../images/icon/pc_sub_select_dw.png") no-repeat 100% center;background-size:9px;padding-right:15px;}
 
   .input_c {padding-top:0;}
   .input_c input[type=checkbox] + label {font-size:17px;padding-left:35px;line-height:25px;}

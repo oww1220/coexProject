@@ -20,6 +20,8 @@
 .main_wrap .cols0 .on_off_bt input:checked + label:before {z-index:3;color:#4c6df7;background-color: #fff;background-image:none;}
 .main_wrap .cols0 .on_off_bt input:checked + label:after {z-index:1;color:#fff;background-color: #4c6df7;background-image:none;}
 .main_wrap .cols0 .on_off_bt input:checked + label span {transform: translateX(-4rem);}
+.main_wrap .cols0 .link_dt {text-align:right;position: absolute;top:0.5rem;right:1rem;color:#fff;font-size:0.9rem;}
+.main_wrap .cols0 .link_dt span {margin-right:0.3rem;display: inline-block;border-bottom: 1px solid #fff;padding-bottom:1px;}
 
 .main_wrap .cols1 {position: relative;z-index: 1;padding: 1.5rem 0;}
 .main_wrap .cols1 .inner {position: relative;}
@@ -28,6 +30,8 @@
 .main_wrap .cols1 .main_list li .list_in .event_wrap > em {letter-spacing: -1px;}
 .main_wrap .cols1 h3 {padding:0 1rem;color:#222;font-size:2rem;margin-bottom:1.5rem;}
 .main_wrap .cols1 h3 a {color:#222;}
+.main_wrap .cols1 .link_dt {text-align:right;position: absolute;top:0.5rem;right:1rem;color:#888;font-size:0.9rem;display: inline-block;border-bottom: 1px solid #888;padding-bottom:1px;}
+
 
 .main_wrap .cols2 {position: relative;z-index: 1;padding: 1.5rem 0;}
 .main_wrap .cols2 .inner {position: relative;}
@@ -58,7 +62,7 @@
 .main_wrap .cols4 .slick-prev {position:absolute;top:50%;left:2rem;width:1.2rem;height:1.2rem;margin-top:-0.6rem;font: 0/0 a;background: url("../images/icon/m_main_prev02.png") no-repeat left center;background-size: contain;}
 .main_wrap .cols4 .slick-next {position:absolute;top:50%;right:2rem;width:1.2rem;height:1.2rem;margin-top:-0.6rem;font: 0/0 a;background: url("../images/icon/m_main_next02.png") no-repeat right center;background-size: contain;}
 
-.main_wrap .cols_link {padding: 1.5rem 0 3rem;}
+.main_wrap .cols_link {padding: 3rem 0 1.5rem;}
 .main_wrap .cols_link ul {padding: 0;text-align:center;font-size:0;}
 .main_wrap .cols_link ul li {display:block;}
 .main_wrap .cols_link ul li + li {margin-top:1rem;}
@@ -107,6 +111,8 @@
   .main_wrap .cols0 .on_off_bt label:before,
   .main_wrap .cols0 .on_off_bt label:after{width: 40px;font-size: 14px;line-height: 25px;border-radius: 5px;}
   .main_wrap .cols0 .on_off_bt input:checked + label span {transform: translateX(-50px);}
+  .main_wrap .cols0 .link_dt {top:25px;right:0;font-size:16px;}
+  .main_wrap .cols0 .link_dt span {margin-right:5px;}
 
   .main_wrap .cols1 {padding: 50px 0;}
   .main_wrap .cols1 h3 {padding:0;font-size:40px;margin-bottom:50px;}
@@ -115,6 +121,7 @@
   .main_wrap .cols1 .main_list li:nth-child(5n){margin-left: 0px;}
   .main_wrap .cols1 .main_list li .list_in .event_wrap > span {letter-spacing: 0px;}
   .main_wrap .cols1 .main_list li .list_in .event_wrap > em {letter-spacing: 0px;}
+  .main_wrap .cols1 .link_dt {top:25px;right:0;font-size:16px;}
 
   .main_wrap .cols2 {padding:100px 0;background-color:#F5F5F5;}
   .main_wrap .cols2 .inner {position: relative;overflow: hidden;}
@@ -143,7 +150,7 @@
   .main_wrap .cols4 .slick-prev {position:absolute;top:50%;left:40px;width:28px;height:28px;margin-top:-14px;background: url("../images/icon/pc_main_prev02.png") no-repeat left center;background-size: 16px;}
   .main_wrap .cols4 .slick-next {position:absolute;top:50%;right:40px;width:28px;height:28px;margin-top:-14px;background: url("../images/icon/pc_main_next02.png") no-repeat right center;background-size: 16px;}
 
-  .main_wrap .cols_link {padding: 50px 0 150px;}
+  .main_wrap .cols_link {padding: 150px 0 50px;}
   .main_wrap .cols_link ul {padding: 0;text-align:center;font-size:0;}
   .main_wrap .cols_link ul li {display:inline-block;}
   .main_wrap .cols_link ul li + li {margin-left:180px;margin-top:0;}
@@ -158,9 +165,9 @@
   .main_wrap .cols_notice li {position: relative;padding:3px 0;}
   .main_wrap .cols_notice li a {display:block;}
   .main_wrap .cols_notice li a:before {width:20px;height:20px;margin-right:10px;background-image: url("../images/icon/pc_main_notice.png");}
-  .main_wrap .cols_notice li p {font-size: 14px;width:940px;padding:1px 0;}
-  .main_wrap .cols_notice li strong {font-size: 14px;margin-right: 30px;}
-  .main_wrap .cols_notice li span {font-size: 14px;display:block;color:#8f8f8f;position: absolute;top:7px;right:0;}
+  .main_wrap .cols_notice li p {font-size: 16px;width:940px;padding:1px 0;}
+  .main_wrap .cols_notice li strong {font-size: 16px;margin-right: 30px;}
+  .main_wrap .cols_notice li span {font-size: 16px;display:block;color:#8f8f8f;position: absolute;top:7px;right:0;}
 
   .main_wrap .cols_appdown {padding:90px 0;}
   .main_wrap .cols_appdown .appdown_cont {display:inline-block;}
