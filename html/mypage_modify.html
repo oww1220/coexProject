@@ -95,7 +95,7 @@
                                                         <div class="icon">아이콘</div>
                                                         <b>99</b>
                                                     </div> 
-                                                    <span>쿠폰함</span>
+                                                    <span>이벤트함</span>
                                                 </a>
                                             </div>
                                         </li>
@@ -121,113 +121,212 @@
                                             <div class="title">회원정보를 최신정보로 관리해주세요.</div>
                                             <p>보호조치 해제 및 유용한 정보 수신을 위해 회원정보를 최신으로 업데이트 하세요.</p>
 
-                                            <ul class="signup_list">
-                                                <li class="button">
-                                                    <label for="">이름</label>
-                                                    <input type="text" placeholder="홍길동" value="Chloe Kim">
-                                                    <div class="button_wrap">
-                                                        <button type="button">이름 수정</button>
-                                                    </div>
-                                                    <span class="help_message">전시회 현장 입장확인 및 네임텍 발권을 위해 실명을 입력해주세요.</span>
-                                                    <span class="error_message">에러 메시지</span>
-                                                </li>
-                                                <li>
-                                                    <strong>성별</strong>
-                                                    <div class="radio_list">
-                                                        <div class="input_r">
-                                                            <input id="r01" type="radio" name="001">
-                                                            <label for="r01">남</label>
-                                                        </div>
-                                                        <div class="input_r">
-                                                            <input id="r02" type="radio" name="001">
-                                                            <label for="r02">여</label>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <label for="">이메일(ID)</label>
-                                                    <input type="text" placeholder="smp2@coex.co.kr" value="smp@coex.co.kr" >
-                                                    <span class="help_message">본 사이트는 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확히 입력해 주세요.</span>
-                                                    <span class="error_message">에러 메시지</span>
-                                                </li>
-                                                <li class="button">
-                                                    <label for="">비밀번호</label>
-                                                    <input type="password" placeholder="비밀번호" value="***">
-                                                    <div class="button_wrap">
-                                                        <button type="button">비밀번호 수정</button>
-                                                    </div>
-                                                    <span class="help_message">영문, 숫자, 특수기호포함 8자 이상, 16자 이하로 작성해주세요.</span>
-                                                    <span class="error_message">에러 메시지</span>
-                                                </li>
-                                                <li>
-                                                    <label for="">생년</label>
-                                                    <input type="text" placeholder="19871220"value="19871220">
-                                                    <span class="help_message">만 14세 미만은 회원가입을할 수 없습니다.</span>
-                                                    <span class="error_message">에러 메시지</span>
-                                                </li>
-                                                <li>
-                                                    <label for="">휴대폰 번호</label>
-                                                    <input type="text" placeholder="010-1234-1234"value="010-0333-****">
-                                                    <span class="help_message">본 사이트는 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확히 입력해 주세요.</span>
-                                                    <span class="error_message">에러 메시지</span>
-                                                </li>
-                                                <li>
-                                                    <strong>마케팅 정보 수신동의</strong>
-                                                    <div class="chk_list">
-                                                        <div class="input_c">
-                                                            <input id="ch001" type="checkbox">
-                                                            <label for="ch001">이메일</label>
-                                                        </div>
-                                                        <div class="input_c">
-                                                            <input id="ch002" type="checkbox">
-                                                            <label for="ch002">APP 푸시알림</label>
-                                                        </div>
-                                                        <div class="input_c">
-                                                            <input id="ch003" type="checkbox">
-                                                            <label for="ch003">SMS</label>
-                                                        </div>
-                                                        <div class="input_c">
-                                                            <input id="ch004" type="checkbox">
-                                                            <label for="ch004">카카오플러스</label>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-
-                                            <ul class="signup_btns">
-                                                <li>
-                                                    <a href="#" class="signup_btn facebook">페이스북 계정으로 연결하기</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="signup_btn facebook terminate">페이스북 계정 연결해제</a>
-                                                </li>
-                                                <!--<li>
-                                                    <a href="#"class="signup_btn twitter">트위터 계정으로 연결하기</a>
-                                                </li>-->
-                                                <li>
-                                                    <a href="#" class="signup_btn kakao">카카오톡 계정으로 연결하기</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="signup_btn kakao terminate">카카오톡 계정 연결해제</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="signup_btn naver">네이버 계정으로 연결하기</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="signup_btn naver terminate">네이버 계정 연결해제</a>
-                                                </li>
-                                            </ul>
-
-                                            <div class="btn_w">
-                                                <ul class="signup_btns type02">
+                                            <div class="modify_list">
+                                                <ul class="clear_both">
                                                     <li>
-                                                        <a href="#" class="layer_open_bt signup_btn border" data-layer="layer-t01">회원탈퇴</a>
+                                                        <div class="list_in">
+                                                            <strong>기본정보</strong>
+                                                            <ul>
+                                                                <li>
+                                                                    <b>이름</b>
+                                                                    <span>홍길*</span>
+                                                                </li>
+                                                                <li>
+                                                                    <b>태어난 해</b>
+                                                                    <span>19**년</span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="btn_w">
+                                                                <ul class="signup_btns">
+                                                                    <li>
+                                                                        <button type="button" class="signup_btn cancel">수정</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="layer_open_bt signup_btn" data-layer="layer-t02">수정완료</a>
+                                                        <div class="list_in">
+                                                            <strong>CONTACT</strong>
+                                                            <ul>
+                                                                <li>
+                                                                    <b>휴대폰번호</b>
+                                                                    <span>010-1234-1234</span>
+                                                                </li>
+                                                                <li>
+                                                                    <b>이메일</b>
+                                                                    <span>saman****@g****.com</span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="btn_w">
+                                                                <ul class="signup_btns">
+                                                                    <li>
+                                                                        <button type="button" class="signup_btn cancel">수정</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_in">
+                                                            <strong>보안</strong>
+                                                            <ul>
+                                                                <li>
+                                                                    <b>비밀번호</b>
+                                                                    <span>*********</span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="btn_w">
+                                                                <ul class="signup_btns">
+                                                                    <li>
+                                                                        <button type="button" class="signup_btn cancel">수정</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_in">
+                                                            <strong>SNS 연결 설정</strong>
+                                                            <ul>
+                                                                <li>
+                                                                    <b>페이스북</b>
+                                                                    <span>연결중(From 2019. 05.30)</span>
+                                                                </li>
+                                                                <li>
+                                                                    <b>카카오톡</b>
+                                                                    <span>연결안됨</span>
+                                                                </li>
+                                                                <li>
+                                                                    <b>네이버</b>
+                                                                    <span>연결안됨</span>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="btn_w">
+                                                                <ul class="signup_btns">
+                                                                    <li>
+                                                                        <button type="button" class="signup_btn cancel">수정</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </li>
                                                 </ul>
-                                            </div> 
+
+                                                <div class="withdraw_bt">
+                                                    <a href="#" class="layer_open_bt" data-layer="layer-t01"><span>회원탈퇴 </span>&gt;</a>
+                                                </div>
+                                            </div>
+
+                                            <div style="display:none;">
+                                                <ul class="signup_list">
+                                                    <li class="button">
+                                                        <label for="">이름</label>
+                                                        <input type="text" placeholder="홍길동" value="Chloe Kim">
+                                                        <div class="button_wrap">
+                                                            <button type="button">이름 수정</button>
+                                                        </div>
+                                                        <span class="help_message">전시회 현장 입장확인 및 네임텍 발권을 위해 실명을 입력해주세요.</span>
+                                                        <span class="error_message">에러 메시지</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>성별</strong>
+                                                        <div class="radio_list">
+                                                            <div class="input_r">
+                                                                <input id="r01" type="radio" name="001">
+                                                                <label for="r01">남</label>
+                                                            </div>
+                                                            <div class="input_r">
+                                                                <input id="r02" type="radio" name="001">
+                                                                <label for="r02">여</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">이메일(ID)</label>
+                                                        <input type="text" placeholder="smp2@coex.co.kr" value="smp@coex.co.kr" >
+                                                        <span class="help_message">본 사이트는 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확히 입력해 주세요.</span>
+                                                        <span class="error_message">에러 메시지</span>
+                                                    </li>
+                                                    <li class="button">
+                                                        <label for="">비밀번호</label>
+                                                        <input type="password" placeholder="비밀번호" value="***">
+                                                        <div class="button_wrap">
+                                                            <button type="button">비밀번호 수정</button>
+                                                        </div>
+                                                        <span class="help_message">영문, 숫자, 특수기호포함 8자 이상, 16자 이하로 작성해주세요.</span>
+                                                        <span class="error_message">에러 메시지</span>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">생년</label>
+                                                        <input type="text" placeholder="19871220"value="19871220">
+                                                        <span class="help_message">만 14세 미만은 회원가입을할 수 없습니다.</span>
+                                                        <span class="error_message">에러 메시지</span>
+                                                    </li>
+                                                    <li>
+                                                        <label for="">휴대폰 번호</label>
+                                                        <input type="text" placeholder="010-1234-1234"value="010-0333-****">
+                                                        <span class="help_message">본 사이트는 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확히 입력해 주세요.</span>
+                                                        <span class="error_message">에러 메시지</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>마케팅 정보 수신동의</strong>
+                                                        <div class="chk_list">
+                                                            <div class="input_c">
+                                                                <input id="ch001" type="checkbox">
+                                                                <label for="ch001">이메일</label>
+                                                            </div>
+                                                            <div class="input_c">
+                                                                <input id="ch002" type="checkbox">
+                                                                <label for="ch002">APP 푸시알림</label>
+                                                            </div>
+                                                            <div class="input_c">
+                                                                <input id="ch003" type="checkbox">
+                                                                <label for="ch003">SMS</label>
+                                                            </div>
+                                                            <div class="input_c">
+                                                                <input id="ch004" type="checkbox">
+                                                                <label for="ch004">카카오플러스</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="signup_btns">
+                                                    <li>
+                                                        <a href="#" class="signup_btn facebook">페이스북 계정으로 연결하기</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="signup_btn facebook terminate">페이스북 계정 연결해제</a>
+                                                    </li>
+                                                    <!--<li>
+                                                        <a href="#"class="signup_btn twitter">트위터 계정으로 연결하기</a>
+                                                    </li>-->
+                                                    <li>
+                                                        <a href="#" class="signup_btn kakao">카카오톡 계정으로 연결하기</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="signup_btn kakao terminate">카카오톡 계정 연결해제</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="signup_btn naver">네이버 계정으로 연결하기</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="signup_btn naver terminate">네이버 계정 연결해제</a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn_w">
+                                                    <ul class="signup_btns type02">
+                                                        <li>
+                                                            <a href="#" class="layer_open_bt signup_btn border" data-layer="layer-t01">회원탈퇴</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="layer_open_bt signup_btn" data-layer="layer-t02">수정완료</a>
+                                                        </li>
+                                                    </ul>
+                                                </div> 
+                                            <div>
 
                                         </div>
 
