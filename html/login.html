@@ -88,20 +88,21 @@
 							<p class="signup_guide">
 								<!--비밀번호를 잊으셨나요?-->
 								<a href="#">회원가입</a>
-								<a href="#">아이디/비밀번호 찾기</a>
+								<a href="#">아이디 찾기</a>
+								<a href="#">비밀번호 확인</a>
 							</p>
 							<ul class="signup_btns">
 								<li>
-									<a href="#"class="signup_btn facebook">페이스북 로그인</a>
+									<a href="#"class="signup_btn facebook layer_open_bt" data-layer="layer-t01">페이스북 로그인</a>
 								</li>
 								<!--<li>
 									<a href="#"class="signup_btn twitter">트위터 로그인</a>
 								</li>-->
 								<li>
-									<a href="#"class="signup_btn kakao">카카오톡 로그인</a>
+									<a href="#"class="signup_btn kakao layer_open_bt" data-layer="layer-t01">카카오톡 로그인</a>
 								</li>
 								<li>
-									<a href="#"class="signup_btn naver">네이버 로그인</a>
+									<a href="#"class="signup_btn naver layer_open_bt" data-layer="layer-t01">네이버 로그인</a>
 								</li>
 							</ul>
 						</form>
@@ -109,6 +110,28 @@
 				</div>
 			</div>
 			<!--//로그인-->
+
+			<!--sns연결 오류 레이어-->
+			<!--js::pop_layer:parent, layer-t01:target--->
+			<div class="pop_layer signup width layer-t01">
+				<div class="pop_inner">
+					<div class="pop_scroll">
+
+						<div class="pop_cont">
+							<strong>SNS 계정 연결이 되어있지 않습니다.</strong>
+							<p>소셜계정 연결 후, 다시 시도해 주세요.</p>
+							<div class="btn_wrap">
+								<a href="#" id="test001" data-layer="layer-t01">확인</a>
+							</div>
+						</div>
+						<a href="#"class="layer_close_bt" data-layer="layer-t01">닫기</a>	
+                    
+					</div>
+
+				</div>
+			</div>
+			<div class="layer_dimmed">레이어 배경</div>
+			<!--//sns연결 오류 레이어-->
 
 
 		</div>

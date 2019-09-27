@@ -209,7 +209,7 @@ body.fixed {overflow: hidden; position: fixed;}
 .main_list .list_in .flag .star {display:inline-block;vertical-align:middle;width:1.5rem;height:1.5rem;background:url("../images/icon/m_sub_star.png") no-repeat 0 0;background-size:100%;font: 0/0 a;margin-left:auto;}
 .main_list .list_in .event_wrap {margin-top: 1.5rem;padding:0 0.5rem;}
 .main_list .list_in .event_wrap .tit {font-size: 1.3rem;display:block;font-weight:normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding: 1px 0;margin-bottom:0.3rem;}
-.main_list .list_in .event_wrap > strong {font-size: 1.3rem;display:block;font-weight:normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding: 1px 0;margin-bottom:0.7rem;}
+.main_list .list_in .event_wrap > strong {font-size: 1.4rem;display:block;font-weight:normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding: 1px 0;margin-bottom:0.7rem;}
 .main_list .list_in .event_wrap > span {font-size: 1.05rem;display:block;margin-bottom:0.5rem;letter-spacing: 0;} 
 .main_list .list_in .event_wrap > span:before {position: relative;bottom: 0.2rem;margin-right: 0.5rem;display: inline-block;vertical-align: middle;content: "";width: 1.2rem;height: 1.4rem;background: url("../images/icon/m_main_cols1_ic03.png") no-repeat center center;background-size: 99%;}
 .main_list .list_in .event_wrap > span.regi:before {background-image:url("../images/icon/m_main_cols1_ic05.png");}
@@ -305,11 +305,11 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
 .regi_list_wrap .regi_in .hover .btns a + a {margin-top:0.5rem;}
 .regi_list_wrap .regi_in .hover .dim {position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.7;}
 .regi_list_wrap .regi_list > ul > li {width:22rem;margin:1.5rem auto 0;}
-#container .sub_wrap li.none {margin:6rem 0;text-align:center;float:none;width:100%;border:0 !important;}
+#container .sub_wrap li.none {margin:6rem 0;text-align:center;float:none;width:100%;border:0 !important;display: block;}
 #container .sub_wrap li.none .list_in {display:inline-block;}
 #container .sub_wrap li.none .list_in:before {display:inline-block;content:'';width:8rem;height:8rem;background:url("../images/icon/m_sub_event_none.png") no-repeat 0 0;background-size:100%;font: 0/0 a;}
 #container .sub_wrap li.none p {color: #888;font-size: 1.15rem;margin-top: 1rem;}
-#container .sub_wrap .more_bt {width:100%;margin:2rem 0 0;border:0 !important;}
+#container .sub_wrap .more_bt {width:100%;margin:2rem 0 0;border:0 !important;display: block;}
 #container .sub_wrap .more_bt .list_in a {display: block;width: 5rem;height: 5rem;background: url("../images/icon/m_sub_more_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
 #container .sub_wrap .more_bt.type2 .list_in a {background-image: url(../images/icon/m_regi_more.png);}
 
@@ -338,6 +338,22 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
 .regi_list_wrap .regi_in .infos_w > em {font-size: 1.05rem;display:block;letter-spacing: 0;} 
 .regi_list_wrap .regi_in .infos_w > em:before {position: relative;bottom: 0.2rem;margin-right: 0.5rem;display: inline-block;vertical-align: middle;content: "";width: 1.2rem;height: 1.4rem;background: url("../images/icon/m_main_cols1_ic04.png") no-repeat center center;background-size: 85%;}
 
+.regi_list_wrap .regi_list .text_regi_list {padding:3rem 0 0;}
+.regi_list_wrap .regi_list .text_regi_list > li:first-child {border-top: 1px solid #e8e8e8;}
+.regi_list_wrap .regi_list .text_regi_list > li {width: 100%;margin: 0;padding: 1rem;border-bottom: 1px solid #e8e8e8;box-sizing: border-box;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
+.regi_list_wrap .regi_list .text_regi_list .list_in {}
+.regi_list_wrap .regi_list .text_regi_list .list_in  > strong {font-size: 1.4rem;display:block;font-weight:normal;margin-bottom:1rem;line-height:1.3;}
+.regi_list_wrap .regi_list .text_regi_list .list_in .info_W > span {font-size: 1.05rem;display:block;margin-bottom:0.5rem;letter-spacing: 0;} 
+.regi_list_wrap .regi_list .text_regi_list .list_in .info_W > span:before {position: relative;bottom: 0.2rem;margin-right: 0.5rem;display: inline-block;vertical-align: middle;content: "";width: 1.2rem;height: 1.4rem;background: url("../images/icon/m_main_cols1_ic03.png") no-repeat center center;background-size: 99%;}
+.regi_list_wrap .regi_list .text_regi_list .list_in .info_W > span.regi:before {background-image:url("../images/icon/m_main_cols1_ic05.png");}
+.regi_list_wrap .regi_list .text_regi_list .list_in .info_W > em {font-size: 1.05rem;display:block;letter-spacing: 0;} 
+.regi_list_wrap .regi_list .text_regi_list .list_in .info_W > em:before {position: relative;bottom: 0.2rem;margin-right: 0.5rem;display: inline-block;vertical-align: middle;content: "";width: 1.2rem;height: 1.4rem;background: url("../images/icon/m_main_cols1_ic04.png") no-repeat center center;background-size: 85%;}
+.regi_list_wrap .regi_list .text_regi_list .list_in .info_W i {font-size: 1.05rem;margin-right: 0.5rem;font-style: normal;}
+.regi_list_wrap .regi_list .text_regi_list .btn_w {width:11rem;text-align:right;margin-left:auto;flex:none;}
+.regi_list_wrap .regi_list .text_regi_list .signup_btns {display:inline-block;margin-top:0;}
+.regi_list_wrap .regi_list .text_regi_list .signup_btns li {float:none;padding:0;width:9rem;max-width:100%;}
+.regi_list_wrap .regi_list .text_regi_list .signup_btns li + li {margin-top:0.5rem;}
+.regi_list_wrap .regi_list .text_regi_list .signup_btns li a {font-size: 1.05rem;line-height: 1;padding: 1rem 0 0.8rem;}
 
 /*페이징*/
 .paging_w {text-align:center;font-size:0;margin-top:2rem;}
@@ -680,6 +696,22 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .regi_list_wrap .regi_in .infos_w > em {font-size: 14px;display:block;letter-spacing: 0;} 
     .regi_list_wrap .regi_in .infos_w > em:before {position: relative;bottom: 2px;margin-right: 10px;display: inline-block;vertical-align: middle;content: "";width: 14px;height: 16px;background: url("../images/icon/pc_main_cols1_ic04.png") no-repeat center center;background-size: 12px;}
 
+    .regi_list_wrap .regi_list .text_regi_list {padding:50px 0 0;}
+    .regi_list_wrap .regi_list .text_regi_list > li:first-child {border-top: 1px solid #e8e8e8;}
+    .regi_list_wrap .regi_list .text_regi_list > li {width: 100%;margin: 0;padding: 40px 0;border-bottom: 1px solid #e8e8e8;box-sizing: border-box;display:block;position:relative;}
+    .regi_list_wrap .regi_list .text_regi_list .list_in  > strong {font-size: 20px;display:block;font-weight:normal;margin-bottom:20px;line-height:1.3;padding-right: 333px;}
+    .regi_list_wrap .regi_list .text_regi_list .list_in .info_W > span {font-size: 16px;margin-bottom:0px;display:inline-block;} 
+    .regi_list_wrap .regi_list .text_regi_list .list_in .info_W > span:before {bottom: 2px;margin-right: 10px;width: 14px;height: 16px;background: url("../images/icon/pc_main_cols1_ic03.png") no-repeat center center;background-size: 14px;}
+    .regi_list_wrap .regi_list .text_regi_list .list_in .info_W > span.regi:before {width: 14px;height: 14px;background-image:url("../images/icon/pc_main_cols1_ic05.png");background-size: 14px;}
+    .regi_list_wrap .regi_list .text_regi_list .list_in .info_W > em {font-size: 16px;display:inline-block;margin-left:30px;} 
+    .regi_list_wrap .regi_list .text_regi_list .list_in .info_W > em:before {bottom: 2px;margin-right: 10px;width: 14px;height: 16px;background: url("../images/icon/pc_main_cols1_ic04.png") no-repeat center center;background-size: 12px;}
+    .regi_list_wrap .regi_list .text_regi_list .list_in .info_W i {display:inline;font-size: 16px;margin-right: 10px;font-style: normal;}
+
+    .regi_list_wrap .regi_list .text_regi_list .btn_w {width:auto;text-align:right;margin-left:auto;flex:none;display:block;position: absolute;top: 50%;right: 0;margin-top: -25px;}
+    .regi_list_wrap .regi_list .text_regi_list .signup_btns {display:inline-block;margin-top:0;font-size:0;}
+    .regi_list_wrap .regi_list .text_regi_list .signup_btns li {float:none;padding:0;width: 156px;max-width:100%;display:inline-block;}
+    .regi_list_wrap .regi_list .text_regi_list .signup_btns li + li {margin-top:0;margin-left: 5px;}
+    .regi_list_wrap .regi_list .text_regi_list .signup_btns li a {font-size: 14px;line-height: 38px;height: 40px;padding: 0;}
 
 
     /*레이어*/
