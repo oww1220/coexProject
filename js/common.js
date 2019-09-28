@@ -953,6 +953,10 @@ $(function(){
 	if($(".prch-wrap").length) {
 		$FOOTER.css({"padding-bottom": "9rem"});
 	}
+	if($(".sub_wrap .order_view .order_pay").length) {
+		$FOOTER.css({"padding-bottom": "9rem"});
+	}
+
 
 	/*업체정보 레이어
 	if($(".layer_open_company").length){

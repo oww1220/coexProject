@@ -388,6 +388,35 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .cart_view .cart_guide {margin:2rem 1rem 0;}
 .sub_wrap .cart_view .cart_guide h5 {font-size:1.4rem;}
 
+/*티켓결제*/
+.sub_wrap .order_view .order_col {padding:0 1rem;}
+.sub_wrap .order_view .order_col + .order_col {margin-top:2.5rem;}
+.sub_wrap .order_view .order_col h4 {font-weight: normal;font-size: 1.7rem;margin-bottom:1.3rem;}
+.sub_wrap .order_view .order_info li + li {margin-top:1rem;}
+.sub_wrap .order_view .order_info li b {font-weight:normal;display:inline-block;width:6rem;}
+.sub_wrap .order_view .order_info li span {display:inline-block;}
+
+.sub_wrap .order_view .order_col .cart_box {border:0;}
+.sub_wrap .order_view .order_col .cart_box .cart_product {margin: 0;padding: 0;}
+.sub_wrap .order_view .order_col .cart_box .cart_product .view {padding:0;}
+
+.sub_wrap .order_view .order_select .input_r {display:block;}
+.sub_wrap .order_view .order_select .input_r + .input_r {margin:1rem 0 0;}
+.sub_wrap .order_view .order_select .input_r_g {position:relative;background-color:#FDF168;border-radius:5px;padding:1rem;margin-top:0.5rem;display:none;}
+.sub_wrap .order_view .order_select .input_r_g:before {display: block;content: '';position: absolute;top: -0.5rem;left: 15%;width: 1rem;height: 1rem;margin-left:-0.5rem;background: url("../images/icon/m_singup_arr.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;}
+.sub_wrap .order_view .order_select .input_r_g p {font-size:1rem;line-height:1.4;padding-left:1.4rem;text-align:left;color:#222;}
+.sub_wrap .order_view .order_select .input_r_g p:before {display: block;content: "";width: 1rem;height: 1rem;position: absolute;top: 1.1rem;left: 1rem;background: url("../images/icon/m_singup_alert.png") no-repeat 0 0;background-size: 100%;}
+.sub_wrap .order_view .order_select .input_r input[type=radio]:checked + label + .input_r_g {display:block;}
+.sub_wrap .order_view .order_select .input_r.naver label:after {display:inline-block;content: "";position: relative;top: -0.2rem;margin-left:1rem;width:4.5rem;height:2rem;background: url("../images/icon/pc_s_naver.png") no-repeat center left;background-size: contain;vertical-align: middle;}
+.sub_wrap .order_view .order_select .input_r.kakao label:after {display:inline-block;content: "";position: relative;top: -0.2rem;margin-left:1rem;width:4.5rem;height:2rem;background: url("../images/icon/pc_s_kakao.png") no-repeat center left;background-size: contain;vertical-align: middle;}
+
+.sub_wrap .order_view .order_pay_w {}
+.sub_wrap .order_view .order_pay_w .price_w {display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;padding:2.5rem 1rem;}
+.sub_wrap .order_view .order_pay_w .price_w span {display:block;text-align:center;font-size:1.05rem;}
+.sub_wrap .order_view .order_pay_w .price_w strong {display:block;text-align:center;font-size:1.7rem;color:#FF6280;font-weight:normal;margin-top:0;margin-left:auto;}
+.sub_wrap .order_view .order_pay_w .price_chk {padding:1.5rem 1rem 0;border-top:1px dotted #e8e8e8;}
+.sub_wrap .order_view .order_pay {display:block;position: fixed;right: 0;bottom: 0;left: 0;z-index: 10;background-color:#fff;padding:1rem;border-top:1px solid #e8e8e8;}
+.sub_wrap .order_view .order_pay .signup_btns {margin:0;}
 
 /*완료*/
 .sub_wrap .complete_wrap {position: relative;}
@@ -469,7 +498,7 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .pop_layer.coupon .pop_cont .info_col .lists {margin-top:1rem;}
 .pop_layer.coupon .pop_cont .info_col .lists .depth_list {font-size: 1.05rem;}
 .pop_layer.coupon .pop_cont .info_col .lists .depth_list li + li {margin-top:0.5rem;}
-.pop_layer.coupon .pop_cont .info_col .table_wrap button {font-size:0.9rem;width:5.5rem;height:2.3rem;line-height:2.5rem;text-align:center;background-color:#4C6DF7;color:#fff;border-radius:5px;}
+.pop_layer.coupon .pop_cont .info_col .table_wrap button {font-size:0.9rem;width:6.5rem;height:2.3rem;line-height:2.5rem;text-align:center;background-color:#4C6DF7;color:#fff;border-radius:5px;}
 
 
 .pop_layer.width {width: 100%;max-width: 100%;}
@@ -1558,10 +1587,10 @@ border-radius:100%;display:table;}
   .sub_wrap .cart_box .cart_product .view .free {color:#FF6280;}
   .sub_wrap .cart_box .cart_product .view .pay {color:#4C6DF7;}
   .sub_wrap .cart_box .cart_product .view .infos {margin-top:25px;letter-spacing: 0;}
-  .sub_wrap .cart_box .cart_product .view .infos li {font-size:14px;float: left;}
-  .sub_wrap .cart_box .cart_product .view .infos li i {margin-right:10px;}
-  .sub_wrap .cart_box .cart_product .view .infos li + li {margin-top:0px;margin-left:60px;}
-  .sub_wrap .cart_box .cart_product .view .infos li:before {position: relative;bottom: 2px;margin-right: 10px;display: inline-block;vertical-align: middle;content: "";width: 14px;height: 16px;background: url("../images/icon/pc_main_cols1_ic05.png") no-repeat center center;background-size: 14px;}
+  .sub_wrap .cart_box .cart_product .view .infos li {font-size:16px;float:left;}
+  .sub_wrap .cart_box .cart_product .view .infos li i {margin-right:7px;}
+  .sub_wrap .cart_box .cart_product .view .infos li + li {margin-top:0px;margin-left:40px;}
+  .sub_wrap .cart_box .cart_product .view .infos li:before {position: relative;bottom: 2px;margin-right: 7px;display: inline-block;vertical-align: middle;content: "";width: 14px;height: 16px;background: url("../images/icon/pc_main_cols1_ic05.png") no-repeat center center;background-size: 14px;}
   .sub_wrap .cart_box .cart_product .view .infos li + li:before {background: url("../images/icon/pc_main_cols1_ic03.png") no-repeat center center;background-size: 14px;}
   .sub_wrap .cart_box .cart_product .view .infos li + li + li:before {background: url("../images/icon/pc_main_cols1_ic04.png") no-repeat center center;background-size: 12px;}
   .sub_wrap .cart_box .cart_product .view .dt_W {border-top: 1px dashed #e8e8e8;margin-top:20px;padding-top: 10px;}
@@ -1585,6 +1614,43 @@ border-radius:100%;display:table;}
   .sub_wrap .cart_box .cart_info_w .signup_btn {height:50px;line-height:50px;font-size:14px;}
   .sub_wrap .cart_view .cart_guide {margin:40px 0 0;}
   .sub_wrap .cart_view .cart_guide h5 {font-size:17px;}
+
+  /*티켓결제*/
+  .sub_wrap .order_view {position: relative;padding-right:400px;}
+  .sub_wrap .order_view .order_col {padding:0;}
+  .sub_wrap .order_view .order_col + .order_col {margin-top:70px;}
+  .sub_wrap .order_view .order_col h4 {font-weight: normal;font-size: 30px;margin-bottom:35px;}
+  .sub_wrap .order_view .order_info {border:1px solid #e8e8e8;border-radius:5px;padding:45px 55px;box-sizing:border-box;}
+  .sub_wrap .order_view .order_info li {font-size:18px;}
+  .sub_wrap .order_view .order_info li + li {margin-top:25px;}
+  .sub_wrap .order_view .order_info li b {font-weight:normal;display:inline-block;width:100px;}
+  .sub_wrap .order_view .order_info li span {display:inline-block;}
+
+  .sub_wrap .order_view .order_col .cart_box {border:1px solid #e8e8e8;border-radius:5px;padding:45px 55px;box-sizing:border-box;}
+  .sub_wrap .order_view .order_col .cart_box .cart_product .btn_w {bottom: 0px;right: 0px;}
+  .sub_wrap .order_view .order_col .cart_box .cart_product .infos li {float:none;}
+  .sub_wrap .order_view .order_col .cart_box .cart_product .infos li + li {margin-top:10px;margin-left:0;}
+
+  .sub_wrap .order_view .order_select {border:1px solid #e8e8e8;border-radius:5px;padding:45px 55px;box-sizing:border-box;}
+  .sub_wrap .order_view .order_select .input_r {display:inline-block;}
+  .sub_wrap .order_view .order_select .input_r + .input_r {margin:0 0 0 60px;}
+  .sub_wrap .order_view .order_select .input_r_g {position:absolute;background-color:#FDF168;border-radius:5px;padding:20px;margin-top:0;display:none;width:760px;left:-55px;top:100px;}
+  .sub_wrap .order_view .order_select .input_r_g:before {top: -5px;width: 12px;height: 12px;margin-left:-6px;background-image: url("../images/icon/pc_singup_arr.png");left: 50%;}
+  .sub_wrap .order_view .order_select .input_r_g p {font-size:16px;line-height:1.4;padding-left:25px;text-align:left;color:#222;}
+  .sub_wrap .order_view .order_select .input_r_g p:before {width: 14px;height: 14px;position: absolute;top: 24px;left: 20px;background-image: url("../images/icon/pc_singup_alert.png");}
+  .sub_wrap .order_view .order_select .input_r input[type=radio]:checked + label + .input_r_g {display:block;}
+  .sub_wrap .order_view .order_select .input_r.naver label:after {display:inline-block;content: "";position: relative;top: -2px;margin-left:15px;width:76px;height:30px;background: url("../images/icon/pc_s_naver.png") no-repeat center left;background-size: 76px;vertical-align: middle;}
+  .sub_wrap .order_view .order_select .input_r.kakao label:after {display:inline-block;content: "";position: relative;top: -2px;margin-left:15px;width:76px;height:30px;background: url("../images/icon/pc_s_kakao.png") no-repeat center left;background-size: 76px;vertical-align: middle;}
+
+  .sub_wrap .order_view .order_pay_w {position: absolute;top:0;right:0;width: 360px;margin-top: 64px;}
+  .sub_wrap .order_view .order_pay_w .price_in {border: 2px solid #4c6df7;border-radius: 5px;padding: 50px 0;}
+  .sub_wrap .order_view .order_pay_w .price_w {display:block;padding:0 30px 50px;}
+  .sub_wrap .order_view .order_pay_w .price_w span {display:block;text-align:left;font-size:20px}
+  .sub_wrap .order_view .order_pay_w .price_w strong {display:block;text-align:right;font-size:35px;color:#FF6280;font-weight:normal;margin-top:60px;margin-left:0;}
+  .sub_wrap .order_view .order_pay_w .price_chk {padding:50px 30px 0;border-top:1px dotted #e8e8e8;}
+  .sub_wrap .order_view .order_pay {display:block;position: static;right: 0;bottom: 0;left: 0;z-index: 0;background-color:#fff;padding:0;border-top:0;}
+  .sub_wrap .order_view .order_pay .signup_btns {margin-top:50px;}
+  .sub_wrap .order_view .order_pay .signup_btns li {width:360px;}
 
 
   /*완료*/
@@ -1817,7 +1883,7 @@ border-radius:100%;display:table;}
 
   .sub_wrap .btn_w {text-align: center;}
   .sub_wrap .btn_w .signup_btns {display: inline-block;}
-  .sub_wrap .btn_w .signup_btns li {width:250px;max-width: auto;}
+  .sub_wrap .btn_w .signup_btns li {width:250px;max-width: 100%;}
   .sub_wrap .signup_btn {height:70px;line-height: 70px;font-size: 18px;margin-top: 60px;padding:0;border-radius:5px;}
   .sub_wrap .signup_btns {margin-top:60px;}
   .sub_wrap .signup_btns ~ .signup_btns {margin-top:80px;}
