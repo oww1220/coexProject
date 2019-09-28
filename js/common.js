@@ -926,7 +926,7 @@ $(function(){
 	/*layer팝업*/
 	COEX.layer.open(LAYER_BT_OPEN, LAYER_DIM, LAYER_DIV);
 	COEX.layer.close(LAYER_BT_CLOSE, LAYER_DIM, LAYER_DIV);
-	COEX.layer.close(LAYER_DIM, LAYER_DIM, LAYER_DIV);
+	//COEX.layer.close(LAYER_DIM, LAYER_DIM, LAYER_DIV);
 
 	COEX.layer.open("#test01", LAYER_DIM, LAYER_DIV, function (show){
 		alert("콜백");
@@ -1067,7 +1067,6 @@ $(function(){
 				}
 			}
 		}
-
 		
 		if(!mypage.has(e.target).length && !mypage.find(".mypage_bt_list").has(e.target).length){
 			if(mypage.find(".mypage_bt_list").is(":visible")){
@@ -1084,6 +1083,11 @@ $(function(){
 
 	});
 
+	$(".layer_dimmed").on(TOUCH_EVENT, function(e){
+		$(this).fadeOut();
+		$(".pop_layer").fadeOut();
+		$BODY.removeClass("fixed");
+	});
 
 	/*qr코드 레이어*/
 	$(".qr_bt.layer_open_bt").trigger('click');
