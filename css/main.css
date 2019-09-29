@@ -45,7 +45,8 @@
 
 .main_wrap .cols3 {position: relative;z-index: 1;padding: 1.5rem 0;background-color:#F5F5F5;}
 .main_wrap .cols3 .tit_w {padding:0 1rem;margin-bottom:1.5rem;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;}
-.main_wrap .cols3 .tit_w > a {display:none;}
+.main_wrap .cols3 .tit_w > a {color:#4c6df7;font-size:0.9rem;margin-left: auto;}
+.main_wrap .cols3 .tit_w > a span {margin-right:0.3rem;display: inline-block;border-bottom: 1px solid #4c6df7;padding-bottom:1px;}
 .main_wrap .cols3 .tit_w > p {font-size:1.05rem;margin-left:1rem;color:#444;}
 .main_wrap .cols3 h3 {color:#222;font-size:2rem;}
 .main_wrap .cols3 h3 a {color:#222;}
