@@ -25,9 +25,9 @@
 		<div class="top_bn">
 			<div class="inner">
 				<ul>
-					<li class="new">
+					<li>
 						<a href="#">
-							<p>[일반공지]2019 캐릭터라이센싱페어 사전등록하고 아메리카노 한잔 아메리카노 한잔!!! 아메리카노 한잔!!!</p>
+							<p>[일반공지]2019 캐릭터라이센싱페어 사전등록하고 아메리카노 한잔 아메리카노 한잔!!!</p>
 						</a>
 					</li>
 					<li>
@@ -65,16 +65,69 @@
 				<!--//초대권등록-->
 
 				<!--로그인,아웃-->
+				<div class="log_wrap">
 					<!--로그아웃 시-->
+					<ul class="link">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>
 					<!--//로그아웃 시-->
 
-					<!--로그인 시-->
+					<!--로그인 시
+					<ul class="link">
+						<li class="pc"><a href="#">로그아웃</a></li>
+					</ul>
+					<div class="mypage_bt_w toggle_btn" data-target="mypage_bt_list" data-sort="normal">
+						<div class="mypage_bt_in">
+							<a href="javascript:void(0)" class="mypage_bt toggle_btn">
+								<div class="icon_wrap">
+									<div class="img">
+										<img src="../images/icon/m_default_sum2.png" alt="">
+									</div>
+									<b>99</b>
+								</div>
+							</a>
+							<div class="mypage_bt_list">
+								<strong>마이페이지</strong>
+								<ul>
+									<li>
+										<a href="">회원정보 관리</a>
+									</li>
+									<li>
+										<a href="">나의 사전등록 관리</a>
+									</li>
+									<li>
+										<a href="">이벤트함</a>
+									</li>
+									<li>
+										<a href="">초대권 등록</a>
+									</li>
+									<li>
+										<a href="">전시관리 플랫폼</a>
+									</li>
+									<li>
+										<a href="">알림함</a>
+									</li>
+									<li class="mo"><a href="#">로그아웃</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="users">홍길동님</div>
+					</div>
+					
 					<!--//로그인 시-->
+				</div>
 				<!--//로그인,아웃-->
+
+				<!--검색버튼-->
+				<div class="search_bt_w">
+					<button type="button" class="panel_s_btn" data-target="panel_s_w" data-sort="none" data-on="true">검색열기</button>
+				</div>
+				<!--//검색버튼-->
 
 				<!--패널 열기 버튼-->
 				<div class="panel_bt_w">
-					<button type="button" class="panel_btn" data-target="panel_W" data-sort="none" data-on="true">
+					<button type="button" class="panel_btn" data-target="panel_w" data-sort="none" data-on="true">
 						<span class="barTop"></span>
 						<span class="barMid"></span>
 						<span class="barBot"></span>
@@ -89,462 +142,112 @@
 	</header>
 	<!--//해더-->
 
-	<!--패널부분-->
-	<div class="panel_W">
+	<!--사이트맵 패널-->
+	<div class="panel_w">
 		<div class="panel_in">
 			<div class="panel_list">
-				<div>패널</div>
+
+				<div class="site_m">
+
+					<div class="site_list">
+						<ul>
+							<li>
+								<strong><a href="">전시회</a></strong>
+								<!--
+								<ul class="depth">
+									<li>
+										<a href="#">유료</a>
+									</li>
+									<li>
+										<a href="#">무료</a>
+									</li>
+								</ul>-->
+							</li>
+							<li>
+								<strong><a href="">부대행사</a></strong>
+								<!--
+								<ul class="depth">
+									<li>
+										<a href="#">유료</a>
+									</li>
+									<li>
+										<a href="#">무료</a>
+									</li>
+								</ul>-->
+							</li>
+							<li>
+								<strong><a href="">이벤트</a></strong>
+							</li>
+							<li>
+								<strong><a href="">지난 전시회 Archive</a></strong>
+							</li>
+							<li class="depth_w">
+								<strong><a href="">고객센터</a></strong>
+								
+								<ul class="depth">
+									<li>
+										<a href="#">사전등록 이용안내</a>
+									</li>
+									<li>
+										<a href="#">자주묻는 질문</a>
+									</li>
+									<li>
+										<a href="#">공지사항</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="panel_link">
+						<a href="#">코엑스 행사일정 바로가기</a>
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 	</div>
-	<!--//패널부분-->
+	<!--//사이트맵 패널-->
+
+	<!--검색 패널-->
+	<div class="panel_s_w">
+		<div class="panel_in">
+			<div class="panel_list">
+
+				<div class="search_m">
+					<button type="button" class="panel_s_close" data-target="panel_s_w" data-sort="none" data-on="true">검색닫기</button>			
+
+					<div class="search_input_w">
+						<div class="search_input">
+							<input type="text" placeholder="검색어를 입력해 주세요">
+							<button type="button">검색</button>
+						</div>
+					</div>
+
+					<div class="search_input_list">
+						<h3>인기검색어</h3>
+						<ul>
+							<li><a href="#">#커피</a></li>
+							<li><a href="#">#디자인</a></li>
+							<li><a href="#">#IT</a></li>
+							<li><a href="#">#베이비엑스포</a></li>
+							<li><a href="#">#캐릭터라이선싱</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--//검색 패널-->
+
 
 	<!--컨텐츠-->
 	<div id="container">
 
-		<!--메인-->
-		<div class="main_wrap">
-
-			<!--#지금 이 전시회 주목-->
-			<div class="cols0">
-				<div class="inner">
-					<h3>
-						<a href="#">#지금 이 전시회 주목</a>
-					</h3>
-					<ul class="main_list">
-
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-											<div class="flag_item red">등록중</div>
-											<div class="flag_item yellow">30%<br/>할인</div>
-										</div>
-										<img src="../images/banner/main_s_bn01.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">행사개최 D-32</div>
-											<div class="flag_item red">이벤트</div>
-											<div class="payment free">무료</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-											<div class="flag_item red">등록중</div>
-										</div>
-										<img src="../images/banner/main_s_bn02.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">개최임박</div>
-											<div class="payment pay">유료</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-												<div class="flag_item gray">등록<br/>마감</div>
-										</div>
-										<img src="../images/banner/main_s_bn03.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">행사 진행중</div>
-											<div class="payment pay">유료</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-											
-										</div>
-										<img src="../images/banner/main_s_bn02.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">행사 진행중</div>
-											<div class="payment pay">유료</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-
-
-					</ul>
-				</div>
-			</div>
-			<!--//#지금 이 전시회 주목-->
-
-			<!--#무료 등록 hot 전시회-->
-			<div class="cols1">
-				<div class="inner">
-					<h3>
-					<a href="#">#무료등록 HOT 전시회</a>
-					</h3>
-					<ul class="main_list">
-
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-											<div class="flag_item red">등록중</div>
-											<div class="flag_item yellow">30%<br/>할인</div>
-										</div>
-										<img src="../images/banner/main_cols1_bn01.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">행사개최 D-32</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-											<div class="flag_item red">등록중</div>
-										</div>
-										<img src="../images/banner/main_cols2_bn02.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">개최임박</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-												<div class="flag_item blue">등록<br/>예정</div>
-										</div>
-										<img src="../images/banner/main_cols2_bn03.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">신규등록</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<div class="list_in">
-									<div class="img_wrap">
-										<div class="flag">
-											<div class="flag_item blue">등록<br/>예정</div>
-										</div>
-										<img src="../images/banner/main_cols2_bn04.png" alt="이벤트"/>
-									</div>
-									<div class="event_wrap">
-										<div class="flag clear_both">
-											<div class="flag_item">신규등록</div>
-										</div>
-										<strong>캐릭터 라이센스 페어 캐릭터 라이센스 페어 캐릭터 라이센스 페어</strong>
-										<span>2019.04.10 - 2019.07.10</span>
-										<em>코엑스 A,B Hall</em>
-									</div>
-								</div>
-							</a>
-						</li>
-						
-
-						<li class="more_bt">
-							<div class="list_in">
-								<a href="#">더보기</a>
-							</div>
-						</li>
-
-					</ul>
-				</div>
-			</div>
-			<!--//#무료 등록 hot 전시회-->
-
-			<!--#FOCUS 부대행사, #지난 전시회 Archive-->
-			<div class="cols2">
-				<div class="inner">
-					<div class="focus_w regi_list_wrap">
-						<h3>
-							<a href="#">#FOCUS 부대행사</a>
-						</h3>
-						<div class="regi_list">
-							<ul class="clear_both">
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn03.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<div class="btns">
-													<a href="#">상세보기</a>
-													<a href="#">온라인 디렉토리</a>
-												</div>
-												<div class="dim"></div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn02.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<div class="btns">
-													<a href="#">상세보기</a>
-													<a href="#">온라인 디렉토리</a>
-												</div>
-												<div class="dim"></div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-					<div class="archive_w regi_list_wrap">
-						<h3>
-							<a href="#">#지난 전시회 Archive</a>
-						</h3>
-						<div class="regi_list">
-							<ul class="clear_both">
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn04.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<div class="btns">
-													<a href="#">상세보기</a>
-													<a href="#">온라인 디렉토리</a>
-												</div>
-												<div class="dim"></div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn05.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<div class="btns">
-													<a href="#">상세보기</a>
-													<a href="#">온라인 디렉토리</a>
-												</div>
-												<div class="dim"></div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--//#FOCUS 부대행사, #지난 전시회 Archive-->
-
-			<!--#이벤트-->
-			<div class="cols3">
-				<div class="inner">
-					<div class="regi_list_wrap">
-						<div class="tit_w">
-							<h3>
-								<a href="#">#이벤트</a>
-							</h3>
-							<p>전시회도 참여하고 쿠폰도 받고!!</p>
-							<a href="#"><span>더 많은 이벤트 보기 </span>></a>
-						</div>
-						<div class="regi_list">
-							<ul class="clear_both">
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn03.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<a href="#" class="link">이벤트 링크</a>
-												<div class="date">
-													참여기간 I 2019-7-23 ~ 2019-7-24
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn02.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<a href="#" class="link">이벤트 링크</a>
-												<div class="date">
-													참여기간 I 2019-7-23 ~ 2019-7-24
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="regi_in">
-										<div class="tops">
-											<div class="sum_w">
-												<div class="img">
-													<img src="../images/banner/main_cols2_bn04.png" alt="banner">
-												</div>
-											</div>
-											<div class="hover">
-												<a href="#" class="link">이벤트 링크</a>
-												<div class="date">
-													참여기간 I 2019-7-23 ~ 2019-7-24
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--//#이벤트-->
-
-
-			<div class="cols_line">
-				<div class="inner"></div>
-			</div>
-
-			<!--메인하단 롤링-->
-			<div class="cols4">
-				<div class="inner">
-					<ul>
-						<li>
-							<a href="#">
-								<img src="../images/banner/main_cols5_bn01.png" alt="배너"/>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="../images/banner/main_cols5_bn01.png" alt="배너"/>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!--//메인하단 롤링-->
-
-			<div class="cols_notice">
-				<div class="inner">
-					<ul>
-						<li>
-							<a href="#">
-								<p><strong>공지사항</strong> [시스템 점검] 9월 정기 시스템 안내스템 안내스템 안내 </p>
-								<span>2019.08.23</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<p><strong>공지사항</strong> [시스템 점검] 9월 정기 시스템 안내스템 안내스템 안내 </p>
-								<span>2019.08.23</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="cols_appdown">
-				<div class="inner">
-					<div class="appdown_cont">
-						<strong>더 쉽고 빠른 행사 사전등록</strong>
-						<p>
-							<span>지금 바로</span>
-							<img src="../images/icon/pc_main_logo.png" alt="로고"/>
-							<span>APP을 다운로드 하세요.</span>
-						</p>
-						<div class="appdown_bt">
-							<a href="#">ios</a>
-							<a href="#">안드로이드</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		<!--//메인-->
+		
 		
 	</div>
 	<!--//컨텐츠--->
@@ -575,6 +278,11 @@
 					</li>
 				</ul>
 			</div>
+
+			<!--
+			<div class="footer_btn">
+				<a href="#">전시관리 플랫폼 바로가기</a>
+			</div>-->
 
 			<div class="family_wrap">
 				<div class="family_in">
@@ -610,12 +318,17 @@
 					<li>
 						<a href="#">개인정보처리방침</a>
 					</li>
+					<!--
 					<li>
 						<a href="#">이메일무단수집거부</a>
-					</li>
+					</li>-->
 					<li>
 						<a href="#">취소및환불정책</a>
 					</li>
+					<!--
+					<li class="pc">
+						<a href="#">전시관리 플랫폼</a>
+					</li>-->
 				</ul>
 			</div>
 
