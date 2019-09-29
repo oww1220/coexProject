@@ -596,7 +596,7 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .search_list_w .search_list .view .infos {margin:0 0 20px 0;letter-spacing: 0;}
     .search_list_w .search_list .view .infos li {font-size:16px;float: left;}
     .search_list_w .search_list .view .infos li i {margin-right:10px;}
-    .search_list_w .search_list .view .infos li + li {margin-top:0px;margin-left:60px;}
+    .search_list_w .search_list .view .infos li + li {margin-top:0px;margin-left:40px;}
     .search_list_w .search_list .view .infos li:before {position: relative;bottom: 2px;margin-right: 10px;display: inline-block;vertical-align: middle;content: "";width: 14px;height: 16px;background: url("../images/icon/pc_main_cols1_ic05.png") no-repeat center center;background-size: 14px;}
     .search_list_w .search_list .view .infos li + li:before {background: url("../images/icon/pc_main_cols1_ic03.png") no-repeat center center;background-size: 14px;}
     .search_list_w .search_list .view .infos li + li + li:before {background: url("../images/icon/pc_main_cols1_ic04.png") no-repeat center center;background-size: 12px;}
@@ -615,7 +615,7 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .search_list_w .search_list .dt_bt {width:99px;height:99px;background:url("../images/icon/pc_search_dt.png") no-repeat center center;background-size:contain;font: 0/0 a;}
     .search_list_w .search_list .dt_bt.join {background-image: url("../images/icon/pc_search_dt2.png");}
     .search_list_w .search_list .dt_bt.join2 {background-image: url("../images/icon/pc_search_dt2_02.png");}
-    .search_list_w .search_list .guide {font-size:14px;margin-top:10px;}
+    .search_list_w .search_list .guide {font-size:16px;margin-top:10px;}
 
 
     .search_list_w .text_list > li {padding:30px 40px;}

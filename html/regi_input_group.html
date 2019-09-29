@@ -86,12 +86,13 @@
                                 <ul class="depth_list">
                                     <li>단체등록용 <a href="">파일 다운로드</a>하여 작성 후 업로드해 주세요.</li>
                                     <li>양식에 맞지 않는 파일 업로드 시 오류의 원인이 됩니다.</li>
+                                    <li>관리자 승인상태 확인 및 결제는 장바구니에서 확인 가능합니다.</li>
                                 </ul>
 
                                 <div class="btn_w">
                                     <ul class="signup_btns">
                                         <li>
-                                            <a href="#" class="signup_btn">관리자 승인요청</a>
+                                            <a href="#" class="signup_btn layer_open_bt" data-layer="layer-t01">관리자 승인요청</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -222,6 +223,29 @@
                 </div>
             </div>
             //사전등록-->
+
+
+            <!--신청완료 레이어-->
+			<!--js::pop_layer:parent, layer-t01:target--->
+			<div class="pop_layer signup width layer-t01">
+				<div class="pop_inner">
+					<div class="pop_scroll">
+
+						<div class="pop_cont">
+							<strong>신청이 완료되었습니다.</strong>
+							<p>신청된 단체등록은 장바구니에서 승인여부 확인 및 결제완료 후 티켓이 발권됩니다.</p>
+							<div class="btn_wrap">
+								<a href="#" id="test001" data-layer="layer-t01">확인</a>
+							</div>
+						</div>
+						<a href="#"class="layer_close_bt" data-layer="layer-t01">닫기</a>	
+                    
+					</div>
+
+				</div>
+			</div>
+			<div class="layer_dimmed">레이어 배경</div>
+			<!--//신청완료 레이어-->
 
 
 		</div>
