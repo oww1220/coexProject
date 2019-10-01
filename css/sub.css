@@ -400,6 +400,7 @@ background-color:#e8e8e8;margin:0 auto 2rem;}
 .sub_wrap .order_view .order_info li span {display:inline-block;}
 
 .sub_wrap .order_view .order_col .cart_box {border:0;}
+.sub_wrap .order_view .order_col .cart_box .cart_product .view h4 {margin-top:0;}
 .sub_wrap .order_view .order_col .cart_box .cart_product {margin: 0;padding: 0;}
 .sub_wrap .order_view .order_col .cart_box .cart_product .view {padding:0;}
 
@@ -418,6 +419,7 @@ background-color:#e8e8e8;margin:0 auto 2rem;}
 .sub_wrap .order_view .order_pay_w .price_w span {display:block;text-align:center;font-size:1.05rem;}
 .sub_wrap .order_view .order_pay_w .price_w strong {display:block;text-align:center;font-size:1.7rem;color:#FF6280;font-weight:normal;margin-top:0;margin-left:auto;}
 .sub_wrap .order_view .order_pay_w .price_chk {padding:1.5rem 1rem 0;border-top:1px dotted #e8e8e8;}
+.sub_wrap .order_view .order_pay_w .price_chk a {color:#4c6df7;text-decoration:underline;}
 .sub_wrap .order_view .order_pay {display:block;position: fixed;right: 0;bottom: 0;left: 0;z-index: 10;background-color:#fff;padding:1rem;border-top:1px solid #e8e8e8;}
 .sub_wrap .order_view .order_pay .signup_btns {margin:0;}
 

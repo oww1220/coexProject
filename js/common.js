@@ -145,7 +145,7 @@ var COEX = COEX || {
 			$(document).on("click", target, function(e){
 				var layer = $(this).data("layer");
 				var targetDom = $(this);
-				that.scrollTop = $(window).scrollTop();
+				that.scrollTop = SCROLL_Top = $(window).scrollTop();
 
 				if(callback){
 					callback(show, layer, targetDom);
@@ -1022,11 +1022,11 @@ $(function(){
 	});
 
 	var TOUCH_EVENT = ("ontouchstart" in window) ? "touchstart" : "click";
-
+	
 	/*영역외 닫기*/
 	$(document).on(TOUCH_EVENT, function(e){
 		//console.log(e.target);
-
+		//console.log(SCROLL_Top);
 		var family = $(".footer .family_wrap"),
 			mypage = $(".gnb_wrap .log_wrap .mypage_bt_w"),
 			panel_w = $(".panel_w"),
@@ -1052,8 +1052,9 @@ $(function(){
 					$HEADER.removeClass("pt_open");
 					mypage.find(".mypage_bt_list").hide();
 				}
-				if(!panel_s_w.hasClass("on") && !$(".pop_layer").is(":visible")){					
+				if(!panel_s_w.hasClass("on") && !$(".pop_layer").is(":visible") && $BODY.hasClass("fixed")){					
 					$BODY.removeClass("fixed");
+					$(window).scrollTop(SCROLL_Top);
 					//console.log(2);
 				}
 			}
@@ -1065,8 +1066,9 @@ $(function(){
 			if(panel_s_w.is(":visible")){
 				search_bt_w.find("button").removeClass("on");
 				panel_s_w.removeClass("on");
-				if(!panel_w.hasClass("on") && !$(".pop_layer").is(":visible")){
+				if(!panel_w.hasClass("on") && !$(".pop_layer").is(":visible") && $BODY.hasClass("fixed")){
 					$BODY.removeClass("fixed");
+					$(window).scrollTop(SCROLL_Top);
 					//console.log(1);
 				}
 			}
@@ -1091,6 +1093,7 @@ $(function(){
 		$(this).fadeOut();
 		$(".pop_layer").fadeOut();
 		$BODY.removeClass("fixed");
+		$(window).scrollTop(SCROLL_Top);
 	});
 
 	/*qr코드 레이어*/
