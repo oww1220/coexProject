@@ -54,8 +54,10 @@
 					<div class="signup_guide_w">
 						<ul class="depth_list">
 							<li>만 14세 미만은 회원가입할 수 없습니다.</li>
-							<li>본 사이트는 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확히 입력해 주세요.</li>
+							<li>본 사이트는 인증완료된 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확한 정보를 입력해주시고, 
+							등록하신 이메일도 ID로 사용을 원하실 경우 회원가입 완료 후 마이페이지 > 회원정보관리 에서 이메일 인증 부탁드립니다.</li>
 							<li>비밀번호는 회원님의 개인정보 보호를 위해 영문, 숫자, 특수기호 포함 8자 이상, 16자 이하로 작성해 주세요.</li>
+							<li>본 사이트는 SNS 회원가입 한 경우라도 회원가입 완료 후, 마이페이지 > 회원정보관리 에서 비밀번호 설정 후 일반 로그인도 가능합니다.</li>
 						</ul>
 					</div>
 					<div class="signup_cont">
@@ -87,7 +89,7 @@
 									<span class="error_message">에러 메시지</span>
 								</li>
 								<li>
-									<label for="">이메일 주소(ID)</label>
+									<label for="">이메일 주소</label>
 									<input type="text" placeholder="smp2@coex.co.kr"/>
 									<span class="help_message">본 사이트는 이메일 혹은 휴대폰 번호를 아이디로 사용합니다. 정상적인 서비스 이용을 위해 정확히 입력해 주세요.</span>
 									<span class="error_message">에러 메시지</span>
@@ -115,13 +117,13 @@
 								</li>
 								<li>
 									<label for="">비밀번호</label>
-									<input type="password"  placeholder="비밀번호"/>
+									<input type="password"  placeholder="비밀번호" disabled/>
 									<span class="help_message">영문, 숫자, 특수기호포함 8자 이상, 16자 이하로 작성해주세요.</span>
 									<span class="error_message">비밀번호 양식과 틀립니다</span>
 								</li>
 								<li>
 									<label for="">비밀번호 재입력</label>
-									<input type="password" placeholder="비밀번호 재입력"/>
+									<input type="password" placeholder="비밀번호 재입력" disabled/>
 									<span class="help_message">영문, 숫자, 특수기호포함 8자 이상, 16자 이하로 작성해주세요.</span>
 									<span class="error_message"></span>
 								</li>
@@ -172,17 +174,18 @@
 								<a href="#">로그인</a>
 							</p>
 							<ul class="signup_btns">
-								<li>
-									<a href="#"class="signup_btn facebook">페이스북 계정으로 간편가입</a>
-								</li>
+								
 								<!--<li>
 									<a href="#"class="signup_btn twitter">트위터 계정으로 간편가입</a>
 								</li>-->
 								<li>
-									<a href="#"class="signup_btn kakao">카카오톡 계정으로 간편가입</a>
+									<a href="#"class="signup_btn naver layer_open_bt" data-layer="layer-t02">네이버 계정으로 간편가입</a>
 								</li>
 								<li>
-									<a href="#"class="signup_btn naver">네이버 계정으로 간편가입</a>
+									<a href="#"class="signup_btn kakao layer_open_bt" data-layer="layer-t02">카카오톡 계정으로 간편가입</a>
+								</li>
+								<li>
+									<a href="#"class="signup_btn facebook layer_open_bt" data-layer="layer-t02">페이스북 계정으로 간편가입</a>
 								</li>
 							</ul>
 						</form>
@@ -211,8 +214,27 @@
 
 				</div>
 			</div>
-			<div class="layer_dimmed">레이어 배경</div>
 			<!--//가입오류 레이어-->
+
+			<!--필드입력 레이어-->
+			<!--js::pop_layer:parent, layer-t02:target--->
+			<div class="pop_layer signup layer-t02">
+				<div class="pop_inner">
+					<div class="pop_cont">
+						<strong>휴대폰 번호를 입력해 주세요.</strong>
+						<div class="btn_wrap">
+							<a href="#">확인</a>
+						</div>
+						<a href="#"class="layer_close_bt" data-layer="layer-t02">닫기</a>	
+					</div>
+
+				</div>
+			</div>
+			<!--//필드입력 레이어-->
+
+
+			<div class="layer_dimmed">레이어 배경</div>
+			
 
 		</div>
 			

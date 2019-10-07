@@ -75,11 +75,13 @@
 .select_custum .select_list ul li.soldout a {color:#e8e8e8 !important;pointer-events: none;}
 .select_custum .select_list ul li a:hover {color:#4c6df7;}
 
-.sub_wrap .ball_w {text-align:center;margin-bottom:2rem;}
-.sub_wrap .ball_w ul {font-size:0;}
+.sub_wrap .ball_w {text-align:center;margin-bottom:2rem;position: relative;}
+.sub_wrap .ball_w ul {font-size:0;text-align:left;}
 .sub_wrap .ball_w li {width:1.3rem;height:1.3rem;margin:0 0.25rem;display:inline-block;font: 0/0 a;background:url("../images/icon/m_ball_off.png") no-repeat 0 0;
-background-size:contain;}
+background-size:99%;}
 .sub_wrap .ball_w li.on {background-image:url("../images/icon/m_ball_on.png");}
+.sub_wrap .ball_w .nums {text-align:right;position:absolute;top:0;right:0;font-size:1.1rem;letter-spacing:0;}
+.sub_wrap .ball_w .nums b {color:#4c6df7;}
 
 /*---------사전등록-----------start*/
 .sub_wrap .regi_wrap {padding: 0rem 0 6rem;}
@@ -368,7 +370,7 @@ background-color:#e8e8e8;margin:0 auto 2rem;}
 .sub_wrap .cart_box .cart_product .view .info_W {flex: 1;}
 .sub_wrap .cart_box .cart_product .view .info_W > p {color:#888;font-size:1.05rem;line-height:1.5;margin-top:1.5rem;}
 .sub_wrap .cart_box .cart_product .view .info_W > p a {color:#222;text-decoration:underline;}
-.sub_wrap .cart_box .cart_product .view h4 {font-size: 1.8rem;margin-top: 0.5rem;line-height: 1.3;word-break: break-all;}
+.sub_wrap .cart_box .cart_product .view h4 {font-size: 1.8rem;line-height: 1.3;word-break: break-all;}
 .sub_wrap .cart_box .cart_product .view .infos {margin-top:1.3rem;letter-spacing: 0;text-align:left;}
 .sub_wrap .cart_box .cart_product .view .infos li {font-size:1.05rem;}
 .sub_wrap .cart_box .cart_product .view .infos li i {font-style: normal;margin-right:0.2rem;}
@@ -387,6 +389,9 @@ background-color:#e8e8e8;margin:0 auto 2rem;}
 .sub_wrap .cart_box .cart_info_w .price_w {display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;margin-bottom:2.5rem;}
 .sub_wrap .cart_box .cart_info_w .price_w span {display:block;text-align:center;font-size:1.05rem;color:#888;}
 .sub_wrap .cart_box .cart_info_w .price_w strong {display:block;text-align:center;font-size:1.7rem;color:#FF6280;font-weight:normal;margin-top:0;margin-left:auto;}
+.sub_wrap .cart_box .cart_info_w .state {font-size:1.05rem;margin-bottom:1rem;line-height:1.3;}
+.sub_wrap .cart_box .cart_info_w .state.end {color:#4c6df7;}
+.sub_wrap .cart_box .cart_info_w .state p {margin-top:0.5rem;color:#FF6280;}
 .sub_wrap .cart_box .cart_info_w .signup_btns {margin-top:1rem;}
 .sub_wrap .cart_view .cart_guide {margin:2rem 1rem 0;}
 .sub_wrap .cart_view .cart_guide h5 {font-size:1.4rem;}
@@ -647,6 +652,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .signup_list li input:focus {border-bottom:2px solid #4C6DF7;}
 .signup_list li input:read-only,
 .signup_list li input:disabled {border-bottom:1px solid #E8E8E8 !important;background-color: #fff;}
+.signup_list li input:disabled {background-color: #f5f5f5;}
 .signup_list li span {margin-top:0.5rem;display: none;}
 .signup_list li .help_message {color:#4C6DF7;font-size:1rem;line-height: 1.3;}
 .signup_list li input:focus ~ .help_message {display: block;}
@@ -932,7 +938,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .main_frame .mypage_modify_w {position: relative;}
 .mypage_wrap .main_frame .mypage_modify_w .info_cont {padding:0 1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .info_cont .title {font-size: 1.7rem;text-align:center;}
-.mypage_wrap .main_frame .mypage_modify_w .info_cont > p {font-size:0.9rem;margin-top:0.7rem;color:#888;text-align:center;line-height: 1.6;}
+.mypage_wrap .main_frame .mypage_modify_w .info_cont > p {font-size:1rem;margin-top:0.7rem;color:#888;text-align:center;line-height: 1.6;}
 .mypage_wrap .main_frame .mypage_modify_w .signup_list {margin-top:2.5rem;}
 .mypage_wrap .main_frame .mypage_modify_w .signup_wrap {margin:0;padding:0;}
 
@@ -947,6 +953,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in li + li {margin-top:1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in li b {font-weight:normal;display:inline-block;width:6rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in li span {display:inline-block;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in .guides {font-size: 1rem;margin-top: 0.7rem;color: #888;line-height: 1.4;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_list .signup_btns {}
 .mypage_wrap .main_frame .mypage_modify_w .modify_list .signup_btns li {}
 .mypage_wrap .main_frame .mypage_modify_w .modify_list .signup_btns li a {}
@@ -959,6 +966,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .th {margin-bottom:1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .th strong {display: block;color: #222;font-size: 1.2rem;font-weight:bold;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list {margin:0;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li p {margin-top:0.5rem;font-size:1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td input {width:100%;border:1px solid #e8e8e8;border-radius:0.5rem;padding:1rem 1rem 0.8rem;box-sizing:border-box;font-size:1.05rem;line-height:1;height: 3.3rem;margin:0;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input {position:relative;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input.button input {width: 21.5rem;}
@@ -1302,7 +1310,7 @@ border-radius:100%;display:table;}
   .sub_wrap .ball_w li {width:14px;height:14px;margin:0 5px;display:inline-block;font: 0/0 a;background:url("../images/icon/pc_ball_off.png") no-repeat 0 0;
   background-size:14px;}
   .sub_wrap .ball_w li.on {background-image:url("../images/icon/pc_ball_on.png");}
-
+  .sub_wrap .ball_w .nums {font-size:16px;}
 
   /*---------사전등록-----------start*/
   .sub_wrap .regi_wrap {padding: 110px 480px 200px 0;}
@@ -1593,7 +1601,7 @@ border-radius:100%;display:table;}
   .sub_wrap .cart_box .cart_product .view .info_W strong {font-size: 40px;margin-top: 10px;line-height: 1.3;font-weight: normal;display:block;color:#4C6DF7;}
   .sub_wrap .cart_box .cart_product .view .info_W > p {color:#888;font-size:14px;line-height:1.5;margin-top:30px;}
   .sub_wrap .cart_box .cart_product .view .info_W > p a {color:#222;text-decoration:underline;}
-  .sub_wrap .cart_box .cart_product .view h4 {font-size: 30px;margin-top: 30px;line-height: 1.3;}
+  .sub_wrap .cart_box .cart_product .view h4 {font-size: 30px;line-height: 1.3;}
   .sub_wrap .cart_box .cart_product .view .sort {font-size:18px;margin-top:20px;}
   .sub_wrap .cart_box .cart_product .view .free {color:#FF6280;}
   .sub_wrap .cart_box .cart_product .view .pay {color:#4C6DF7;}
@@ -1619,6 +1627,8 @@ border-radius:100%;display:table;}
   .sub_wrap .cart_box .cart_info_w .price_w {display: inline-block;vertical-align: middle;margin-bottom:0;}
   .sub_wrap .cart_box .cart_info_w .price_w span {text-align:center;font-size:16px;color:#222;display: inline-block;vertical-align: middle;}
   .sub_wrap .cart_box .cart_info_w .price_w strong {width:215px;text-align:center;font-size:30px;color:#FF6280;font-weight:normal;margin-top:0px;display: inline-block;vertical-align: middle;text-align:right;}
+  .sub_wrap .cart_box .cart_info_w .state {font-size:16px;margin-bottom:0;line-height:1.3;display: inline-block;vertical-align: middle;width: 415px;text-align: left;}
+  .sub_wrap .cart_box .cart_info_w .state p {margin-top:10px;color:#FF6280;}
   .sub_wrap .cart_box .cart_info_w .btn_w {display: inline-block;vertical-align: middle;margin-left:70px;}
   .sub_wrap .cart_box .cart_info_w .signup_btns {margin-top:0px;}
   .sub_wrap .cart_box .cart_info_w .signup_btns li {width:150px;}
@@ -1956,7 +1966,7 @@ border-radius:100%;display:table;}
   .sub_wrap .privacy_wrap {padding: 110px 0 200px;}
   .sub_wrap .privacy_wrap .sub_h2 > h2 {padding:0;}
   .sub_wrap .privacy_wrap .sub_h2 > h2 em {height:34px;line-height: 34px;font-size: 16px;padding:0 15px;margin-top:-17px;}
-  .sub_wrap .privacy_wrap .sub_h2 .sort_select {top:20px;left:510px;}
+  .sub_wrap .privacy_wrap .sub_h2 .sort_select {top:20px;left:310px;}
   .sub_wrap .privacy_cont {font-size:16px;padding:0;}
   .sub_wrap .privacy_cont h4 {font-size:30px;margin-bottom: -15px;}
   .sub_wrap .privacy_cont p {}
@@ -2154,6 +2164,7 @@ border-radius:100%;display:table;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in li + li {margin-top:15px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in li b {font-weight:normal;display:inline-block;width:100px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in li span {display:inline-block;}
+  .mypage_wrap .main_frame .mypage_modify_w .modify_list .list_in .guides {font-size: 16px;margin-top: 15px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_list .btn_w {text-align:left;position: absolute;bottom:40px;left:30px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_list .signup_btns li {width:120px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_list .signup_btns li button {border-width:2px;height: 40px;line-height: 40px;font-size:16px;}
@@ -2168,6 +2179,7 @@ border-radius:100%;display:table;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .th strong {display: block;color: #222;font-size: 16px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td {display: table-cell;width:420px;padding: 30px 40px;vertical-align: middle;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td input {width:100%;height:50px;border:1px solid #e8e8e8;border-radius:5px;padding:0 15px;box-sizing:border-box;font-size:16px;}
+  .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li p {margin-top:10px;font-size:16px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input {position:relative;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input.button input {width: 290px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .btn_w {position:absolute;top:0;right:0}

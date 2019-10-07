@@ -618,7 +618,7 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .search_list_w .search_list .guide {font-size:16px;margin-top:10px;}
 
 
-    .search_list_w .text_list > li {padding:30px 40px;}
+    .search_list_w .text_list > li {padding:30px 0;}
     .search_list_w .text_list > li a .flag_item {height: 22px;font-size: 12px;padding: 0;line-height: 23px;border-radius: 5px;border: 1px solid #222;width:55px;flex: none;margin-right:40px;}
     .search_list_w .text_list > li a p {font-size: 16px;line-height:1.4;}
 
