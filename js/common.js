@@ -1032,7 +1032,8 @@ $(function(){
 			panel_w = $(".panel_w"),
 			panel_bt_w = $(".panel_bt_w"),
 			panel_s_w = $(".panel_s_w"),
-			search_bt_w =  $(".search_bt_w"),
+			search_bt_w = $(".search_bt_w"),
+			cart_bt_w = $(".cart_bt_w"),
 			select_custum = $(".pc .select_custum");
 		
 
@@ -1044,7 +1045,7 @@ $(function(){
 			}
 		}
 
-		if(!panel_bt_w.has(e.target).length && !panel_w.has(e.target).length){
+		if(!panel_bt_w.has(e.target).length && !panel_w.has(e.target).length && !cart_bt_w.has(e.target).length){
 			if(panel_w.is(":visible")){
 				panel_bt_w.find(".panel_btn").removeClass("on");
 				panel_w.removeClass("on");
@@ -1062,7 +1063,7 @@ $(function(){
 		}
 		
 
-		if(!search_bt_w.has(e.target).length && !panel_s_w.has(e.target).length ){
+		if(!search_bt_w.has(e.target).length && !panel_s_w.has(e.target).length && !cart_bt_w.has(e.target).length){
 			if(panel_s_w.is(":visible")){
 				search_bt_w.find("button").removeClass("on");
 				panel_s_w.removeClass("on");
