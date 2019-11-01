@@ -86,9 +86,73 @@
                                             <strong>연령</strong>
                                             <span>36세</span>
                                         </li>
+                                        <li>
+                                            <strong>참관구분</strong>
+                                            <span>일반</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <!--설문에 바이어/업계종사자 선택시-(추가입력)-->
+                            <div class="proposer_cont">
+                                <div class="title">추가 정보</div>
+                                <ul class="signup_list">
+                                    <li>
+                                        <label for="">회사명 <em>*</em></label>
+                                        <input type="text" placeholder="월간신문">
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <label for="">부서명 <em>*</em></label>
+                                        <input type="text" placeholder="마케팅부">
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <label for="">직위 <em>*</em></label>
+                                        <input type="text" placeholder="대리">
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <label for="">회사전화 <em>*</em></label>
+                                        <input type="text" placeholder="02-0000-0000">
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li>
+                                        <label for="">회사팩스</label>
+                                        <input type="text" placeholder="02-0000-0000">
+                                        <span class="help_message">도움말 메시지</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li class="button">
+                                        <label for="">소재지 <em>*</em></label>
+                                        <input type="text" placeholder="우편번호">
+                                        <div class="button_wrap">
+                                            <button type="button">우편번호 찾기</button>
+                                        </div>
+                                        <span class="help_message">우편번호 필드</span>
+                                        <span class="error_message">에러 메시지</span>
+                                        
+                                    </li>
+                                    <li class="merge">
+                                        <label for="">소재지 주소</label>
+                                        <input type="text" placeholder="소재지 주소">
+                                        <span class="help_message">소재지 주소</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                    <li class="merge">
+                                        <label for="">소재지 상세 주소</label>
+                                        <input type="text" placeholder="상세 주소">
+                                        <span class="help_message">상세 주소</span>
+                                        <span class="error_message">에러 메시지</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//설문에 바이어/업계종사자 선택시-->
 
                             <div class="proposer_cont">
                                 <div class="title">설문항목</div>
@@ -101,7 +165,7 @@
                                 </div>
                                 <ul class="signup_list">
                                     <li>
-                                        <strong>관심분야</strong>
+                                        <strong>관심분야 <i>2~3개를 선택해주세요.</i></strong>
                                         <div class="chk_list">
                                             <div class="input_c">
                                                 <input id="ch001" type="checkbox">
@@ -136,7 +200,7 @@
                                         </select>
                                     </li>
                                     <li>
-                                        <strong>전시회 인지경로</strong>
+                                        <strong>전시회 인지경로 <i>2~3개를 선택해주세요.</i></strong>
                                         <div class="chk_list">
                                             <div class="input_c">
                                                 <input id="ch101" type="checkbox">
@@ -168,7 +232,18 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul>                          
+                                <div class="agree_wrap">
+                                    <ul>
+                                        <li>
+                                            <div class="input_c">
+                                                <input id="ch03" type="checkbox">
+                                                <label for="ch03">마케팅 정보 수신동의</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p>신규등록 행사 정보 및 쿠폰이벤트 등 각종 유용한 정보를 안내해 드립니다.</p>
+                                </div>
                             </div>
 
                             <div class="btn_wrap">

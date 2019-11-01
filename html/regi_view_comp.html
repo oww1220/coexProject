@@ -105,6 +105,7 @@
                                 <form action="">
 
                                     <div class="select_wrap">
+                                        
                                         <div class="select_custum">
                                             <button type="button">일반</button>
                                             <input type="hidden" id="" value="1"/>
@@ -314,6 +315,12 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <span>장소</span>
+                                        <ul>
+                                            <li>코엑스 Hall A&B</li>
+                                        </ul>
+                                    </li>
+                                    <li>
                                         <span>간단소개</span>
                                         <ul>
                                             <li>
@@ -375,35 +382,79 @@
                         <!--//펼쳐보기-->
 
                         <div class="table_wrap">
+                            <h4>전시회 티켓안내</h4>
                             <table>
-                                <caption>개인정보 수집 및 이용목적</caption>
+                                <caption></caption>
                                 <colgroup>
+                                    <col style="width:10%">
+                                    <col style="width:40%">
+                                    <col style="width:10%">
                                     <col style="width:20%">
-                                    <col style="width:40%">
-                                    <col style="width:40%">
+                                    <col style="width:10%">
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th scope="col" colspan="3">티켓안내</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">티켓명</th>
+                                        <th scope="col">권종</th>
+                                        <th scope="col">판매기간</th>
+                                        <th scope="col">금액</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>[전시회]</td>
-                                        <td>캐릭터 라이센싱페어</td>
-                                        <td>3,000원</td>
+                                        <td>1</td>
+                                        <td class="align_left">Public Day(7월3일~4일)</td>
+                                        <td>일반</td>
+                                        <td>2019.10.12~12.30</td>
+                                        <td>25,000원</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table_wrap">
+                            <h4>부대행사 티켓안내</h4>
+                            <table>
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width:10%">
+                                    <col style="width:40%">
+                                    <col style="width:10%">
+                                    <col style="width:20%">
+                                    <col style="width:10%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">티켓명</th>
+                                        <th scope="col">권종</th>
+                                        <th scope="col">판매기간</th>
+                                        <th scope="col">금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="align_left">Public Day(7월3일~4일)</td>
+                                        <td>일반</td>
+                                        <td>2019.10.12~12.30</td>
+                                        <td>25,000원</td>
                                     </tr>
                                     <tr>
-                                        <td>[통합 전시회]</td>
-                                        <td>캐릭터 라이센싱페어</td>
-                                        <td>3,000원</td>
+                                        <td>2</td>
+                                        <td class="align_left">Public Day(7월3일~4일)</td>
+                                        <td>청소년</td>
+                                        <td>2019.10.12~12.30</td>
+                                        <td>25,000원</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <div class="search_list_w">
-                            <h4>전시회</h4>
+                            <h4>통합전시회</h4>
                             <ul class="search_list">
                                 <li>
                                     <div class="view">
@@ -425,6 +476,7 @@
                                             </div>
                                             <div class="flag clear_both">
                                                 <div class="payment free">무료</div>
+                                                <a class="dt_lick" href="#"><span>상세페이지 바로가기 </span>&gt;</a>
                                             </div>
                                         </div>
                                         <a href="#" class="dt_bt layer_enrollment" data-layer="layer-t01">자세히 보기</a>
@@ -456,7 +508,7 @@
                                             </div>
                                             <div class="flag clear_both">
                                                 <div class="payment free">무료</div>
-
+                                                <a class="dt_lick" href="#"><span>상세페이지 바로가기 </span>&gt;</a>
                                             </div>
                                         </div>
                                         <a href="#" class="dt_bt layer_enrollment" data-layer="layer-t01">자세히 보기</a>
@@ -485,6 +537,7 @@
                                             </div>
                                             <div class="flag clear_both">
                                                 <div class="payment pay">유료</div>
+                                                <a class="dt_lick" href="#"><span>상세페이지 바로가기 </span>&gt;</a>
                                             </div>
                                         </div>
                                         <a href="#" class="dt_bt layer_enrollment" data-layer="layer-t01">자세히 보기</a>
@@ -532,6 +585,31 @@
                         <form action="">
                             <div class="prch_scroll">
                                 <div class="select_wrap">
+                                    <div class="select_custum">
+                                        <button type="button">티켓 구분</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-val="1">전시회</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-val="2">부대행사</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="select_custum">
+                                        <button type="button">전시회 티켓</button>
+                                        <input type="hidden" id="" value=""/>
+                                        <div class="select_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" data-val="1">캐릭터 트랜드 세미나</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="select_custum">
                                         <button type="button">일반</button>
                                         <input type="hidden" id="" value="1"/>
@@ -680,6 +758,12 @@
                                                     </ul>
                                                 </li>
                                                 <li>
+                                                    <span>장소</span>
+                                                    <ul>
+                                                        <li>코엑스 Hall A&B</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
                                                     <span>간단소개</span>
                                                     <ul>
                                                         <li>
@@ -729,6 +813,31 @@
                                             <form action="">
 
                                                 <div class="select_wrap">
+                                                    <div class="select_custum">
+                                                        <button type="button">티켓 구분</button>
+                                                        <input type="hidden" id="" value=""/>
+                                                        <div class="select_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" data-val="1">전시회</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" data-val="2">부대행사</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="select_custum">
+                                                        <button type="button">전시회 티켓</button>
+                                                        <input type="hidden" id="" value=""/>
+                                                        <div class="select_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" data-val="1">캐릭터 트랜드 세미나</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                     <div class="select_custum">
                                                         <button type="button">참관구분</button>
                                                         <input type="hidden" id="" value=""/>

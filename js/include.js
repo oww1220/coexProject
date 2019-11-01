@@ -86,7 +86,10 @@ $(function(){
 										<a href="">초대권 등록</a>
 									</li>
 									<li>
-										<a href="">전시관리 플랫폼</a>
+										<a href="">기업회원 신청</a>
+									</li>
+									<li>
+										<a href="">전시관리 플랫폼 전환</a>
 									</li>
 									<li>
 										<a href="">알림함</a>
@@ -269,6 +272,7 @@ $(function(){
 				<a href="#">전시관리 플랫폼 바로가기</a>
 			</div>-->
 
+			<!--
 			<div class="family_wrap">
 				<div class="family_in">
 					<ul class="clear_both family_target">
@@ -296,7 +300,7 @@ $(function(){
 					</ul>
 					<div class="family_btn toggle_btn" data-target="family_target" data-on="true">Family Site</div>
 				</div>
-			</div>
+			</div>-->
 
 			<div class="link_wrap">
 				<ul class="clear_both">
