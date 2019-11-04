@@ -256,6 +256,9 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .proposer_cont .title {text-align:center;font-size: 2rem;margin-top: 3rem;line-height: 1.3;}
 .sub_wrap .proposer_cont .agree {margin-top:1.2rem;text-align:center; border: 1px solid #e8e8e8;border-radius: 5px;padding:1rem;}
 .sub_wrap .proposer_cont .agree span {text-decoration:underline;}
+.sub_wrap .proposer_cont .agree .input_w {display:inline-block;text-align:left;} 
+.sub_wrap .proposer_cont .agree .input_w .input_c {display: block;} 
+.sub_wrap .proposer_cont .agree .input_w .input_c + .input_c {margin-top:0.5rem;} 
 .sub_wrap .proposer_cont .signup_list {margin-top:1.5rem;}
 .sub_wrap .proposer_cont .signup_list .radio_list {margin-top:1rem;}
 .sub_wrap .proposer_cont .signup_list .radio_list > div + div {margin-left:1.5rem;}
@@ -958,6 +961,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .main_frame .mypage_modify_w {position: relative;}
 .mypage_wrap .main_frame .mypage_modify_w .info_cont {padding:0 1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .info_cont .title {font-size: 1.7rem;text-align:center;}
+.mypage_wrap .main_frame .mypage_modify_w .info_cont .sub_title {font-size: 1.7rem;text-align:center;margin-top:2rem;margin-bottom: -1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .info_cont > p {font-size:1rem;margin-top:0.7rem;color:#888;text-align:center;line-height: 1.6;}
 .mypage_wrap .main_frame .mypage_modify_w .signup_list {margin-top:2.5rem;}
 .mypage_wrap .main_frame .mypage_modify_w .signup_wrap {margin:0;padding:0;}
@@ -990,6 +994,11 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li p {margin-top:0.5rem;font-size:1rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td input {width:100%;border:1px solid #e8e8e8;border-radius:0.5rem;padding:1rem 1rem 0.8rem;box-sizing:border-box;font-size:1.05rem;line-height:1;height: 3.3rem;margin:0;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list .chk_list {margin-top:-1rem;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li {margin:0;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li + li {margin-top:0.5rem;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li.button {padding-right: 8.5rem;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li.button .button_wrap {top:0;}
+.mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li.button .button_wrap button {padding: 1rem 0 0.8rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input {position:relative;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input.button input {width: 21.5rem;}
 .mypage_wrap .main_frame .mypage_modify_w .modify_dt .btn_w {position:absolute;top:0;right:0}
@@ -1506,6 +1515,7 @@ border-radius:100%;display:table;}
   .sub_wrap .proposer_cont + .proposer_cont .title {padding-top:60px;border-top:1px solid #e8e8e8;}
   .sub_wrap .proposer_cont .agree {text-align:center;border:1px solid #e8e8e8;border-radius:5px;padding:30px 0;margin:30px 0 0;}
   .sub_wrap .proposer_cont .agree span {text-decoration:underline;}
+  .sub_wrap .proposer_cont .agree .input_w .input_c + .input_c {margin-top:15px;} 
   .sub_wrap .proposer_cont .signup_list {width:500px;margin:40px auto 0;}
   .sub_wrap .proposer_cont .signup_list .radio_list {margin-top:20px;}
   .sub_wrap .proposer_cont .signup_list .radio_list > div + div {margin-left:30px;}
@@ -2192,6 +2202,7 @@ border-radius:100%;display:table;}
   .mypage_wrap .main_frame .mypage_modify_w {position: relative;width:700px;margin:0 auto;}
   .mypage_wrap .main_frame .mypage_modify_w .info_cont {padding:0;}
   .mypage_wrap .main_frame .mypage_modify_w .info_cont .title {font-size: 30px;text-align:center;}
+  .mypage_wrap .main_frame .mypage_modify_w .info_cont .sub_title {font-size: 17px;text-align:left;margin-top:45px;font-weight:bold;margin-bottom: -10px;}
   .mypage_wrap .main_frame .mypage_modify_w .info_cont > p {font-size:16px;margin-top:20px;color:#888;text-align:center;}
   .mypage_wrap .main_frame .mypage_modify_w .signup_list {margin-top:60px;}
   .mypage_wrap .main_frame .mypage_modify_w .signup_wrap {margin:0;padding:0;}
@@ -2226,6 +2237,9 @@ border-radius:100%;display:table;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td {display: table-cell;width:420px;padding: 30px 40px;vertical-align: middle;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td input {width:100%;height:50px;border:1px solid #e8e8e8;border-radius:5px;padding:0 15px;box-sizing:border-box;font-size:16px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li p {margin-top:10px;font-size:16px;}
+  .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li + li {margin-top:20px;}
+  .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li.button {padding-right: 130px;}
+  .mypage_wrap .main_frame .mypage_modify_w .modify_dt .td .signup_list li.button .button_wrap button {height: 50px;padding: 0;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input {position:relative;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .table_input.button input {width: 290px;}
   .mypage_wrap .main_frame .mypage_modify_w .modify_dt .btn_w {position:absolute;top:0;right:0}
