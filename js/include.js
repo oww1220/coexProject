@@ -252,18 +252,19 @@ $(function(){
 
 			<div class="sns_wrap">
 				<ul class="clear_both">
-					<li class="twitter">
-						<a href="#">트위터</a>
-					</li>
-					<li class="instagram">
-						<a href="#">인스타그램</a>
-					</li>
 					<li class="facebook">
 						<a href="#">페이스북</a>
 					</li>
+					<li class="twitter">
+						<a href="#">트위터</a>
+					</li>
+					<!--
+					<li class="instagram">
+						<a href="#">인스타그램</a>
+					</li>
 					<li class="blog">
 						<a href="#">블로그</a>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 
