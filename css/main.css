@@ -88,7 +88,7 @@
 .main_wrap .cols_appdown .appdown_cont strong {display:block;font-size:2rem;color:#FDF168;font-weight:normal;}
 .main_wrap .cols_appdown .appdown_cont p {font-size:0;margin-top:1rem;}
 .main_wrap .cols_appdown .appdown_cont p span {display:inline-block;color:#Fff;font-size:1.1rem;vertical-align:middle;margin-top: 0.5rem;}
-.main_wrap .cols_appdown .appdown_cont p img {display:inline-block;vertical-align:middle;width:7rem;margin:0 0.3rem 0 0.5rem;}
+.main_wrap .cols_appdown .appdown_cont p img {display:inline-block;vertical-align:middle;width:10rem;margin:0 0.3rem 0 0.5rem;}
 .main_wrap .cols_appdown .appdown_bt {text-align:center;font-size:0;margin-top:1.5rem;}
 .main_wrap .cols_appdown .appdown_bt a {display:block;background:url("../images/icon/m_dw_app01.png") no-repeat 0 0;background-size: 100%;width:22rem;height:4.2rem;font: 0/0 a;margin:0 auto;}
 .main_wrap .cols_appdown .appdown_bt a + a {background-image:url("../images/icon/m_dw_app02.png");margin-top:0.5rem;}

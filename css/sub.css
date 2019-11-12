@@ -873,7 +873,16 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .sub_wrap .use_guide_wrap .use_guide_info .text strong {display:block;font-weight:normal;margin-top:1rem;line-height:1.3;font-size:1.8rem;}
 .sub_wrap .use_guide_wrap .use_guide_info .text p {margin-top:1rem;line-height:1.3;font-size:1rem;}
 .sub_wrap .use_guide_wrap .use_guide_info .text .sns_bt {margin-top:1rem;max-width: 434px;}
-
+.sub_wrap .use_guide_wrap .use_guide_bt {padding:3rem 0;}
+.sub_wrap .use_guide_wrap .use_guide_bt button {display: block;width: 5rem;height: 5rem;background: url("../images/icon/m_use_more.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;margin:0 auto;}
+.sub_wrap .use_guide_wrap .use_guide_bt button.on {background-image:url("../images/icon/m_use_close.png");}
+.sub_wrap .use_guide_wrap .use_guide_mid .col + .col {margin-top: 1.5rem;}
+.sub_wrap .use_guide_wrap .use_guide_mid .text {padding: 0 2.5rem;}
+.sub_wrap .use_guide_wrap .use_guide_mid .text b {display:inline-block;font-weight:normal;color:#4c6df7;border-bottom:1px solid #4c6df7;padding-bottom:0.2rem;font-size:1rem;}
+.sub_wrap .use_guide_wrap .use_guide_mid .text strong {display:block;font-weight:normal;margin-top:0.5rem;line-height:1.3;font-size:1.8rem;}
+.sub_wrap .use_guide_wrap .use_guide_mid .text p {margin-top:0.5rem;line-height:1.3;font-size:1rem;}
+.sub_wrap .use_guide_wrap .use_guide_mid .text .sns_bt {margin-top:1rem;max-width: 392px;}
+.sub_wrap .use_guide_wrap .use_more_conts {display:none;}
 
 /*마이페이지*/
 .sub_wrap .mypage_wrap {padding: 3rem 0 3rem;}
@@ -2116,7 +2125,7 @@ border-radius:100%;display:table;}
 
   /*사용자 가이드*/
   .sub_wrap .use_guide_wrap {padding: 0;}
-  .sub_wrap .use_guide_wrap:before {position: absolute;content: "벡드라운드";top: 0;left: 0;font: 0/0 a;width: 100%;height: 275px;background-color: #4C6DF7;}
+  .sub_wrap .use_guide_wrap:before {position: absolute;content: "벡드라운드";top: 0;left: 0;font: 0/0 a;width: 100%;height: 255px;background-color: #4C6DF7;}
   .sub_wrap .use_guide_wrap .sub_h2 {padding: 0;margin: 0;}
   .sub_wrap .use_guide_wrap .sub_h2 h2 {text-align:center;}
   .sub_wrap .use_guide_wrap .use_guide_info img {width:auto;}
@@ -2131,6 +2140,17 @@ border-radius:100%;display:table;}
   .sub_wrap .use_guide_wrap .use_guide_info .text .sns_bt {margin-top:15px;max-width: 434px;}
   .sub_wrap .use_guide_wrap .use_guide_info .img  {float:right;}
   .sub_wrap .use_guide_wrap .use_guide_info .col.even .img {float:left;}
+  .sub_wrap .use_guide_wrap .use_guide_bt {padding:70px 0;}
+  .sub_wrap .use_guide_wrap .use_guide_bt button {width: 70px;height: 70px;background-image:url("../images/icon/pc_use_more.png");background-size: auto;}
+  .sub_wrap .use_guide_wrap .use_guide_bt button.on {background-image:url("../images/icon/pc_use_close.png");}
+  .sub_wrap .use_guide_wrap .use_guide_mid .col + .col {margin-top: 35px;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .text {padding: 0;width:925px;margin:0 auto;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .text b {padding-bottom:4px;font-size:18px;width: 50px;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .text strong {margin-top:10px;line-height:1.2;font-size:20px;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .text p {margin-top:5px;line-height:1.3;font-size:16px;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .text .sns_bt {margin-top:15px;}
+  .sub_wrap .use_guide_wrap .use_guide_top {position:relative;background:url("../images/banner/pc_use_guide_top.jpg") no-repeat top center;}
+  .sub_wrap .use_guide_wrap .use_guide_top .inner {height:464px;font: 0/0 a;}
 
   /*마이페이지*/
   .sub_wrap .mypage_wrap {padding: 110px 0 200px;}
