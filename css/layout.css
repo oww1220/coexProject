@@ -49,7 +49,7 @@ img {width:100%;}
 .gnb_wrap .log_wrap .mypage_bt_w .mypage_bt_list li a {font-size:1.05rem;}
 .gnb_wrap .log_wrap .users {color:#fff;font-size:1.05rem;display: inline-block;vertical-align: middle;margin-left:0.5rem;}
 
-.gnb_wrap .search_bt_w {display: inline-block;vertical-align: middle;}
+.gnb_wrap .search_bt_w {display: inline-block;vertical-align: middle;margin-left: 1.5rem;}
 .gnb_wrap .search_bt_w button {width:20px;height:20px;background:url("../images/icon/m_header_icon01.png") no-repeat 0 0;background-size:contain;font: 0/0 a;}
 
 .gnb_wrap .ticket_w {display: inline-block;vertical-align: middle;}
@@ -684,7 +684,7 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .regi_list_wrap .regi_in .tops .info_w p {font-size:20px;}
     .regi_list_wrap .regi_in .tops .info_w em {display:block;color:#4C6DF7;font-size:16px;margin-top:15px;}
     .regi_list_wrap .regi_in .sum_w {position: relative;overflow: hidden;border-radius:10px;height: 340px;}
-    .regi_list_wrap .regi_in .sum_w img {width:auto;}
+    .regi_list_wrap .regi_in .sum_w img {}
     .main_list .list_in .event_wrap .flag {margin-bottom: 13px;}
     .main_list .list_in .event_wrap .flag .flag_item {height:22px;font-size:12px;padding: 0 15px;line-height: 23px;border-radius: 5px;border:1px solid #222;}
     .main_list .list_in .event_wrap .flag .flag_item + .flag_item {margin-left:5px;}

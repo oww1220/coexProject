@@ -107,7 +107,7 @@ background-size:99%;}
 .sub_wrap .regi_list_wrap .main_list .list_in .img_wrap .flag .flag_item {width:4rem;height:4rem;}
 
 .sub_wrap .regi_list_wrap .regi_list_col {position: relative;padding:0;}
-.sub_wrap .regi_list_wrap .regi_list_col + .regi_list_col {margin-top:3rem;}
+.sub_wrap .regi_list_wrap .regi_list_col ~ .regi_list_col {margin-top:3rem;}
 .sub_wrap .regi_list_wrap .regi_list_col h3 {font-size:1.7rem;margin-bottom:1rem;padding:0 1rem;}
 .sub_wrap .regi_list_wrap .regi_list_col .regi_list .sort {top:0}
 .sub_wrap .regi_list_wrap .regi_list_col .regi_list .sort.left{left:0;right:auto;}
@@ -619,7 +619,7 @@ text-align:center;}
 .sub_wrap .tab_nav.type1 li.on a,
 .sub_wrap .tab_nav.type2 li.on a {background-color: #222;border-color: #222;color: #fff;}
 
-
+.sub_wrap .event_wrap .event_list ul {display:-webkit-flex;display:flex;flex-wrap: wrap;}
 .sub_wrap .event_wrap .event_list li {margin-bottom:1.8rem;}
 .sub_wrap .event_wrap .event_list li {float: left;width: 50%;}
 .sub_wrap .event_wrap .event_list li:nth-child(odd) a {margin-right:0.5rem;}
@@ -1395,7 +1395,7 @@ border-radius:100%;display:table;}
   .sub_wrap .regi_list_wrap .regi_list > ul > li:nth-child(4n) {margin-right: 0;}
   .sub_wrap .regi_list_wrap .regi_list .sort select{margin-left:40px;}
 
-  .sub_wrap .regi_list_wrap .main_list {padding:0;}
+  .sub_wrap .regi_list_wrap .main_list {padding:0;display:-webkit-flex;display:flex;flex-wrap: wrap;}
   .sub_wrap .regi_list_wrap .main_list li {width: 270px;margin: 0px 55px 60px 0px;}
   .sub_wrap .regi_list_wrap .main_list li .list_in .event_wrap > span {letter-spacing: 0px;}
   .sub_wrap .regi_list_wrap .main_list li .list_in .event_wrap > em {letter-spacing: 0px;}
@@ -1407,7 +1407,7 @@ border-radius:100%;display:table;}
   .sub_wrap .regi_list_wrap .main_list .list_in .img_wrap .flag .flag_item {width:50px;height:50px;}
 
   .sub_wrap .regi_list_wrap .regi_list_col {padding:0;}
-  .sub_wrap .regi_list_wrap .regi_list_col + .regi_list_col {margin-top:70px;}
+  .sub_wrap .regi_list_wrap .regi_list_col ~ .regi_list_col {margin-top:70px;}
   .sub_wrap .regi_list_wrap .regi_list_col h3 {font-size:30px;margin-bottom:30px;padding:0;}
   .sub_wrap .regi_list_wrap .regi_list_col .regi_list .sort {top:0}
   .sub_wrap .regi_list_wrap .regi_list_col .regi_list .sort.left .sort_select {margin:0;}
