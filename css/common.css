@@ -115,7 +115,8 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 }
 
 /*-------------데스크탑-------------*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1025px){
+
 
   select {border:1px solid #ccc;background:url("../images/icon/pc_sub_select_dw.png") no-repeat 100% center;background-size:9px;padding-right:15px;}
   select.normal {font-size:14px;}

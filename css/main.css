@@ -96,11 +96,11 @@
 
 /*-------------테블릿-------------*/
 @media screen and (min-width:768px){
-
+  
 }
 
 /*-------------데스크탑-------------*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1025px){
 
   .main_wrap:before {height:510px;}
   .main_wrap .inner {}

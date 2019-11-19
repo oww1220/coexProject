@@ -1,7 +1,7 @@
 var COEX = COEX || {
 	resize: {
 		chk: function(target){
-			if (target.width() >= 1024 ) {
+			if (target.width() >= 1025 ) {
 				target.removeClass("pc mobile tablet").addClass("pc");
 			}
 			else if(target.width() >=  768){
@@ -10,7 +10,7 @@ var COEX = COEX || {
 			else {
 				target.removeClass("pc mobile tablet").addClass("mobile");
 			}
-			COEX.resize.resize(target);
+			
 		},
 		pf: function(target){
 			var pf = navigator.platform;
@@ -30,7 +30,7 @@ var COEX = COEX || {
 				COEX.resize.chk($BODY);
 				COEX.resize.font();
 			});
-		}
+		},
 	},
 	Map: {
 		init: function(){
@@ -706,6 +706,7 @@ var COEX = COEX || {
 COEX.resize.font();
 
 
+
 $(function(){
 
 	/*제이쿼리 객체 캐쉬 및 상수*/
@@ -730,6 +731,7 @@ $(function(){
 	/*호스트환경 체크*/
 	COEX.resize.pf($BODY);
 	COEX.resize.chk($BODY);
+	COEX.resize.resize($BODY);
 	
 
 	$(window).on("scroll", function(){
@@ -771,7 +773,7 @@ $(function(){
 				autoplay: true,
 				arrows: true,
 				responsive: [ 
-					{ breakpoint: 1024, settings: "unslick" }, 
+					{ breakpoint: 1025, settings: "unslick" }, 
 				],
 	
 			});
@@ -1122,7 +1124,7 @@ $(window).on("load", function(){
 
 	/*아이스크롤 리사이징*/
 	$(window).on("resize",function(){	
-		COEX.iscrolls.resize();
+		//COEX.iscrolls.resize();
 	});
 
 	
