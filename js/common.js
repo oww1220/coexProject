@@ -1104,6 +1104,25 @@ $(function(){
 	$(".qr_bt.layer_open_bt").trigger('click');
 
 
+	/*전시회 상세 최소높이*/
+	if($(".sub_wrap .regi_sky").length) {
+		var $regi_sky = $(".sub_wrap .regi_sky .regi_sky_in");
+		function regiSkyCa() {
+			var height = $regi_sky.height();
+			if($BODY.hasClass("mobile")){
+				$(".sub_wrap .regi_conts").css({"min-height": "auto"});
+			}
+			else {
+				$(".sub_wrap .regi_conts").css({"min-height": height});
+			}
+		}
+		regiSkyCa();
+		$(window).on("resize", function(){
+			regiSkyCa();
+		});
+	}
+
+
 });
 
 $(window).on("load", function(){

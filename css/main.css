@@ -96,7 +96,8 @@
 
 /*-------------테블릿-------------*/
 @media screen and (min-width:768px){
-  
+  .main_wrap .cols_appdown .appdown_bt a {display:inline-block;width: 18rem;margin: 0 0.25rem;}
+  .main_wrap .cols_appdown .appdown_bt a + a {margin-top:0;}
 }
 
 /*-------------데스크탑-------------*/
@@ -173,14 +174,14 @@
   .main_wrap .cols_notice li strong {font-size: 16px;margin-right: 30px;}
   .main_wrap .cols_notice li span {font-size: 16px;display:block;color:#8f8f8f;position: absolute;top:7px;right:0;}
 
-  .main_wrap .cols_appdown {padding:90px 0;}
-  .main_wrap .cols_appdown .appdown_cont {display:inline-block;}
-  .main_wrap .cols_appdown .appdown_cont strong {font-size:40px;}
-  .main_wrap .cols_appdown .appdown_cont p {font-size:0;margin-top:20px;}
-  .main_wrap .cols_appdown .appdown_cont p span {display:inline-block;color:#Fff;font-size:24px;vertical-align:middle;margin-top: 15px;}
-  .main_wrap .cols_appdown .appdown_cont p img {display:inline-block;vertical-align:middle;width:auto;margin:0 10px;}
-  .main_wrap .cols_appdown .appdown_bt {margin-top:40px;}
-  .main_wrap .cols_appdown .appdown_bt a {display:inline-block;background-image:url("../images/icon/pc_dw_app01.png");width:260px;height:80px;margin:0 10px;}
+  .main_wrap .cols_appdown {padding:90px 0;text-align: left;}
+  .main_wrap .cols_appdown .appdown_cont {display:inline-block;text-align: left;}
+  .main_wrap .cols_appdown .appdown_cont strong {font-size:36px;}
+  .main_wrap .cols_appdown .appdown_cont p {font-size:0;margin-top:10px;}
+  .main_wrap .cols_appdown .appdown_cont p span {display:inline-block;color:#Fff;font-size:20px;vertical-align:middle;margin-top: 10px;}
+  .main_wrap .cols_appdown .appdown_cont p img {display:inline-block;vertical-align:middle;width:195px;margin:0 10px;}
+  .main_wrap .cols_appdown .appdown_bt {margin-top:0px;position: absolute;bottom: 0;right: 0;}
+  .main_wrap .cols_appdown .appdown_bt a {display:inline-block;background-image:url("../images/icon/pc_dw_app01.png");width:215px;height:57px;margin:0 5px;background-size:auto;}
   .main_wrap .cols_appdown .appdown_bt a + a {background-image:url("../images/icon/pc_dw_app02.png");margin-top:0;}
 
 }
