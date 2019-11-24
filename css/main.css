@@ -121,6 +121,7 @@
 
   .main_wrap .cols1 {padding: 50px 0;}
   .main_wrap .cols1 h3 {padding:0;font-size:40px;margin-bottom:50px;}
+  .main_wrap .cols1 .main_list {display:-webkit-flex;display:flex;flex-wrap: wrap;}
   .main_wrap .cols1 .main_list li {width: 270px;float:left;margin-bottom:50px;}
   .main_wrap .cols1 .main_list li + li {margin-left:41px;}
   .main_wrap .cols1 .main_list li:nth-child(5n){margin-left: 0px;}
