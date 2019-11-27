@@ -266,6 +266,8 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .proposer_cont .signup_list .radio_list {margin-top:1rem;}
 .sub_wrap .proposer_cont .signup_list .radio_list > div + div {margin-left:1.5rem;}
 .sub_wrap .proposer_cont .signup_list .chk_list > div {display:block;margin-top:1rem;}
+.sub_wrap .proposer_cont .signup_list .chk_list input[type=checkbox] + label:before {background-image:url("../images/icon/m_sub_radio_off.png");}
+.sub_wrap .proposer_cont .signup_list .chk_list input[type=checkbox]:checked + label:before {background-image:url("../images/icon/m_sub_radio_on.png");}
 .sub_wrap .proposer_info .btn_wrap {margin-top: 2.5rem;margin-bottom: 5rem;}
 .sub_wrap .proposer_info .btn_wrap a {height: 8rem;line-height: 8.2rem;width: 8rem;border-radius: 100%;}
 .sub_wrap .proposer_info .signup_btns {margin-bottom: 5rem;}
@@ -1495,6 +1497,8 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .proposer_cont .signup_list .radio_list {margin-top:20px;}
   .sub_wrap .proposer_cont .signup_list .radio_list > div + div {margin-left:30px;}
   .sub_wrap .proposer_cont .signup_list .chk_list > div {display:block;margin-top:20px;}
+  .sub_wrap .proposer_cont .signup_list .chk_list input[type=checkbox] + label:before {background-image:url("../images/icon/pc_sub_radio_off.png");background-size:auto;}
+  .sub_wrap .proposer_cont .signup_list .chk_list input[type=checkbox]:checked + label:before {background-image:url("../images/icon/pc_sub_radio_on.png");background-size:auto;}
   .sub_wrap .proposer_info .btn_wrap {margin-top: 60px;margin-bottom:70px;}
   .sub_wrap .proposer_info .btn_wrap a {height: 180px;line-height: 180px;width: 180px;border-radius: 100%;font-size: 20px;}
   .sub_wrap .proposer_info .signup_btns {margin-bottom: 70px;}

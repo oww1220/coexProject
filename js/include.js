@@ -323,9 +323,9 @@ $(function(){
 
 			<div class="copyright_wrap">
 				<ul class="clear_both">
-					<li>서울특별시 강남구 영동대로 513 (삼성동, 코엑스) 06164</li>
+					<li>서울특별시 강남구 영동대로 513 (삼성동, 코엑스) 06164.</li>
 					<li>문의전화 : 02-6000-8114</li>
-					<li>COPYRIGHT 2015-2019 © COEX</li>
+					<li>COPYRIGHT 2019 - 2020 © COEX.</li>
 					<li>ALL RIGHTS RESERVED.</li>
 				</ul>
 			</div>

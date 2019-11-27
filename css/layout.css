@@ -808,6 +808,7 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .footer .copyright_wrap ul {width: 560px;}
     .footer .copyright_wrap li {font-size: 16px;display: block; float: left;margin: 8px 0 0;}
     .footer .copyright_wrap li:first-child {margin-right: 35px;}
+    .footer .copyright_wrap li:last-child {margin-left: 5px;}
     .footer .copyright_wrap li + li {margin-top: 8px;}
 
     .footer .footer_btn {display:block;position:absolute;bottom:60px;right:0px;}
