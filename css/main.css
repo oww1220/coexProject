@@ -53,7 +53,7 @@
 .main_wrap .cols3 h3 {color:#222;font-size:2rem;}
 .main_wrap .cols3 h3 a {color:#222;}
 .main_wrap .cols3 .regi_list_wrap .regi_in .tops {box-shadow:none;}
-.main_wrap .cols3 .regi_list ul {white-space: nowrap;overflow-x: scroll;overflow-y: hidden;-webkit-overflow-scrolling: touch;padding: 0 1rem;font-size: 0;text-align: center;}
+.main_wrap .cols3 .regi_list ul {white-space: nowrap;overflow-x: scroll;overflow-y: hidden;-webkit-overflow-scrolling: touch;padding: 0 1rem;font-size: 0;}
 .main_wrap .cols3 .regi_list ul::-webkit-scrollbar {display: none}
 .main_wrap .cols3 .regi_list li {display: inline-block;float:none;width: 14rem;vertical-align: top;text-align: left;margin-right:1rem;margin-top:0;}
 .main_wrap .cols3 .regi_in .hover .link {position:absolute;display:block;font:0/0 a;top:0;left:0;width:100%;height:100%;}
@@ -61,7 +61,7 @@
 .main_wrap .cols3 .regi_in .hover.on .date {-webkit-transform: translateY(0%);transform: translateY(0%);}
 
 .main_wrap .cols4 {position: relative;z-index: 1;padding: 1.5rem 0;}
-.main_wrap .cols4 ul {padding:0 1rem;}
+.main_wrap .cols4 ul {margin:0 1rem;overflow: hidden;border-radius: 0.5rem;}
 .main_wrap .cols4 .slick-prev {position:absolute;top:50%;left:2rem;width:1.2rem;height:1.2rem;margin-top:-0.6rem;font: 0/0 a;background: url("../images/icon/m_main_prev02.png") no-repeat left center;background-size: contain;}
 .main_wrap .cols4 .slick-next {position:absolute;top:50%;right:2rem;width:1.2rem;height:1.2rem;margin-top:-0.6rem;font: 0/0 a;background: url("../images/icon/m_main_next02.png") no-repeat right center;background-size: contain;}
 
@@ -152,9 +152,10 @@
   .main_wrap .cols3 .regi_in .hover .date {font-size:15px;padding:12px;}
 
   .main_wrap .cols4 {padding: 100px 0;}
-  .main_wrap .cols4 ul {padding:0;}
+  .main_wrap .cols4 ul {margin:0;border-radius: 10px;}
   .main_wrap .cols4 .slick-prev {position:absolute;top:50%;left:40px;width:28px;height:28px;margin-top:-14px;background: url("../images/icon/pc_main_prev02.png") no-repeat left center;background-size: 16px;}
   .main_wrap .cols4 .slick-next {position:absolute;top:50%;right:40px;width:28px;height:28px;margin-top:-14px;background: url("../images/icon/pc_main_next02.png") no-repeat right center;background-size: 16px;}
+  .main_wrap .cols4 ul img {height: auto !important;}
 
   .main_wrap .cols_link {padding: 150px 0 50px;}
   .main_wrap .cols_link ul {padding: 0;text-align:center;font-size:0;}

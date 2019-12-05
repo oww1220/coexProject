@@ -316,7 +316,7 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .directory_lists .company_list ul li a {display:block;border:1px solid #e8e8e8;box-sizing:border-box;padding:1rem 0.5rem;border-radius:0.5rem;}
 .sub_wrap .directory_lists .company_list li:nth-child(odd) a {margin-right:0.5rem;}
 .sub_wrap .directory_lists .company_list li:nth-child(even) a {margin-left:0.5rem;}
-.sub_wrap .directory_lists .company_list ul li .img {height:10rem;width:10rem;margin:0 auto;overflow: hidden;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;}
+.sub_wrap .directory_lists .company_list ul li .img {height:10rem;width:100%;margin:0 auto;overflow: hidden;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;}
 .sub_wrap .directory_lists .company_list ul li img {max-width:100%;max-height: 100%;display:block;margin:0 auto;width:auto;}
 .sub_wrap .directory_lists .company_list ul li p {font-size:1.2rem;text-align:center;margin-top:1rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 1px 0;}
 .sub_wrap .directory_lists .company_list ul li .sns_t {text-align:center;margin-top:0.7rem;}
@@ -326,6 +326,8 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .directory_lists .company_list ul li .like:before {position: relative;bottom: 0.1rem;margin-right: 0.2rem;display: inline-block;vertical-align: middle;content: "";width: 1.2rem;height: 1.4rem;background: url("../images/icon/m_sub_like_ic.png") no-repeat center center;background-size: 99%;}
 #container .sub_wrap .directory_lists .company_list ul li.more_bt {margin-top:3rem;}
 #container .sub_wrap .directory_lists .company_list ul li.more_bt a {border:0;}
+.sub_wrap .directory_lists .signup_btns {margin-top:0;padding-top:3rem;}
+#container .sub_wrap .directory_lists ul li.none {padding:0;margin: 6rem 0 3rem;}
 
 .sub_wrap .search_input_w {margin:0 1rem;}
 .sub_wrap .directory_lists .d_event_list {}
@@ -629,7 +631,7 @@ text-align:center;}
 .sub_wrap .tab_nav.type1 li.on a,
 .sub_wrap .tab_nav.type2 li.on a {background-color: #222;border-color: #222;color: #fff;}
 
-.sub_wrap .event_wrap .event_list ul {display:-webkit-flex;display:flex;flex-wrap: wrap;}
+.sub_wrap .event_wrap .event_list ul {display:-webkit-flex;display:flex;flex-wrap: wrap;width: 100%;}
 .sub_wrap .event_wrap .event_list li {margin-bottom:1.8rem;}
 .sub_wrap .event_wrap .event_list li {float: left;width: 50%;}
 .sub_wrap .event_wrap .event_list li:nth-child(odd) a {margin-right:0.5rem;}
@@ -1564,13 +1566,14 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .directory_lists .company_list ul li .visit:before {bottom: 1px;margin-right: 7px;width: 27px;height: 17px;background: url("../images/icon/pc_sub_visit_ic.png") no-repeat center center;background-size: auto;}
   .sub_wrap .directory_lists .company_list ul li .like:before {bottom: 1px;margin-right: 7px;width: 20px;height: 18px;background: url("../images/icon/pc_sub_like_ic.png") no-repeat center center;background-size: auto;}
   #container .sub_wrap .directory_lists .company_list ul li.more_bt {margin-top:20px;}
-
+  .sub_wrap .directory_lists .signup_btns {margin-top:0;padding-top:60px}
+  #container .sub_wrap .directory_lists ul li.none {padding:0;margin: 100px 0 40px;}
 
   .sub_wrap .search_input_w {margin:50px 0 0;}
   .sub_wrap .directory_lists .d_event_list ul {display:-webkit-flex;display:flex;flex-wrap: wrap;}
   .sub_wrap .directory_lists .d_event_list li {float: left;width: 270px;margin: 60px 40px 0px 0px;position: relative;padding-bottom: 60px;}
   .sub_wrap .directory_lists .d_event_list li:nth-child(4n) {margin-right:0;}
-  .sub_wrap .directory_lists .d_event_list li.more_bt {margin-top:60px;}
+  #container .sub_wrap .directory_lists .d_event_list li.more_bt {margin-top:60px;padding-bottom:0;}
   .sub_wrap .directory_lists .d_event_list .d_event_in {}
   .sub_wrap .directory_lists .d_event_list li:nth-child(odd) .d_event_in {margin-right:0;}
   .sub_wrap .directory_lists .d_event_list li:nth-child(even) .d_event_in {margin-left:0;}
