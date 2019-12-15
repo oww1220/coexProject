@@ -764,6 +764,7 @@ $(function(){
 	}
 
 	/*메인 상단 슬라이드*/
+	
 	if($(".main_wrap .cols0 ul").length && $.fn.slick) {
 		(function(){
 			COEX.slide.init($(".main_wrap .cols0 ul"), "slick", {
@@ -772,6 +773,40 @@ $(function(){
 				infinite: true,
 				autoplay: true,
 				arrows: true,
+				responsive: [ 
+					{ breakpoint: 1025, settings: "unslick" }, 
+				],
+	
+			});
+		})();
+	}
+
+	if($(".main_wrap .cols1 ul").length && $.fn.slick) {
+		(function(){
+			COEX.slide.init($(".main_wrap .cols1 ul"), "slick", {
+				slidesToShow: 4, 
+				slidesToScroll: 1, 
+				infinite: true,
+				autoplay: true,
+				arrows: true,
+				autoplaySpeed: 3500,
+				responsive: [ 
+					{ breakpoint: 1025, settings: "unslick" }, 
+				],
+	
+			});
+		})();
+	}
+
+	if($(".main_wrap .cols3 ul").length && $.fn.slick) {
+		(function(){
+			COEX.slide.init($(".main_wrap .cols3 ul"), "slick", {
+				slidesToShow: 3, 
+				slidesToScroll: 1, 
+				infinite: true,
+				autoplay: true,
+				arrows: true,
+				autoplaySpeed: 4000,
 				responsive: [ 
 					{ breakpoint: 1025, settings: "unslick" }, 
 				],
