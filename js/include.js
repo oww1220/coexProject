@@ -309,15 +309,14 @@ $(function(){
 						<a href="#">개인정보 처리방침</a>
 					</li>
 					<li>
+						<a href="#">이용약관</a>
+					</li>
+					<li>
 						<a href="#">이메일무단수집거부</a>
 					</li>
 					<li>
-						<a href="#">이용약관</a>
+						<a href="#">사전등록 이용안내</a>
 					</li>
-					<!--
-					<li class="pc">
-						<a href="#">전시관리 플랫폼</a>
-					</li>-->
 				</ul>
 			</div>
 

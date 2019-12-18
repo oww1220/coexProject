@@ -49,6 +49,10 @@
 .sub_wrap .sns_wrap .sns_list li .twitter {background-image:url("../images/icon/m_sub_share_bt02.png");}
 .sub_wrap .sns_wrap .sns_list li .kakao {background-image:url("../images/icon/m_sub_share_bt03.png");}
 .sub_wrap .sns_wrap .sns_list li .naver {background-image:url("../images/icon/m_sub_share_bt04.png");}
+.sub_wrap .signup_btns .sns_wrap {right:0;}
+.sub_wrap .signup_btns .sns_wrap .sns_list {top: -17.5rem;left: 2.2rem;}
+.sub_wrap .signup_btns .sns_wrap .sns_list li {width:auto;float:none;}
+.sub_wrap .signup_btns .sns_wrap .sns_list:before {background-image:url("../images/icon/m_sub_share_arr2.png");top:auto;bottom:-0.88rem;}
 
 .sub_wrap .btn_wrap {font-size: 0;text-align: center;margin-top: 1.7rem;}
 .sub_wrap .btn_wrap  > a {display: inline-block;font-size: 1.1rem;height:3.3rem;line-height: 3.4rem;width: 60%;border-radius: 100px;transition:.3s all ease;}
@@ -280,7 +284,7 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .proposer_info .proposer_info_list li span {color: #222;font-size: 1.2rem;display: inline-block;vertical-align: middle;}
 .sub_wrap .proposer_info .proposer_guide {margin-top: 1.2rem;text-align: center;border: 1px solid #4c6df7;border-radius: 5px;padding: 1rem;}
 .sub_wrap .proposer_info .proposer_guide p {color:#4c6df7;line-height: 1.4;font-size: 1.2rem;}
-.sub_wrap .proposer_info .notice_w_bottom {background-color: #374260;padding:2rem 1rem;margin-top:5rem;margin-bottom: -6rem;}
+.sub_wrap .proposer_info .notice_w_bottom {background-color: #374260;padding:2rem 1rem;margin-top:5rem;margin-bottom: -6rem;color:#fff;}
 .sub_wrap .proposer_info .notice_w_bottom h4 {color:#fff;font-size: 1.7rem;}
 .sub_wrap .proposer_info .notice_w_bottom .depth_list {margin-top:1.5rem;}
 .sub_wrap .proposer_info .notice_w_bottom .depth_list > li {color:#fff;font-size: 1.1rem;}
@@ -514,6 +518,10 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 
 /*약관완료 레이어*/
 .pop_layer.agree {width: 100%;max-width: 100%;}
+.mobile .pop_layer.agree,
+.tablet .pop_layer.agree {top:0 !important;left:0 !important;}
+.mobile .pop_layer.agree .pop_scroll,
+.tablet .pop_layer.agree .pop_scroll {height:100vh !important;overflow: auto;}
 .pop_layer.agree .pop_inner {margin:0;border-radius:0;}
 .pop_layer.agree .pop_cont .tit {font-size: 1.7rem;line-height:1.4;margin-top: 2rem;}
 .pop_layer.agree .pop_cont p {color:#222;text-align:left;width:100%;}
@@ -522,6 +530,10 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 
 /*사전등록 레이어*/
 .pop_layer.enrollment {width: 100%;max-width: 100%;}
+.mobile .pop_layer.enrollment,
+.tablet .pop_layer.enrollment {top:0 !important;left:0 !important;}
+.mobile .pop_layer.enrollment .pop_scroll,
+.tablet .pop_layer.enrollment .pop_scroll {height:100vh !important;overflow: auto;}
 .pop_layer.enrollment .pop_inner {margin:0;border-radius:0;}
 .pop_layer.enrollment .left_conts {padding-bottom:6rem;}
 .pop_layer.enrollment .left_conts .head h3 {padding:1rem 0;font-size:1.7rem;text-align:center;}
@@ -770,8 +782,8 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .sub_wrap .signup_btns .signup_btn.down:before {background-image:url("../images/icon/m_signup_btn05.png");position:relative;display:inline-block;vertical-align:middle;top:-0.2rem;left:auto;width:1.3rem;height:1.3rem;margin-right:0.5rem;margin-top:0;}
 .sub_wrap .signup_btns.type02 {zoom:1;}
 .sub_wrap .signup_btns.type02:after {content:"";display:block;clear:both;}
-.sub_wrap .signup_btns.type02 li {float:left;width:50%;margin-top:0;padding-right:0.5rem;box-sizing:border-box;}
-.sub_wrap .signup_btns.type02 li + li {padding-right:0;padding-left:0.5rem;}
+.sub_wrap .signup_btns.type02 li {float:left;width:50%;margin-top:0;padding-right:0.25rem;padding-left:0.25rem;box-sizing:border-box;}
+.sub_wrap .signup_btns.type02 li + li {}
 .sub_wrap .signup_btns li {position: relative;}
 .sub_wrap .signup_btns li .btn_guide {position:absolute;top:3rem;left:5%;background-color:#FDF168;width: 90%;border-radius:5px;box-shadow: 1px 10px 25px -5px grey;display:none;}
 .sub_wrap .signup_btns li a:hover .btn_guide {display:block;}
@@ -923,7 +935,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .mypage_wrap .mypage_menu li span {font-size:1.15rem;display:inline-block;vertical-align: middle;margin-top:0;margin-left: 0.5rem;}
 .mypage_wrap .mypage_menu .on span {color:#4C6DF7;}
 
-.mypage_wrap .main_frame img {width:100%;}
+.mypage_wrap .main_frame img {width:100%;height: 100%;}
 .mypage_wrap .main_frame .sum {text-align: center;border-top:1px solid #e8e8e8;padding:0;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;position: relative;}
 .mypage_wrap .main_frame .sum:after {display:block;content:"";width:1px;height:100%;background-color:#e8e8e8;position:absolute;top:0;left:61%;}
 .mypage_wrap .main_frame .sum .img {width: 6rem;height:6rem;overflow: hidden;border-radius: 100%;display: -webkit-flex;display:flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;background-color:#f5f5f5;margin-right:1rem;flex: none;}
@@ -1304,6 +1316,8 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .sns_wrap .sns_list li .twitter {background-image:url("../images/icon/pc_sub_share_bt02.png");}
   .sub_wrap .sns_wrap .sns_list li .kakao {background-image:url("../images/icon/pc_sub_share_bt03.png");}
   .sub_wrap .sns_wrap .sns_list li .naver {background-image:url("../images/icon/pc_sub_share_bt04.png");}
+  .sub_wrap .signup_btns .sns_wrap .sns_list {top: -322px;left: 70px;}
+  .sub_wrap .signup_btns .sns_wrap .sns_list:before {background-image:url("../images/icon/pc_sub_share_arr2.png");top:auto;bottom:-11px;}
 
   .sub_wrap .btn_wrap {margin-top: 100px;}
   .sub_wrap .btn_wrap  > a {height:70px;line-height: 72px;width: 350px;font-size: 20px;}
@@ -1989,8 +2003,8 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .signup_btns .signup_btn.naver.terminate:before {background-image:url("../images/icon/pc_signup_btn04_off.png");}
   .sub_wrap .signup_btns .signup_btn.down:before {background-image:url("../images/icon/pc_signup_btn05.png");top:-2px;left:auto;width:17px;height:17px;margin-right:7px;margin-top:0px;}
   
-  .sub_wrap .signup_btns.type02 li {margin-top:0;padding-right:10px;}
-  .sub_wrap .signup_btns.type02 li + li {padding-right:0;padding-left:10px;}
+  .sub_wrap .signup_btns.type02 li {margin-top:0;padding-right:5px;padding-left:5px;}
+  .sub_wrap .signup_btns.type02 li + li {}
   .sub_wrap .signup_btns li .btn_guide {top:55px;left:35px;width: 428px;}
   .sub_wrap .signup_btns li .btn_guide:before {top: -5px;width: 12px;height: 12px;margin-left:-6px;background-image: url("../images/icon/pc_singup_arr.png");}
   .sub_wrap .signup_btns li .btn_guide p {margin:20px;font-size:12px;padding-left:18px;line-height: 1.5;}
@@ -2121,6 +2135,7 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .use_guide_wrap .use_guide_top .inner {height:464px;font: 0/0 a;}
 
   .sub_wrap .use_guide_wrap .use_guide_mid .step0 {margin:100px 0;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .step0 + .step0 {margin-top: -65px;}
   .sub_wrap .use_guide_wrap .use_guide_mid .step0 .text strong {font-size:30px;margin-bottom:20px;}
   .sub_wrap .use_guide_wrap .use_guide_mid .step0 .text p {line-height:1.5;}
 
