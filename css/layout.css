@@ -434,6 +434,11 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .footer .btnTop {display: block !important;}
 }
 
+.loading{position:fixed;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,.7);z-index:-1;opacity:0;transition:opacity .3s ease-in-out}
+.loading.active{opacity:1;z-index:1000}
+.loading p{position:absolute;top:0;right:0;bottom:0;left:0;width:64px;height:64px;margin:auto}
+
+
 
 /*-------------테블릿-------------*/
 @media screen and (min-width:768px) {
@@ -640,7 +645,7 @@ font-size:1.3rem;line-height:1.4;word-break:break-all;}
     .search_list_w .search_list .flag .payment.pay:before {background-image: url("../images/icon/pc_main_cols1_ic01.png");}
     .search_list_w .search_list .flag .dt_lick {display: inline-block;vertical-align: middle;color:#888;font-size:14px;margin-left:10px;}
     .search_list_w .search_list .flag .dt_lick span {margin-right:4px;display: inline-block;border-bottom: 1px solid #888;padding-bottom:1px;}
-    .search_list_w .search_list .dt_bt {width:99px;height:99px;background:url("../images/icon/pc_search_dt.png") no-repeat center center;background-size: auto;font: 0/0 a;}
+    .search_list_w .search_list .dt_bt {width:99px;height:99px;background:url("../images/icon/pc_search_dt.png") no-repeat center center;background-size: auto;font: 0/0 a;cursor: pointer;}
     .search_list_w .search_list .dt_bt.join {background-image: url("../images/icon/pc_search_dt2_02.png");background-size: auto;}
     .search_list_w .search_list .dt_bt.join2 {background-image: url("../images/icon/pc_search_dt2_02.png");background-size: auto;}
     .search_list_w .search_list .guide {font-size:16px;margin-top:10px;}

@@ -303,13 +303,19 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 .sub_wrap .observer_info .observer_file .file_bt_w .file_bt {display: inline-block;position: relative;} 
 .sub_wrap .observer_info .observer_file .file_bt_w .file_bt span {display: inline-block;width: 8rem;height: 8rem;background: url("../images/icon/m_sub_add_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;} 
 .sub_wrap .observer_info .observer_file .file_bt_w .file_bt input {position: absolute;top:0;left:0;width:100%;height:100%;opacity: 0;} 
+.sub_wrap .observer_info .observer_file .file_bt_w p {color: #888;font-size: 1.15rem;margin-top: 1rem;}
 .sub_wrap .observer_info .observer_file .file_comp {margin:3rem 0 7rem;padding:1.2rem 0.5rem 1rem;background-color:#F5F5F5;border-radius:5px;text-align:center;} 
 .sub_wrap .observer_info .observer_file .file_comp p {display:inline-block;text-align:left;line-height:1.4;font-size:1.05rem;word-break: break-all;} 
 .sub_wrap .observer_info .observer_file .depth_list {margin-top:3rem;}
 .sub_wrap .observer_info .observer_file .depth_list li + li {margin-top:0.5rem;}
 .sub_wrap .observer_info .observer_file .depth_list a {color:#4c6df7;text-decoration:underline;}
+.sub_wrap .observer_info .observer_file .depth_list .emphasis {color:#4c6df7;}
 .sub_wrap .observer_info .observer_file .signup_list {margin-top: 2rem;}
 .sub_wrap .observer_info .observer_file .signup_list input {width:100%;border:1px solid #e8e8e8;border-radius:0.5rem;padding:1rem 1rem 0.8rem;box-sizing:border-box;font-size:1.05rem;line-height:1;height: 3.3rem;margin-top:1rem;}
+.sub_wrap .observer_info .observer_file .down_bt {text-align:right;margin-top:1rem;}
+.sub_wrap .observer_info .observer_file .down_bt a {font-size: 1.05rem;line-height: 1.6rem;display: inline-block;vertical-align: middle;color:#4c6df7;}
+.sub_wrap .observer_info .observer_file .down_bt a:before {position:relative;bottom:-0.2rem;margin-right:0.3rem;display:inline-block;vertical-align:middle;content:"";width:1.5rem;height:1.5rem;
+background:url("../images/icon/m_dw_btn.png") no-repeat 0 0;background-size: contain;}
 
 /*Online Directory 리스트*/
 .sub_wrap .directory_wrap {padding: 3rem 0rem 6rem;}
@@ -549,7 +555,7 @@ margin:0;border:1px solid #222;border-radius: 5px;font-size:1.15rem;padding: 0 0
 
 /*모바일 하단 구매*/
 .prch-wrap {display:block;position: fixed;right: 0;bottom: 0;left: 0;z-index: 10;background-color:#fff;padding:1rem 0 0;border-top:3px solid #4c6df7;}
-.prch-wrap .prch-toggle {position:absolute;top:-3rem;left:50%;margin-left:-3rem;width:6rem;height:3rem;background: url("../images/icon/m_bt_fix_up.png") no-repeat center bottom;background-size: contain;font: 0/0 a;}
+.prch-wrap .prch-toggle {position:absolute;top:-4rem;left:50%;margin-left:-5rem;width:10rem;height:4rem;background: url("../images/icon/m_bt_fix_up.png") no-repeat center bottom;background-size: contain;font: 0/0 a;}
 .prch-wrap .prch-toggle.on {background-image:url("../images/icon/m_bt_fix_dw.png");}
 .prch-wrap .prch-option {display:none;}
 .prch-wrap .prch-option .prch_scroll {overflow-x: hidden;overflow-y: auto;max-height:25rem;}
@@ -1553,6 +1559,7 @@ white-space: nowrap;padding: 1px 0;}
   /*참관자 정보등록*/
   .sub_wrap .observer_wrap {padding: 110px 0 200px;}
   .sub_wrap .observer_info {margin-top: 40px;padding:0;}
+  .sub_wrap .observer_info .observer_file .file_w {border-top: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;padding-bottom:100px;margin-top:20px;} 
   .sub_wrap .observer_info .observer_file .file_bt_w {margin:110px 0 0 0;text-align:center;} 
   .sub_wrap .observer_info .observer_file .file_bt_w .file_bt {display: inline-block;position: relative;} 
   .sub_wrap .observer_info .observer_file .file_bt_w .file_bt span {display: inline-block;width: 120px;height: 120px;background: url("../images/icon/pc_sub_add_bt.png") no-repeat 0 0;background-size: 100%;font: 0/0 a;} 
@@ -1566,6 +1573,9 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .observer_info .observer_file .signup_list li {float:left;width:500px;}
   .sub_wrap .observer_info .observer_file .signup_list li + li {float:right;margin:0 0 0 60px;}
   .sub_wrap .observer_info .observer_file .signup_list input {width:100%;height:50px;border:1px solid #e8e8e8;border-radius:5px;padding:0 15px;box-sizing:border-box;font-size:16px;margin-top:15px;}
+  .sub_wrap .observer_info .observer_file .down_bt {text-align:right;margin-top:10px;}
+  .sub_wrap .observer_info .observer_file .down_bt a {font-size: 16px;line-height: 21px;}
+  .sub_wrap .observer_info .observer_file .down_bt a:before {bottom: 1px;margin-right: 5px;width: 32px;height: 21px;background:url("../images/icon/pc_dw_btn.png") no-repeat 0 0;background-size: auto;}
 
   /*Online Directory 리스트*/
   .sub_wrap .directory_wrap {padding: 110px 0 200px;}
