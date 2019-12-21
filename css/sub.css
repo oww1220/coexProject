@@ -726,15 +726,15 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 
 .signup_list li input {width:100%;border:0;border-bottom:1px solid #E8E8E8;font-size:1.2rem;padding: 1.2rem 0 1rem;line-height:1;transition:.3s all ease;box-sizing:border-box;margin-top:0.5rem;}
 .signup_list li input:focus {border-bottom:2px solid #4C6DF7;}
-.signup_list li input:read-only,
-.signup_list li input:disabled {border-bottom:1px solid #E8E8E8 !important;background-color: #fff;}
-.signup_list li input:disabled {background-color: #f5f5f5;}
-.signup_list li input:read-only {background-color: #e8e8e8;color:#8C8D8E;}
+.signup_list li input[readonly],
+.signup_list li input[disabled] {border-bottom:1px solid #E8E8E8 !important;background-color: #fff;}
+.signup_list li input[disabled] {background-color: #f5f5f5;}
+.signup_list li input[readonly] {background-color: #e8e8e8;color:#8C8D8E;}
 .signup_list li span {margin-top:0.5rem;display: none;}
 .signup_list li .help_message {color:#4C6DF7;font-size:1rem;line-height: 1.3;}
 .signup_list li input:focus ~ .help_message {display: block;}
 .signup_list li.error input:focus ~ .help_message {display: none;}
-.signup_list li input:read-only ~ .help_message {display: none;}
+.signup_list li input[readonly] ~ .help_message {display: none;}
 .signup_list li.error .error_message {display: block;}
 .signup_list li.error input,
 .signup_list li.error input:focus{border-bottom:2px solid #FF6280;}
@@ -921,6 +921,7 @@ font-size:1.3rem;line-height:1.4;margin:0.7rem 0 1rem;word-break:break-all;}
 .sub_wrap .use_guide_wrap .use_guide_mid .text p {margin-top:0.5rem;line-height:1.3;font-size:1rem;}
 .sub_wrap .use_guide_wrap .use_guide_mid .text .sns_bt {margin-top:1rem;max-width: 392px;}
 .sub_wrap .use_guide_wrap .use_more_conts {display:none;}
+.sub_wrap .use_guide_wrap .use_guide_mid .text .guide {color: #4c6df7;padding-left: 1rem;text-indent: -0.8rem;}
 
 .sub_wrap .use_guide_wrap .use_guide_mid .step0 {margin:0 0 3rem;}
 .sub_wrap .use_guide_wrap .use_guide_mid .step0 .text strong {color: #4c6df7;}
@@ -1995,8 +1996,8 @@ white-space: nowrap;padding: 1px 0;}
   .signup_list li > strong i {font-size: 16px;margin-left:5px;}
   .signup_list li input {font-size: 18px;border-bottom:2px solid #E8E8E8;margin-top:10px;padding:20px 0;}
   .signup_list li input:focus {border-bottom:3px solid #4C6DF7;}
-  .signup_list li input:read-only,
-  .signup_list li input:disabled {border-bottom:2px solid #E8E8E8 !important;}
+  .signup_list li input[readonly],
+  .signup_list li input[disabled] {border-bottom:2px solid #E8E8E8 !important;}
   .signup_list li span {margin-top:10px;font-size:15px;}
   .signup_list li.error input,
   .signup_list li.error input:focus{border-bottom:3px solid #FF6280;}
@@ -2163,6 +2164,7 @@ white-space: nowrap;padding: 1px 0;}
   .sub_wrap .use_guide_wrap .use_guide_mid .text .sns_bt {margin-top:15px;}
   .sub_wrap .use_guide_wrap .use_guide_top {position:relative;background:url("../images/banner/pc_use_guide_top.jpg") no-repeat top center;}
   .sub_wrap .use_guide_wrap .use_guide_top .inner {height:464px;font: 0/0 a;}
+  .sub_wrap .use_guide_wrap .use_guide_mid .text .guide {padding-left: 15px;text-indent: -13px;width: 610px;margin: 10px 0;}
 
   .sub_wrap .use_guide_wrap .use_guide_mid .step0 {margin:100px 0;}
   .sub_wrap .use_guide_wrap .use_guide_mid .step0 + .step0 {margin-top: -65px;}
