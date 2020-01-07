@@ -436,10 +436,10 @@ var COEX = COEX || {
 		fixedTop: function(){
 			var enScrollTop = 0,
 				beScrollTop = 0,
-				$header = $("#header");
-				$topBanner = $(".top_bn_w");
-				fixdTop = $header.offset().top;
-				paddingTop = $header.height();
+				$header = $("#header"),
+				$topBanner = $(".top_bn_w"),
+				fixdTop = $header.offset().top,
+				paddingTop = $header.height(),
 				scrollThreshold = 90;
 
 			if($topBanner.length && $topBanner.is(":visible")){
@@ -719,7 +719,7 @@ $(function(){
 		$TOP_BANNER = $(".top_bn_w"),
 		SELECTCUSTOM = ".select_custum",
 		TOGGLE = ".toggle_btn",
-		GOTARGET = ".go_target_bt"
+		GOTARGET = ".go_target_bt",
 		LAYER_BT_OPEN = ".layer_open_bt",
 		LAYER_BT_CLOSE = ".layer_close_bt",
 		LAYER_DIM = ".layer_dimmed",
