@@ -39,8 +39,11 @@ time, mark, audio, video {
 	margin:0;padding:0;
 }
 
- html, body {width:100%;/*height:100%;*/-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent;word-break:keep-all;font-family:"NotoR";font-size:13px;letter-spacing:-1px;line-height: 1;color:#222;}
- h1, h2, h3, h4, h5, h6 {font-weight:normal;font-size:inherit;}
+html, body {width:100%;/*height:100%;*/-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent;word-break:keep-all;font-family:"NotoR";font-size:13px;letter-spacing:-1px;line-height: 1;color:#222;}
+body.pc {font-size:16px;}
+body.mobile,
+body.tablet {font-size:1.2rem;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;font-size:inherit;}
 
  /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, 
@@ -102,6 +105,8 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
 .input_r input[type=radio] + label {display:block;font-size: 1.15rem;position:relative;padding-left:2.3rem;line-height:1.6rem;color:#222;text-align: left;min-height: 1.7rem;}
 .input_r input[type=radio] + label:before {display:block;content:'';width:1.8rem;height: 1.8rem;position:absolute;top:-0.2rem;left:0;background: url("../images/icon/m_sub_radio_off.png") no-repeat 0 0;background-size: contain;}
 .input_r input[type=radio]:checked + label:before {background-image:url("../images/icon/m_sub_radio_on.png");}
+.input_r input[type=radio]:checked:disabled + label:before {background-image:url("../images/icon/m_sub_chk_d_on.png");}
+
 
 .input_date .pc {display:none;}
 .input_date .mo {display:block;}
@@ -133,7 +138,8 @@ input[type='date'] {padding:5px;border:1px solid #ccc;font-size:13px;}
   .input_r {padding-top:0;}
   .input_r input[type=radio] + label {font-size:17px;padding-left:35px;line-height:25px;min-height: 25px;}
   .input_r input[type=radio] + label:before {top: 0px;width:25px;height:25px;background-image:url("../images/icon/pc_sub_radio_off.png");}
-  input[type=radio]:checked + label:before {background-image:url("../images/icon/pc_sub_radio_on.png");}
+  .input_r input[type=radio]:checked + label:before {background-image:url("../images/icon/pc_sub_radio_on.png");}
+  .input_r input[type=radio]:checked:disabled + label:before {background-image:url("../images/icon/pc_sub_chk_d_on.png");}
 
   .input_date .pc {display:block;position:relative;}
   .input_date .pc button {position:absolute;top:24px;right:20px;width:20px;height:22px;background:url("../images/icon/pc_sub_calander.png") no-repeat 0 0;font: 0/0 a;}

@@ -1060,7 +1060,8 @@ $(function(){
 
 	var TOUCH_EVENT = ("ontouchstart" in window) ? "touchstart" : "click";
 	
-	/*영역외 닫기*/
+	
+	/*영역외 닫기-최종수정*/
 	$(document).on(TOUCH_EVENT, function(e){
 		//console.log(e.target);
 		//console.log(SCROLL_Top);
@@ -1072,7 +1073,8 @@ $(function(){
 			search_bt_w = $(".search_bt_w"),
 			cart_bt_w = $(".cart_bt_w"),
 			links_w = $(".gnb_wrap .log_wrap .link"),
-			select_custum = $(".pc .select_custum");
+			select_custum = $(".pc .select_custum"),
+			ticket_w = $(".ticket_w");
 		
 
 		if(!family.has(e.target).length){
@@ -1083,7 +1085,7 @@ $(function(){
 			}
 		}
 
-		if(!panel_bt_w.has(e.target).length && !panel_w.has(e.target).length && !cart_bt_w.has(e.target).length && !links_w.has(e.target).length){
+		if(!panel_bt_w.has(e.target).length && !panel_w.has(e.target).length && !cart_bt_w.has(e.target).length && !links_w.has(e.target).length && !ticket_w.has(e.target).length){
 			if(panel_w.is(":visible")){
 				panel_bt_w.find(".panel_btn").removeClass("on");
 				panel_w.removeClass("on");
@@ -1101,7 +1103,7 @@ $(function(){
 		}
 		
 
-		if(!search_bt_w.has(e.target).length && !panel_s_w.has(e.target).length && !cart_bt_w.has(e.target).length && !links_w.has(e.target).length){
+		if(!search_bt_w.has(e.target).length && !panel_s_w.has(e.target).length && !cart_bt_w.has(e.target).length && !links_w.has(e.target).length && !ticket_w.has(e.target).length){
 			if(panel_s_w.is(":visible")){
 				search_bt_w.find("button").removeClass("on");
 				panel_s_w.removeClass("on");
@@ -1127,6 +1129,7 @@ $(function(){
 		}
 
 	});
+	/*영역외 닫기-최종수정 --end*/
 
 	$(".layer_dimmed").on(TOUCH_EVENT, function(e){
 		$(this).fadeOut();
