@@ -23,7 +23,8 @@
 .main_wrap .cols0 .link_dt {text-align:right;position: absolute;top:0.5rem;right:1rem;color:#fff;font-size:1rem;}
 .main_wrap .cols0 .link_dt span {margin-right:0.3rem;display: inline-block;border-bottom: 1px solid #fff;padding-bottom:1px;}
 .main_wrap .cols0 .main_list li .list_in .img_wrap {height: 25.3rem;}
-
+.mobile .main_wrap .cols0 .main_list {padding:0;overflow: hidden;white-space: normal;}
+.mobile .main_wrap .cols0 .main_list li.slick-slide {width:20rem !important;}
 
 .main_wrap .cols1 {position: relative;z-index: 1;padding: 1.5rem 0;}
 .main_wrap .cols1 .inner {position: relative;}

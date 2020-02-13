@@ -764,7 +764,6 @@ $(function(){
 	}
 
 	/*메인 상단 슬라이드*/
-	
 	if($(".main_wrap .cols0 ul").length && $.fn.slick) {
 		(function(){
 			COEX.slide.init($(".main_wrap .cols0 ul"), "slick", {
@@ -774,9 +773,24 @@ $(function(){
 				autoplay: true,
 				arrows: true,
 				responsive: [ 
-					{ breakpoint: 1025, settings: "unslick" }, 
+					{ 
+						breakpoint: 1025, 
+						settings: "unslick"
+					},
+					{ 
+						breakpoint: 768, 
+						settings: {
+							arrows: false,
+							slidesToShow: 1,
+							centerMode: true,
+							variableWidth: true,
+						} 
+					}, 
 				],
 	
+			});
+			$(".main_wrap .cols0 ul").on("mouseleave", function(e){
+				$(this).slick("slickPlay");
 			});
 		})();
 	}
@@ -795,6 +809,9 @@ $(function(){
 				],
 	
 			});
+			$(".main_wrap .cols1 ul").on("mouseleave", function(e){
+				$(this).slick("slickPlay");
+			});
 		})();
 	}
 
@@ -811,6 +828,9 @@ $(function(){
 					{ breakpoint: 1025, settings: "unslick" }, 
 				],
 	
+			});
+			$(".main_wrap .cols3 ul").on("mouseleave", function(e){
+				$(this).slick("slickPlay");
 			});
 		})();
 	}
