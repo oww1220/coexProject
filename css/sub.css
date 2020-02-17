@@ -225,6 +225,7 @@ background-size:99%;}
 .sub_wrap .regi_conts .details .dt_W .depth_list > li {font-size:1.15rem;display: -webkit-flex;display:flex;-webkit-align-items: baseline;align-items: baseline;text-indent:0;padding-left:0;word-break: break-all;line-height: 1.4;}
 .sub_wrap .regi_conts .details .dt_W .depth_list > li:before {flex: none;position: relative;top: -4px;}
 .sub_wrap .regi_conts .details .dt_W .depth_list > li > span {width: 6rem;display: inline-block;text-indent: 0;flex: none;}
+.sub_wrap .regi_conts .details .dt_W .depth_list > li li {word-break: break-all;}
 .sub_wrap .regi_conts .details .dt_W .depth_list > li li + li {margin-top:0.2rem;}
 
 .sub_wrap .pop_layer .dt_W .dt_tit_w {margin-top:1rem;}
