@@ -140,69 +140,80 @@ var COEX = COEX || {
 			}
 
 		},
-		open: function(target, dimmed, parent, callback){
-			var that = this;
-			$(document).on("click", target, function(e){
-				var layer = $(this).data("layer");
-				var targetDom = $(this);
-				that.scrollTop = SCROLL_Top = $(window).scrollTop();
+		openClick: function(target, dimmed, parent, callback){
+            var that = this;
+            $(document).on("click", target, function(e){
+                var layer = $(this).data("layer");
+                var targetDom = $(this);
+                //that.scrollTop = $(window).scrollTop();
 
-				if(callback){
-					callback(show, layer, targetDom);
-				}
-				else{
-					show();
-				}
-				
-				function show(){
-					$("body").addClass("fixed");
-				
-					if(dimmed) $(dimmed).fadeIn();
-					$(parent + "." + layer).show();
-					that.calculate(layer);
-					//console.log(layer, that.scrollTop);
+                if(callback){
+                    callback(show, layer, targetDom);
+                }
+                else{
+                    show();
+                }
+                
+                function show(){
+                    that.open(layer, dimmed, parent);
+                }
 
-					$(window).on("resize.layer", function(){
-						that.calculate(layer);
-					});
-				}
+                e.preventDefault();
+            });
+        },
+        open: function(layer, dimmed, parent, callback){
+            var that = this;
+            that.scrollTop = $(window).scrollTop();
+            $("body").addClass("fixed");
+            $("body").css({top:-that.scrollTop});
+            if(dimmed) $(dimmed).fadeIn();
+            if(callback) callback(layer);
+            $(parent + "." + layer).show();
+            that.calculate(layer);
+            $(window).on("resize.layer", function(){
+                that.calculate(layer);
+            });
+        },
+        closeClick: function(target, dimmed, parent, callback){
+            var that = this;
+            $(document).on("click", target, function(e){
+                var layer;
+                var targetDom = $(this);
+                if(target == dimmed){
+                    layer = parent;
+                }
+                else{
+                    layer = parent + "."+$(this).data("layer");
+                }
+                
+                if(callback){
+                    callback(hide, layer, targetDom);
+                }
+                else{
+                    hide();
+                }
 
-				e.preventDefault();
-			});
-		},
-		close: function(target, dimmed, parent, callback){
-			var that = this;
-			$(document).on("click", target, function(e){
-				var layer;
-				var targetDom = $(this);
-				if(target == dimmed){
-					layer = $(parent);
-					//console.log("dimmed");
-				}
-				else{
-					layer = $(parent + "."+$(this).data("layer"));
-				}
-				
-				if(callback){
-					callback(hide, layer, targetDom);
-				}
-				else{
-					hide();
-				}
+                function hide() {
+                    that.close(layer, dimmed, parent);
+                }
 
-				function hide() {
-					layer.hide();
-					$("body").removeClass("fixed");
-					$(window).scrollTop(that.scrollTop);
-					if(dimmed) $(dimmed).fadeOut();
-					//console.log(layer, that.scrollTop);
-
-					$(window).off("resize.layer");
-				}
-
-				e.preventDefault();
-			});
-		},
+                e.preventDefault();
+            });
+        },
+        close :function(layer, dimmed, parent){
+            var that = this;
+            if(layer != dimmed) {
+                $(layer).hide();
+            }
+            else {
+                $(parent).hide();
+            }
+            if(dimmed) $(dimmed).fadeOut();
+            $("body").removeClass("fixed");
+            $("body").css({top:0});
+			$(window).scrollTop(that.scrollTop);
+            $(window).off("resize.layer");
+        },
 	},
 	event: {
 		toggle: function(target, callback){
@@ -981,27 +992,27 @@ $(function(){
 	COEX.event.goTarget(GOTARGET);
 
 	/*layer팝업*/
-	COEX.layer.open(LAYER_BT_OPEN, LAYER_DIM, LAYER_DIV);
-	COEX.layer.close(LAYER_BT_CLOSE, LAYER_DIM, LAYER_DIV);
-	//COEX.layer.close(LAYER_DIM, LAYER_DIM, LAYER_DIV);
+	COEX.layer.openClick(LAYER_BT_OPEN, LAYER_DIM, LAYER_DIV);
+	COEX.layer.closeClick(LAYER_BT_CLOSE, LAYER_DIM, LAYER_DIV);
+	//COEX.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_DIV);
 
-	COEX.layer.open("#test01", LAYER_DIM, LAYER_DIV, function (show){
+	COEX.layer.openClick("#test01", LAYER_DIM, LAYER_DIV, function (show){
 		alert("콜백");
 
 		show();
 	});
-	COEX.layer.close("#test001", LAYER_DIM, LAYER_DIV, function (hide){
+	COEX.layer.closeClick("#test001", LAYER_DIM, LAYER_DIV, function (hide){
 		alert("콜백");
 
 		hide();
 	});
 
-	COEX.layer.open(".layer_enrollment", LAYER_DIM, LAYER_DIV, function (show){
+	COEX.layer.openClick(".layer_enrollment", LAYER_DIM, LAYER_DIV, function (show){
 		$(".prch-wrap").css({"z-index": 111});
 		show();
 	});
 
-	COEX.layer.close(".layer_close_enrollment", LAYER_DIM, LAYER_DIV, function (hide){
+	COEX.layer.closeClick(".layer_close_enrollment", LAYER_DIM, LAYER_DIV, function (hide){
 		$(".prch-wrap").css({"z-index": 10});
 
 		hide();
@@ -1018,7 +1029,7 @@ $(function(){
 	/*업체정보 레이어
 	if($(".layer_open_company").length){
 		
-		COEX.layer.open(".layer_open_company", LAYER_DIM, LAYER_DIV, function (show, layer){	
+		COEX.layer.openClick(".layer_open_company", LAYER_DIM, LAYER_DIV, function (show, layer){	
 			show();
 			var $target = $("." + layer + " .slide ul");
 			var $texts = $("." + layer + " .texts li");
@@ -1033,7 +1044,7 @@ $(function(){
 			});
 
 		});
-		COEX.layer.close(".layer_close_compony", LAYER_DIM, LAYER_DIV, function (hide, layer){
+		COEX.layer.closeClick(".layer_close_compony", LAYER_DIM, LAYER_DIV, function (hide, layer){
 			hide();
 			var $target = layer;
 			$target.find(".slide ul").slick("unslick");
@@ -1151,12 +1162,16 @@ $(function(){
 	});
 	/*영역외 닫기-최종수정 --end*/
 
+	$(LAYER_DIM).on(TOUCH_EVENT, function(e){
+        COEX.layer.close(LAYER_DIM, LAYER_DIM, LAYER_DIV);
+    });
+	/*
 	$(".layer_dimmed").on(TOUCH_EVENT, function(e){
 		$(this).fadeOut();
 		$(".pop_layer").fadeOut();
 		$BODY.removeClass("fixed");
 		$(window).scrollTop(SCROLL_Top);
-	});
+	});*/
 
 	/*qr코드 레이어*/
 	$(".qr_bt.layer_open_bt").trigger('click');
