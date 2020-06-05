@@ -216,29 +216,32 @@ var COEX = COEX || {
         },
 	},
 	event: {
-		toggle: function(target, callback){
+		toggle: function(target, parent, callback){
 
 			$(document).on("click", target, function(e) {
-				var targetDiv = $(this);
-				var layer = $("." + targetDiv.data("target"));
-				var sort = targetDiv.data("sort");
-				var onClass = targetDiv.data("on");
-				var siblings = targetDiv.data("siblings");
+				var $this = $(this);
+				var $targetDiv = $(target);
+				var layer = $("." + $this.data("target"));
+				var sort = $this.data("sort");
+				var onClass = $this.data("on");
+				var siblings = $this.data("siblings");
+				var $parent =$(parent);
 				//console.log(sort, onClass, siblings);
 
 				function logic(){
 					
 					if(onClass){
-						if(siblings){
-							targetDiv.parent().siblings().find(target).removeClass("on");
-							targetDiv.parent().siblings().find(target).siblings().removeClass("on");
-						}
-						if(targetDiv.hasClass("on")){
-							targetDiv.removeClass("on");
+						
+						if(parent === null ? $this.hasClass("on") : layer.is(":visible")){
+							$this.removeClass("on");
 							layer.removeClass("on");
 						}
 						else{
-							targetDiv.addClass("on");
+							if(siblings){
+								$targetDiv.removeClass("on");
+								$parent.removeClass("on");
+							}
+							$this.addClass("on");
 							layer.addClass("on");
 						}	
 					}
@@ -260,13 +263,13 @@ var COEX = COEX || {
 					else{
 						if(sort == "fade"){
 							if(siblings){
-								targetDiv.parent().siblings().find(target).siblings().fadeOut();
+								$parent.fadeOut();
 							}
 							layer.fadeIn();
 						}
 						else if (sort == "normal"){
 							if(siblings){
-								targetDiv.parent().siblings().find(target).siblings().hide();
+								$parent.hide();
 							}
 							layer.show();
 						}
@@ -275,12 +278,12 @@ var COEX = COEX || {
 						}
 						else{
 							if(siblings){
-								targetDiv.parent().siblings().find(target).siblings().slideUp();
+								$parent.slideUp();
 							}
 							layer.slideDown();
 						}
 					}
-
+	
 				}
 
 				if(callback) {
@@ -905,9 +908,9 @@ $(function(){
 
 
 	/*토글*/
-	COEX.event.toggle(TOGGLE);
+	COEX.event.toggle(TOGGLE, ".sub_wrap .notice_wrap .questions_list .cont");
 
-	COEX.event.toggle(".top_bn_close", function(logic, layer){
+	COEX.event.toggle(".top_bn_close", null, function(logic, layer){
 		var paddingTop = $HEADER.height();
 		setTimeout(function(){
 			$HEADER.addClass("fixed");
@@ -919,7 +922,7 @@ $(function(){
 		
 	});
 	
-	COEX.event.toggle(".panel_btn", function(logic, layer){
+	COEX.event.toggle(".panel_btn", null, function(logic, layer){
 		$(window).off("resize.panel");
 		var paddingTop = 0;
 
@@ -965,13 +968,13 @@ $(function(){
 		logic();
 	});
 
-	COEX.event.toggle(".panel_s_btn", function(logic, layer){
+	COEX.event.toggle(".panel_s_btn", null, function(logic, layer){
 		$(".panel_s_close").addClass("on");
 		$BODY.addClass("fixed");
 		logic();
 	});
 
-	COEX.event.toggle(".panel_s_close", function(logic, layer){
+	COEX.event.toggle(".panel_s_close", null, function(logic, layer){
 		$(".panel_s_btn").removeClass("on");
 		$BODY.removeClass("fixed");
 		logic();
